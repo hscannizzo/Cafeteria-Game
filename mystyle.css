@@ -1,10 +1,28 @@
 .game-screen {
-  background-image: url("bronxpage1.png");
-  position: fixed;
+position: fixed;
 top: 0;
 left: 0;
 height: 100%;
 width: 100%;
+object-fit: scale-down;
+}
+
+#cafe1 .game-screen {
+  background-image: url("bronxpage1.png");
+}
+
+#cafe2 .game-screen {
+  background-image: url("bronxpage2.png"); 
+}
+
+#kitchen .game-screen {
+  background-image: url("kitchen.png"); 
+
+}
+
+#lunchline .game-screen {
+  background-image: url("line.png"); 
+
 }
 
  .map {
@@ -114,4 +132,382 @@ padding-top: 5px;
   left: 40%;
   bottom: 41%;
   width: 100px;
+}
+.chefimage {
+  position: absolute;
+  bottom: 10%;
+  left: 20%;
+  width: 600px; 
+} 
+
+.plumbingimage {
+  position: absolute;
+  bottom: 30%;
+  left: 34%;
+  width: 80px; 
+
+}
+
+.fliesimage {
+position: absolute;
+bottom: 50%;
+left: 27%;
+width: 70px;
+}
+
+.verminproofimage {
+  position: absolute;
+  bottom: 50%;
+left: 80%;
+width: 50px;
+}
+
+.nonfoodcontactimage {
+  position: absolute;
+  bottom: 42%;
+left: 30%;
+width: 200px;
+}
+
+.bulbimage {
+  position: absolute;
+  bottom: 93%;
+left: 35%;
+width: 50px;
+}
+
+.contaminationimage {
+  position: absolute;
+  bottom: 68%;
+left: 40%;
+width: 250px;
+}
+
+.lunchladyimage {
+  position: absolute;
+  bottom: 2%;
+left: 80%;
+width: 400px;
+}
+
+#mappopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-color: #10487C;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 -4px 16px -3px #742830a1, 0 3px 13px -3px #742830a1;
+  border-radius: 25px;
+  padding-right: 260px;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+.mapcafe {
+  position: fixed;
+  width: 80px;
+}
+
+#mappopup {
+  display: none;
+}
+.button1 {
+  background-color: #C74238; 
+  border: none;
+  color: #d3d3d3;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Courier Prime', monospace;
+ position: absolute;
+ bottom: 66%;
+ left: 50%;
+}
+
+
+.button2 {
+  background-color: #C74238; 
+  border: none;
+  color: #d3d3d3;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Courier Prime', monospace;
+  position: absolute;
+left: 60%;
+bottom: 30%;
+}
+
+.button3 {
+  background-color: #C74238; 
+  border: none;
+  color: #d3d3d3;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Courier Prime', monospace;
+  position: absolute;
+  bottom: 48%;
+left: 40%;
+}
+
+.button4 {
+  background-color: #C74238; 
+  border: none;
+  color: #d3d3d3;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: absolute;
+  font-family: 'Courier Prime', monospace;
+  left: 30%;
+  bottom: 28%;
+}
+
+.beginningpopup {
+  background-color: #FBFBFB;
+  width: 1295px;
+  height: 634px;
+  position: absolute;
+  z-index: 1;
+  left: 15%;
+  bottom: 20%;
+  border-radius: 25px;
+  
+}
+
+.topwriting {
+font-family: "proxima-nova", sans-serif;
+font-weight: 800;
+font-style: normal;
+font-size: 64px;
+left: 15%;
+position: absolute;
+}
+
+.frontwriting {
+  font-size: 36px;
+left: 13%;
+right: 9%;
+position: absolute;
+font-family: 'Courier Prime', monospace;
+bottom: 60%;
+}
+.maptiny {
+  position: absolute;
+  left: 5%;
+  bottom:35%;
+}
+.apron1tiny {
+  position: absolute;
+  left: 32%;
+  bottom: 35%;
+}
+.apron2tiny {
+  position: absolute;
+  left: 42%;
+  bottom: 35%;
+}
+
+.footertiny {
+  position: absolute;
+  left: 67%;
+  bottom: 40%;
+}
+
+.mapwriting {
+  font-size: 22px;
+left: 2%;
+position: absolute;
+font-family: 'Courier Prime', monospace;
+bottom: 15%;
+}
+
+.footerwriting {
+  font-size: 22px;
+left: 64%;
+position: absolute;
+font-family: 'Courier Prime', monospace;
+bottom: 18%;
+
+}
+
+.apronwriting {
+  font-size: 22px;
+left: 28%;
+position: absolute;
+font-family: 'Courier Prime', monospace;
+bottom: 18%;
+}
+
+.buttonfirst {
+  background-color: #FBFBFB; 
+  border: 5px solid black;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 40px;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: absolute;
+  font-family: 'Courier Prime', monospace;
+  left: 40%;
+  bottom: 6%;
+  border-radius: 25px;
+}
+
+.chefpopup {
+  position: absolute;
+  z-index: 1;
+  background-color:#FBFBFB;
+  width: 1790px;
+  height: 350px;
+  bottom: 0%;
+  display: none;
+}
+.titlechef {
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 80px;
+  left: 2%;
+  position: absolute;  
+}
+
+.dialogchef {
+  font-size: 40px;
+  left: 2%;
+  position: absolute;
+  font-family: 'Courier Prime', monospace;
+  bottom: 40%; 
+}
+
+.chefbutton {
+  background-color: #FBFBFB; 
+  border: 5px solid black;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 40px;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: absolute;
+  font-family: 'Courier Prime', monospace;
+  left: 85%;
+  bottom: 10%;
+  border-radius: 25px;
+}
+
+.chefhead {
+  position: absolute;
+  bottom: 99%;
+  left: 74%;
+
+}
+.chefframe {
+  border: 5px solid #fbfbfb;
+  bottom: 100%;
+  left: 83%;
+}
+
+.certificatepopup {
+  position: absolute;
+  z-index: 1;
+  background-color:#FBFBFB;
+  width: 959px;
+  height: 397px;
+  bottom: 40%;
+  left: 20%;
+  border-radius: 25px;
+  display: none;
+}
+
+.titlehealth {
+  position: absolute;
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 55px; 
+  left: 2%;
+}
+
+.certtitle {
+  position: absolute;
+  font-family: 'Courier Prime', monospace;
+  font-size: 44px; 
+  bottom: 56%;
+  left: 2%;
+}
+
+.certificatewritup {
+  position: absolute;
+  font-family: 'Courier Prime', monospace;
+  font-size: 28px; 
+  bottom: 5%;
+  right: 40%;
+  left: 2%;
+}
+.certificateviolation {
+  position: absolute;
+  left: 70%;
+  bottom: 20%;
+}
+
+
+.ratspopup {
+  position: absolute;
+  z-index: 1;
+  background-color:#FBFBFB;
+  width: 959px;
+  height: 397px;
+  bottom: 40%;
+  left: 20%;
+  border-radius: 25px;
+  display: none;
+}
+.rattitle {
+  position: absolute;
+  font-family: 'Courier Prime', monospace;
+  font-size: 44px; 
+  bottom: 58%;
+  left: 2%;
+}
+
+.ratwritup {
+  position: absolute;
+  font-family: 'Courier Prime', monospace;
+  font-size: 28px; 
+  bottom: 8%;
+  right: 40%;
+  left: 2%;
+}
+.ratviolation {
+  position: absolute;
+  left: 70%;
+  bottom: 15%;
+}
+.popupoutline {
+  position: absolute;
+  z-index: 1;
+  background-color:#FBFBFB;
+  width: 959px;
+  height: 397px;
+  bottom: 40%;
+  left: 20%;
+  border-radius: 25px;
 }
