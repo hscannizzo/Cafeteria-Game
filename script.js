@@ -32,9 +32,47 @@ $light.addEventListener("click",function (){
     // show light in footer
     document.getElementById ("footerlight").style.opacity=1
     // show popup
-   })
+    const $lightingpopup =  document.getElementById ('badlightingpopup')
+    console.log ($lightingpopup)  
+    $lightingpopup.style.display="block"
+    //close popup
+    $lightingpopup.addEventListener('click', function(){
+    $lightingpopup.style.display= "none"}
+    )
+})
    
-   
+const $flies= document.getElementById ("flies")
+$flies.addEventListener("click",function (){
+    console.log($flies)
+    // hide light
+   $flies.style.display="none"
+    // show light in footer
+    document.getElementById ("footerflies").style.opacity=1
+    // show popup
+    const $fliespopup =  document.getElementById ('fliespopup')
+    console.log ($fliespopup)  
+    $fliespopup.style.display="block"
+    //close popup
+    $fliespopup.addEventListener('click', function(){
+    $fliespopup.style.display= "none"}
+    )
+}) 
+const $verminproof= document.getElementById ("verminproof")
+$verminproof.addEventListener("click",function (){
+    console.log($verminproof)
+    // hide light
+   $verminproof.style.display="none"
+    // show light in footer
+    document.getElementById ("footerverminproof").style.opacity=1
+    // show popup
+    const $verminproofpopup =  document.getElementById ('verminproofpopup')
+    console.log ($verminproofpopup)  
+    $verminproofpopup.style.display="block"
+    //close popup
+    $verminproofpopup.addEventListener('click', function(){
+    $verminproofpopup.style.display= "none"}
+    )
+})  
    const $chef= document.getElementById ("chef")
    $chef.addEventListener("click",function (){
        console.log($chef)
@@ -46,6 +84,10 @@ $light.addEventListener("click",function (){
     const $chefpopup =  document.getElementById ('chefpopup')
      console.log ($chefpopup)  
     $chefpopup.style.display="block"
+    //change apron color
+    const $aproncolor1 =  document.getElementById ('characterbox2')
+    console.log ($aproncolor1)  
+   $aproncolor1.style.display="block"
       })
 
 
@@ -64,6 +106,90 @@ $certificatepopup.style.display= "none"}
 )
     }
 
+    const $eleanor= document.getElementById ("lunchlady")
+    $eleanor.addEventListener("click",function (){
+        console.log($eleanor)
+        // hide rats
+       $eleanor.style.display= "none"
+        // show rat in footer
+        document.getElementById ("footerhandwash").style.opacity=1
+        // show popup
+     const $eleanorpopup =  document.getElementById ('eleanorpopup')
+      console.log ($eleanorpopup)  
+     $eleanorpopup.style.display= "block"
+     //change apron color
+     const $aproncolor2 =  document.getElementById ('characterbox3')
+     console.log ($aproncolor2)  
+     $aproncolor2.style.display= "block"
+    })
+     
+     
+    function exitButton3 (eleanorbutton){ 
+    console.log (eleanorbutton)
+    //hide popup once clicked
+    const $eleanorpopup= document.getElementById ('eleanorpopup')
+    $eleanorpopup.style.display= "none"
+    //show new popup
+
+    const $handwashpopup =  document.getElementById ('handwashpopup')
+    console.log ($handwashpopup)  
+    $handwashpopup.style.display= "block"
+    //close popup
+    $handwashpopup.addEventListener('click', function(){
+    $handwashpopup.style.display= "none"}
+    )
+    }
+
+    const $contamination= document.getElementById ("contamination")
+    $contamination.addEventListener("click",function (){
+        console.log($contamination)
+        // hide light
+       $contamination.style.display="none"
+        // show light in footer
+        document.getElementById ("footercontamination").style.opacity=1
+        // show popup
+        const $contaminationpopup =  document.getElementById ('contaminationpopup')
+        console.log ($contaminationpopup)  
+        $contaminationpopup.style.display="block"
+        //close popup
+        $contaminationpopup.addEventListener('click', function(){
+        $contaminationpopup.style.display= "none"}
+        )
+    }) 
+
+    const $bulb= document.getElementById ("bulb")
+    $bulb.addEventListener("click",function (){
+        console.log($bulb)
+        // hide light
+       $bulb.style.display="none"
+        // show light in footer
+        document.getElementById ("footerbulb").style.opacity=1
+        // show popup
+        const $bulbpopup =  document.getElementById ('bulbpopup')
+        console.log ($bulbpopup)  
+        $bulbpopup.style.display="block"
+        //close popup
+        $bulbpopup.addEventListener('click', function(){
+        $bulbpopup.style.display= "none"}
+        )
+    }) 
+
+    const $improper= document.getElementById ("nonfoodcontact")
+    $improper.addEventListener("click",function (){
+        console.log($improper)
+        // hide light
+       $improper.style.display="none"
+        // show light in footer
+        document.getElementById ("footernonfoodcontact").style.opacity=1
+        // show popup
+        const $improperpopup =  document.getElementById ('improperpopup')
+        console.log ($improperpopup)  
+        $improperpopup.style.display="block"
+        //close popup
+        $improperpopup.addEventListener('click', function(){
+        $improperpopup.style.display= "none"}
+        )
+    }) 
    
 
    const $plumbing= document.getElementById ("plumbing")
@@ -74,6 +200,13 @@ $certificatepopup.style.display= "none"}
        // show light in footer
        document.getElementById ("footerplumbing").style.opacity=1
        // show popup
+       const $plumbingpopup =  document.getElementById ('plumbingpopup')
+       console.log ($plumbingpopup)  
+       $plumbingpopup.style.display="block"
+       //close popup
+       $plumbingpopup.addEventListener('click', function(){
+       $plumbingpopup.style.display= "none"}
+       )
       })
    
 const $map= document.getElementById ("map")
@@ -103,7 +236,7 @@ $lunchlineLevel.style.display="none"
 //use location name as id to find specific level element
 const selectedlevel=document.getElementById (locationname)
 console.log (selectedlevel)
-selectedlevel.style.display="block"
+selectedlevel.style.display= "block"
 }
 
 function exitButton (buttonname) {

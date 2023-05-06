@@ -1,6 +1,40 @@
+
 <div class="popup" id="popup">
     <div class="titlehealth">You Found A Health Code Violation!</div>
-    <div class="title">Rats</div>
-    <div class="writup">Wild rats carry many diseases that can contaminate food. They are most often found in Manhattan and the Bronx. In the Bronx, they are found in 10.10% of public schools, or 310 schools.</div>
-  <div class="violation"><img src="rats.png" width='200px' alt="rats"></div>
+    <div class="title"></div>
+    <div class="writup"></div>
+  <div class="violation"><img src=".png" width='px' alt=""></div>
   </div>
+
+  .popup {
+    position: absolute;
+    z-index: 1;
+    background-color:#FBFBFB;
+    width: 959px;
+    height: 397px;
+    bottom: 40%;
+    left: 20%;
+    border-radius: 25px;
+    display: none;
+  }
+  .title {
+    position: absolute;
+    font-family: 'Courier Prime', monospace;
+    font-size: 44px; 
+    bottom: 58%;
+    left: 2%;
+  }
+  
+  .writup {
+    position: absolute;
+    font-family: 'Courier Prime', monospace;
+    font-size: 28px; 
+    bottom: 8%;
+    right: 40%;
+    left: 2%;
+  }
+  .violation {
+    position: absolute;
+    left: 70%;
+    bottom: 15%;
+  }
