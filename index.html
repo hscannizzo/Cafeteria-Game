@@ -9,24 +9,242 @@
     <link rel="stylesheet" href="https://use.typekit.net/nmj0ytp.css">
     <title>struggling</title>
 
-    <link rel="stylesheet" href="mystyle1.css" type="text/css"/>
+    <link rel="stylesheet" href="mystyle.css" type="text/css"/>
   </head>
   <body> 
+  <div class="enterscreen" id="title-screen">
+    <button class="fadeButton" id="fadeButton" onclick="gotoLocationEnter('levelselect')">Enter</button>
+<div class="fade"> <img src="enterscreen.png" alt=" Image"></div>
+   
+</div>
+
+
+    <div class="levelselect" id="levelselect">
     <div class="brooklyn1">BROOKLYN</div>
     <div class="bronx1">BRONX</div>
     <div class="statenisland1">STATEN ISLAND</div>
     <div class="manhattan1">MANHATTAN</div>
     <div class="queens1">QUEENS</div>
 
-        <div class="queens"><img src="queensschool.png" width="300px" alt=" Image"></div>
-        <div class="manhattan"><img src="manhattanschool.png" width="300px" alt=" Image"></div>
-        <div class="statenisland"><img src="statenislandschool.png" width="300px" alt=" Image"></div>
-        <div class="brooklyn"><img src="brooklynschool.png" width="300px" alt=" Image"></div>
-        <div class="bronx"><a href="bronxindex.html"><img src="bronxschool.png" width="300px" alt=" Image"></a></div>
-
-
-
+    <div class="queens"><img src="queensschool.png" width="300px" alt=" Image" onclick="gotoLocationLevels('queens')"></div>
+    <div class="queensfinished"id="queensfinished"><img src="finished schools.png" width="300px" alt=" Image"></div>
+    <div class="manhattan"><img src="manhattanschool.png" width="300px" alt=" Image" onclick="gotoLocationLevels('manhattan')"></div>
+    <div class="manhattanfinished"id="manhattanfinished"><img src="finished schools.png" width="300px" alt=" Image"></div>
+    <div class="statenisland"><img src="statenislandschool.png" width="300px" alt=" Image" onclick="gotoLocationLevels('statenisland')"></div>
+    <div class="statenislandfinished"id="statenislandfinished"><img src="finished schools.png" width="300px" alt=" Image"></div>
+     <div class="brooklyn"><img src="brooklynschool.png" width="300px" alt=" Image" onclick="gotoLocationLevels('brooklyn')"></div>
+     <div class="brooklynfinished"id="brooklynfinished"><img src="finished schools.png" width="300px" alt=" Image"></div>
+    <div class="bronx"><img src="bronxschool.png" width="300px" alt=" Image" onclick="gotoLocationLevels('bronx')"></div>
+    <div class="bronxfinished"id="bronxfinished"><img src="finished schools.png" width="300px" alt=" Image"></div>
     <div class="back"> <img src="backgroundlevelselect.png" width="103%" alt="Enter Image"></div>
-<script src="script1.js"></script>
+</div>
+</div>
+
+<div id="bronx">
+    <div class="beginningpopupbronx" id="beginningpopupbronx">
+        <div class="topwritingbronx">
+          Welcome Cafeteria Inspectors!
+        </div>
+        <div class="frontwritingbronx">
+          Thank heavens you’re here. We need your help to clean up this school! Find all the violations in this cafeteria and click on them to capture them. Good luck!
+        </div>
+        <div class="mapwritingbronx">
+          This is your Map. <br> Use it to navigate <br> around the different <br> cafeteria areas.
+        </div>
+        <div class="apronwritingbronx">
+         This keeps track of the people <br> you need to talk to. Click on <br> workers to interact with them!
+        </div>
+        <div class="footerwritingbronx">
+          This is your violation bar. All of the health code violations you’ve found will show here! 
+        </div>
+        <div class="maptinybronx"><img src="map.png" width='120px' alt="tiny map"></div>
+        <div class="apron1tinybronx"><img src="apronunlock.png" width='120px' alt="apron tiny"></div>
+        <div class="apron2tinybronx"><img src="fullapron.png" width='120px' alt="apron tiny"></div> 
+        <div class="footertinybronx"><img src="footertiny.png" width='360px' alt="tiny footer"></div>
+       <button class="buttonfirstbronx" onclick="exitButtonbronx('instructionbuttonbronx')">Continue</button>
+      </div>
+  
+      <div class="endpopupbronx" id="endpopupbronx">
+       <div class="endtitlebronx">You Have Found All The Health Code Violations!</div>
+       <div class="endwritupbronx">Hurry now, brave inspector. We have many more schools to go through!</div>
+       <button class="buttonlastbronx" onclick="gotoLevelSelectbronx ('finalbuttonbronx')">Continue to <br> next school</button>
+      </div>
+  
+  
+      <div class="mapbronx" id="mapbronx"><img src="map.png" width="20%" height="20%"></div>
+      
+     <div class="characterboxbronx">
+      <div class="apronunlock1bronx"><img align="right" src="apronunlock copy.png" width="15%" height="15%"></div>
+      <div class="apronunlock2bronx"><img align="right" src="apronunlock.png" width="15%" height="15%"></div>
+  </div>
+  
+  <div class="characterbox2bronx" id="characterbox2bronx">
+    <div class="apronunlock3bronx"><img align="right" src="fullapron.png" width="15%" height="15%"></div>
+  </div>
+  <div class="characterbox3bronx" id="characterbox3bronx">
+    <div class="apronunlock4bronx"><img align="right" src="fullapron copy.png" width="15%" height="15%"></div>
+  </div>
+  
+  
+  <div class="ratspopupbronx" id="ratspopupbronx">
+    <div class="titlehealthbronx">You Found A Health Code Violation!</div>
+    <div class="rattitlebronx">Rats</div>
+    <div class="ratwritupbronx">Wild rats carry many diseases that can contaminate food. They are most often found in Manhattan and the Bronx. In the Bronx, they are found in 10.10% of public schools, or 310 schools.</div>
+  <div class="ratviolationbronx"><img src="rats.png" width='200px' alt="rats"></div>
+  </div>
+  
+  <div class="badlightingpopupbronx" id="badlightingpopupbronx">
+    <div class="titlehealthbronx">You Found A Health Code Violation!</div>
+    <div class="lightingtitlebronx">Inadequate lighting</div>
+    <div class="lightingwritupbronx">Inadequate lighting can lead to injuries due to minimized range of vision This is most often found in Staten Island and the Bronx. In the Bronx, it is found in 3.60% of public schools, or 110 schools.</div>
+  <div class="lightingviolationbronx"><img src="badlighting.png" width='250px' alt="lighting"></div>
+  </div>
+  
+  <div class="fliespopupbronx" id="fliespopupbronx">
+    <div class="titlehealthbronx">You Found A Health Code Violation!</div>
+    <div class="fliestitlebronx">Filth Flies</div>
+    <div class="flieswritupbronx">Filth flies carry diseases and can lay eggs in food, which hatch into maggots. They are most often found in Manhattan and Queens. In the Bronx, they are found in 2.80% of public schools, or 87 schools.</div>
+  <div class="fliesviolationbronx"><img src="flies.png" width='200px' alt="flies"></div>
+  </div>
+  
+  <div class="verminproofpopupbronx" id="verminproofpopupbronx">
+    <div class="titlehealthbronx">You Found A Health Code Violation!</div>
+    <div class="verminprooftitlebronx">Facility not vermin proof</div>
+    <div class="verminproofwritupbronx">While not as bad as actual mice and rats, this is still an invitation for them. This problem is most often found in Manhattan and Queens. In the Bronx, this is  found in 10.70% of public schools, or 328 schools.</div>
+  <div class="verminproofviolationbronx"><img src="verminproof.png" width='200px' alt="verminproof"></div>
+  </div>
+  
+  <div class="eleanorpopupbronx" id="eleanorpopupbronx">
+    <div class="titleeleanorbronx">LUNCH LADY ELEANOR</div>
+    <div class="dialogeleanorbronx">A <em>hand washing sign?</em> Sweetheart, we barely have enough money in the budget for sinks. </div>
+  <div class="eleanorheadbronx"><img src="lunchladyelenor head.png" width='400px' alt="eleanor head"></div>
+    <button class="eleanorbuttonbronx" onclick="exitButton3bronx('eleanorbuttonbronx')">Continue</button>
+  </div>
+  
+  <div class="handwashpopupbronx" id="handwashpopupbronx">
+    <div class="titlehealthbronx">You Found A Health Code Violation!</div>
+    <div class="handwashtitlebronx">No hand washing sign</div>
+    <div class="handwashwritupbronx">Hand washing reduces germs and chemicals on hands before eating. This is most often missing in Manhattan and the Bronx. In the Bronx, they are found in 10.10% of public schools, or 310 schools.</div>
+  <div class="handwashviolationbronx"><img src="handwash.png" width='200px' alt="handwash"></div>
+  </div>
+  
+  <div class="contaminationpopupbronx" id="contaminationpopupbronx">
+    <div class="titlehealthbronx">You Found A Health Code Violation!</div>
+    <div class="contaminationtitlebronx">food not protected from contamination</div>
+    <div class="contaminationwritupbronx">Food left out in sub-optimal temperatures can be cause many illnesses. This is most often found in Manhattan and Brooklyn. In the Bronx, it is found in 2.70% of public schools, or 83 schools.</div>
+  <div class="contaminationviolationbronx"><img src="contamination.png" width='200px' alt="contamination"></div>
+  </div>
+  
+  <div class="bulbpopupbronx" id="bulbpopupbronx">
+    <div class="titlehealthbronx">You Found A Health Code Violation!</div>
+    <div class="bulbtitlebronx">Light bulb not shielded or shatterproof</div>
+    <div class="bulbwritupbronx">Light bulbs unprotected or improperly built can lead to burns or shattered glass. These are most often found in Staten Island and Manhattan. In the Bronx, it is found in 3.70% of public schools, or 353 schools.</div>
+  <div class="bulbviolationbronx"><img src="bulb.png" width='200px' alt="bulb"></div>
+  </div>
+  
+  <div class="improperpopupbronx" id="improperpopupbronx">
+    <div class="titlehealthbronx">You Found A Health Code Violation!</div>
+    <div class="impropertitlebronx">Surface improperly constructed</div>
+    <div class="improperwritupbronx">Food left out on surfaces not constructed for food can become hazardous. This is most often found in Staten Island and the Bronx. In the Bronx, it is found in 32.70% of public schools, or 1007 schools.</div>
+  <div class="improperviolationbronx"><img src="nonfoodcontact.png" width='250px' alt="improperfoodsurface"></div>
+  </div>
+  
+  <div class="chefpopupbronx" id="chefpopupbronx">
+    <div class="titlechefbronx">CHEF</div>
+    <div class="dialogchefbronx">What’s the big deal? So what I don’t have a certificate? Who cares? <br> I got 800 kids to feed, MOVE! </div>
+  <div class="chefheadbronx"><img src="chef head.png" width='400px' alt="chef head"></div>
+    <button class="chefbuttonbronx" onclick="exitButton2bronx('chefbuttonbronx')">Continue</button>
+  </div>
+  
+  <div class="certificatepopupbronx" id="certificatepopupbronx">
+    <div class="titlehealthbronx">You Found A Health Code Violation!</div>
+    <div class="certtitlebronx">Food Protection Certificate not held by supervisor</div>
+    <div class="certificatewritupbronx">These certificates are mandatory for serving food in NYC. They are most often missing in Queens and the Bronx. In the Bronx, they are found in 2.70% of public schools, or 83 schools.</div>
+  <div class="certificateviolationbronx"><img src="certificate.png" width='200px' alt="certificate"></div>
+  </div>
+  
+  <div class="plumbingpopupbronx" id="plumbingpopupbronx">
+    <div class="titlehealthbronx">You Found A Health Code Violation!</div>
+    <div class="plumbingtitlebronx">Plumbing not properly installed</div>
+    <div class="plumbingwritupbronx">Poor water quality and hazardous material in water are the biggest threats posed by improper plumbing. It is seen most often in Staten Island and the Bronx. In the Bronx, they are found in 14.10% of public schools, or 433 schools.</div>
+  <div class="plumbingviolationbronx"><img src="plumbing.png" width='200px' alt="plumbing"></div>
+  </div>
+  
+  <div id="kitchenbronx">
+    <div class="game-screenbronx">
+     / <img class="plumbingimagebronx" id="plumbingbronx" src="plumbing.png" alt="plumbing">
+     / <img class="chefimagebronx" id="chefbronx" src="chef.png" alt="chef">
+  </div>
+  </div>
+  
+  <div id="cafe2bronx">
+    <div class="game-screenbronx">
+      <img class="fliesimagebronx" id="fliesbronx" src="flies.png" alt="flies">
+      <img class="verminproofimagebronx" id="verminproofbronx" src="verminproof.png" alt="vermin proof">
+    </div>
+    </div>
+  
+    <div id="lunchlinebronx">
+      <div class="game-screenbronx">
+        <img class="nonfoodcontactimagebronx" id="nonfoodcontactbronx" src="nonfoodcontact.png" alt="nonfoodcontact">
+        <img class="bulbimagebronx" id="bulbbronx" src="bulb.png" alt="bulb">
+        <img class="contaminationimagebronx" id="contaminationbronx" src="contamination.png" alt="contamination">
+        <img class="lunchladyimagebronx" id="lunchladybronx" src="lunchladyelenor.png" alt="lunch lady eleanor">
+      </div>
+      </div>
+  
+      <div id="cafe1bronx">
+        <div class="game-screenbronx">
+   <img class="ratsimagebronx" id="ratsbronx" src="rats.png" alt="rats">
+  <img class="lightingimagebronx" id="lightingbronx" src="badlighting.png" alt="lighting">
+        </div>
+        </div>
+  
+  <div class="gamefooterbronx">
+      <div class="flex-containerbronx">
+        <div class="item1bronx"><img src="nonfoodcontact.png" id="footernonfoodcontactbronx" width="140px" alt="improper construction"></div>
+        <div class="item2bronx"><img src="plumbing.png" id="footerplumbingbronx" width="70px" alt="plumbing"></div>
+        <div class="item3bronx"><img src="verminproof.png" id="footerverminproofbronx" width="110px" alt="not vermin proof"></div>
+        <div class="item4bronx" ><img id="footerratsbronx" src="rats.png" width="140px" alt="rats"></div>
+        <div class="item5bronx"><img src="bulb.png" id="footerbulbbronx" width="90px" alt="bulb not shielded"></div>
+        <div class="item6bronx"><img src="badlighting.png" id="footerlightbronx" width="150px" alt="bad lighting"></div>
+        <div class="item7bronx"><img src="flies.png" id="footerfliesbronx" width="110px" alt="flith flies"></div>
+        <div class="item8bronx"><img src="contamination.png" id="footercontaminationbronx"  width="130px" alt="food contamination"></div>
+        <div class="item9bronx"><img src="certificate.png" id="footercertificatebronx" width="120px" alt="certificate"></div>
+        <div class="item10bronx"><img src="handwash.png" id="footerhandwashbronx" width="90px" alt="hand wash"></div>
+      </div>
+     </div>
+  
+     <div id="mappopupbronx">
+      <img class="mapcafeimagebronx" id="mapcafebronx" src="mapcafe.png" width="150%" alt="mapcafe">
+     <button class="button1bronx" onclick="gotoLocationbronx('cafe1bronx')">Cafe 1</button>
+     <button class="button2bronx" onclick="gotoLocationbronx('cafe2bronx')">Cafe 2</button>
+     <button class="button3bronx" onclick="gotoLocationbronx('lunchlinebronx')">Lunch Line</button>
+     <button class="button4bronx" onclick="gotoLocationbronx('kitchenbronx')">Kitchen</button>
+     </div>
+   
+     
+   
+  
+  
+</div>
+
+<div id="brooklyn">
+
+</div>
+
+<div id="queens">
+
+</div>
+
+<div id="manhattan">
+
+</div>
+
+<div id="statenisland">
+
+</div>
+
+<script src="script.js"></script>
   </body>
 </html>

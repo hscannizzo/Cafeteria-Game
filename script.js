@@ -1,236 +1,421 @@
-// These are the levels of our game
-const $kitchenLevel = document.getElementById('kitchen')
-const $cafe1Level = document.getElementById('cafe1')
-const $cafe2evel = document.getElementById('cafe2')
-const $lunchlineLevel = document.getElementById('lunchline')
+const $bronxLevel = document.getElementById('bronx')
+const $brooklynLevel = document.getElementById('brooklyn')
+const $queensLevel = document.getElementById('queens')
+const $manhattanLevel = document.getElementById('manhattan')
+const $statenislandLevel = document.getElementById('statenisland')
+const $enterscreen = document.getElementById('title-screen')
+const $levelselect = document.getElementById('levelselect')
 
 
 
-const $rats= document.getElementById ("rats")
 
-$rats.addEventListener("click",function (){
- console.log($rats)
+
+function gotoLocationEnter(locationname){
+   const $levelbutton =  document.getElementById ('fadeButton')
+console.log ($levelbutton)  
+$levelbutton.style.display="none";  
+//hide all levels
+console.log (locationname)
+   $bronxLevel.style.display="none"
+   $brooklynLevel.style.display="none"
+   $queensLevel.style.display="none"
+   $manhattanLevel.style.display="none"
+   $statenislandLevel.style.display="none"
+   $levelselect.style.display="none"
+ 
+   
+   //show level for location name
+   //use location name as id to find specific level element
+   const selectedlevel=document.getElementById (locationname)
+   console.log (selectedlevel)
+   selectedlevel.style.display= "block"
+   ;
+}
+
+
+var div = document.querySelector(".fade");
+var btn = document.querySelector(".fadeButton");
+btn.addEventListener("click", function Fading(){
+  div.classList.add("elementToFadeOut");
+  
+
+  var timerId = setTimeout(function Fading () {
+   document.getElementById("title-screen").style.zIndex = "0";
+},
+2800)
+  
+});
+
+
+
+function gotoLocationLevels(locationname){
+   console.log (locationname)
+//hide all levels
+$bronxLevel.style.display="none"
+$brooklynLevel.style.display="none"
+$queensLevel.style.display="none"
+$manhattanLevel.style.display="none"
+$statenislandLevel.style.display="none"
+$enterscreen.style.display="none"
+$levelselect.style.display="none"
+//show level for location name
+//use location name as id to find specific level element
+const selectedlevel=document.getElementById (locationname)
+console.log (selectedlevel)
+selectedlevel.style.display= "block"
+}
+
+
+//bronx
+
+
+const $kitchenLevelbronx = document.getElementById('kitchenbronx')
+const $lunchlineLevelbronx = document.getElementById('lunchlinebronx')
+const $cafe1Levelbronx = document.getElementById('cafe1bronx')
+const $cafe2Levelbronx = document.getElementById('cafe2bronx')
+
+
+const totalNumberOfViolations = 10 // Change this to the total number of violations on each level
+let violationsFound = 0
+
+
+
+
+const $ratsbronx= document.getElementById ("ratsbronx")
+
+$ratsbronx.addEventListener("click",function (){
+ console.log($ratsbronx)
  // hide rats
-$rats.style.display="none"
+$ratsbronx.style.display="none"
  // show rat in footer
- document.getElementById ("footerrats").style.opacity=1
+ document.getElementById ("footerratsbronx").style.opacity=1
  // show popup
- const $ratspopup =  document.getElementById ('ratspopup')
-console.log ($ratspopup)  
-$ratspopup.style.display="block"
-//close popup
-$ratspopup.addEventListener('click', function(){
-$ratspopup.style.display= "none"}
-)
-})
 
-const $light= document.getElementById ("lighting")
-$light.addEventListener("click",function (){
-    console.log($light)
+ const $ratspopupbronx =  document.getElementById ('ratspopupbronx')
+ console.log ($ratspopupbronx)  
+ $ratspopupbronx.style.display="block"
+ //close popup
+ $ratspopupbronx.addEventListener('click', function(){
+ $ratspopupbronx.style.display= "none"
+
+   violationsFound = violationsFound + 1
+ 
+   if (violationsFound === totalNumberOfViolations) {
+     showEndScreenbronx()
+   }
+})
+   function showEndScreenbronx() {
+    const $endpopupbronx =  document.getElementById ('endpopupbronx')
+    console.log ($endpopupbronx)  
+    $endpopupbronx.style.display="block"
+}
+ })
+
+const $lightbronx= document.getElementById ("lightingbronx")
+$lightbronx.addEventListener("click",function (){
+    console.log($lightbronx)
     // hide light
-   $light.style.display="none"
+   $lightbronx.style.display="none"
     // show light in footer
-    document.getElementById ("footerlight").style.opacity=1
+    document.getElementById ("footerlightbronx").style.opacity=1
     // show popup
-    const $lightingpopup =  document.getElementById ('badlightingpopup')
-    console.log ($lightingpopup)  
-    $lightingpopup.style.display="block"
+    
+    const $lightingpopupbronx =  document.getElementById ('badlightingpopupbronx')
+    console.log ($lightingpopupbronx)  
+    $lightingpopupbronx.style.display="block"
     //close popup
-    $lightingpopup.addEventListener('click', function(){
-    $lightingpopup.style.display= "none"}
-    )
+    $lightingpopupbronx.addEventListener('click', function(){
+    $lightingpopupbronx.style.display= "none"
+    
+          violationsFound = violationsFound + 1
+    
+          if (violationsFound === totalNumberOfViolations) {
+            showEndScreenbronx()
+          }
+      })
+      function showEndScreenbronx() {
+        const $endpopupbronx =  document.getElementById ('endpopupbronx')
+        console.log ($endpopupbronx)  
+        $endpopupbronx.style.display="block"
+    }
 })
    
-const $flies= document.getElementById ("flies")
-$flies.addEventListener("click",function (){
-    console.log($flies)
+const $fliesbronx= document.getElementById ("fliesbronx")
+$fliesbronx.addEventListener("click",function (){
+    console.log($fliesbronx)
     // hide light
-   $flies.style.display="none"
+   $fliesbronx.style.display="none"
     // show light in footer
-    document.getElementById ("footerflies").style.opacity=1
+    document.getElementById ("footerfliesbronx").style.opacity=1
     // show popup
-    const $fliespopup =  document.getElementById ('fliespopup')
-    console.log ($fliespopup)  
-    $fliespopup.style.display="block"
+    
+    const $fliespopupbronx =  document.getElementById ('fliespopupbronx')
+    console.log ($fliespopupbronx)  
+    $fliespopupbronx.style.display="block"
     //close popup
-    $fliespopup.addEventListener('click', function(){
-    $fliespopup.style.display= "none"}
-    )
-}) 
-const $verminproof= document.getElementById ("verminproof")
-$verminproof.addEventListener("click",function (){
-    console.log($verminproof)
-    // hide light
-   $verminproof.style.display="none"
-    // show light in footer
-    document.getElementById ("footerverminproof").style.opacity=1
-    // show popup
-    const $verminproofpopup =  document.getElementById ('verminproofpopup')
-    console.log ($verminproofpopup)  
-    $verminproofpopup.style.display="block"
-    //close popup
-    $verminproofpopup.addEventListener('click', function(){
-    $verminproofpopup.style.display= "none"}
-    )
-})  
-   const $chef= document.getElementById ("chef")
-   $chef.addEventListener("click",function (){
-       console.log($chef)
-       // hide rats
-      $chef.style.display="none"
-       // show rat in footer
-       document.getElementById ("footercertificate").style.opacity=1
-       // show popup
-    const $chefpopup =  document.getElementById ('chefpopup')
-     console.log ($chefpopup)  
-    $chefpopup.style.display="block"
-    //change apron color
-    const $aproncolor1 =  document.getElementById ('characterbox2')
-    console.log ($aproncolor1)  
-   $aproncolor1.style.display="block"
-      })
+    $fliespopupbronx.addEventListener('click', function(){
+    $fliespopupbronx.style.display= "none"
 
-
-    function exitButton2 (chefbutton){ 
-    console.log (chefbutton)
-    //hide popup once clicked
-    const $chefpopup= document.getElementById ('chefpopup')
-    $chefpopup.style.display="none"
-//show new popup
-const $certificatepopup =  document.getElementById ('certificatepopup')
-console.log ($certificatepopup)  
-$certificatepopup.style.display="block"
-//close popup
-$certificatepopup.addEventListener('click', function(){
-$certificatepopup.style.display= "none"}
-)
-    }
-
-    const $eleanor= document.getElementById ("lunchlady")
-    $eleanor.addEventListener("click",function (){
-        console.log($eleanor)
-        // hide rats
-       $eleanor.style.display= "none"
-        // show rat in footer
-        document.getElementById ("footerhandwash").style.opacity=1
-        // show popup
-     const $eleanorpopup =  document.getElementById ('eleanorpopup')
-      console.log ($eleanorpopup)  
-     $eleanorpopup.style.display= "block"
-     //change apron color
-     const $aproncolor2 =  document.getElementById ('characterbox3')
-     console.log ($aproncolor2)  
-     $aproncolor2.style.display= "block"
+        violationsFound = violationsFound + 1
+  
+        if (violationsFound === totalNumberOfViolations) {
+          showEndScreenbronx()
+        }
     })
-     
-     
-    function exitButton3 (eleanorbutton){ 
-    console.log (eleanorbutton)
-    //hide popup once clicked
-    const $eleanorpopup= document.getElementById ('eleanorpopup')
-    $eleanorpopup.style.display= "none"
-    //show new popup
-
-    const $handwashpopup =  document.getElementById ('handwashpopup')
-    console.log ($handwashpopup)  
-    $handwashpopup.style.display= "block"
-    //close popup
-    $handwashpopup.addEventListener('click', function(){
-    $handwashpopup.style.display= "none"}
-    )
+    function showEndScreenbronx() {
+        const $endpopupbronx =  document.getElementById ('endpopupbronx')
+        console.log ($endpopupbronx)  
+        $endpopupbronx.style.display="block"
     }
+}) 
 
-    const $contamination= document.getElementById ("contamination")
-    $contamination.addEventListener("click",function (){
-        console.log($contamination)
-        // hide light
-       $contamination.style.display="none"
-        // show light in footer
-        document.getElementById ("footercontamination").style.opacity=1
-        // show popup
-        const $contaminationpopup =  document.getElementById ('contaminationpopup')
-        console.log ($contaminationpopup)  
-        $contaminationpopup.style.display="block"
-        //close popup
-        $contaminationpopup.addEventListener('click', function(){
-        $contaminationpopup.style.display= "none"}
-        )
-    }) 
-
-    const $bulb= document.getElementById ("bulb")
-    $bulb.addEventListener("click",function (){
-        console.log($bulb)
-        // hide light
-       $bulb.style.display="none"
-        // show light in footer
-        document.getElementById ("footerbulb").style.opacity=1
-        // show popup
-        const $bulbpopup =  document.getElementById ('bulbpopup')
-        console.log ($bulbpopup)  
-        $bulbpopup.style.display="block"
-        //close popup
-        $bulbpopup.addEventListener('click', function(){
-        $bulbpopup.style.display= "none"}
-        )
-    }) 
-
-    const $improper= document.getElementById ("nonfoodcontact")
-    $improper.addEventListener("click",function (){
-        console.log($improper)
-        // hide light
-       $improper.style.display="none"
-        // show light in footer
-        document.getElementById ("footernonfoodcontact").style.opacity=1
-        // show popup
-        const $improperpopup =  document.getElementById ('improperpopup')
-        console.log ($improperpopup)  
-        $improperpopup.style.display="block"
-        //close popup
-        $improperpopup.addEventListener('click', function(){
-        $improperpopup.style.display= "none"}
-        )
-    }) 
-   
-
-   const $plumbing= document.getElementById ("plumbing")
-   $plumbing.addEventListener("click",function (){
-       console.log($plumbing)
-       // hide light
-      $plumbing.style.display="none"
-       // show light in footer
-       document.getElementById ("footerplumbing").style.opacity=1
+const $verminproofbronx= document.getElementById ("verminproofbronx")
+$verminproofbronx.addEventListener("click",function (){
+    console.log($verminproofbronx)
+    // hide light
+   $verminproofbronx.style.display="none"
+    // show light in footer
+    document.getElementById ("footerverminproofbronx").style.opacity=1
+    // show popup
+    const $verminproofpopupbronx =  document.getElementById ('verminproofpopupbronx')
+    console.log ($verminproofpopupbronx)  
+    $verminproofpopupbronx.style.display="block"
+    //close popup
+    $verminproofpopupbronx.addEventListener('click', function(){
+    $verminproofpopupbronx.style.display= "none"
+        violationsFound = violationsFound + 1
+  
+        if (violationsFound === totalNumberOfViolations) {
+          showEndScreenbronx()
+        }
+    })
+    function showEndScreenbronx() {
+        const $endpopupbronx =  document.getElementById ('endpopupbronx')
+        console.log ($endpopupbronx)  
+        $endpopupbronx.style.display="block"
+    }
+})  
+   const $chefbronx= document.getElementById ("chefbronx")
+   $chefbronx.addEventListener("click",function (){
+       console.log($chefbronx)
+       // hide rats
+      $chefbronx.style.display="none"
+       // show rat in footer
+       document.getElementById ("footercertificatebronx").style.opacity=1
        // show popup
-       const $plumbingpopup =  document.getElementById ('plumbingpopup')
-       console.log ($plumbingpopup)  
-       $plumbingpopup.style.display="block"
-       //close popup
-       $plumbingpopup.addEventListener('click', function(){
-       $plumbingpopup.style.display= "none"}
-       )
+    const $chefpopupbronx =  document.getElementById ('chefpopupbronx')
+     console.log ($chefpopupbronx)  
+    $chefpopupbronx.style.display="block"
+    //change apron color
+    const $aproncolor1bronx =  document.getElementById ('characterbox2bronx')
+    console.log ($aproncolor1bronx)  
+   $aproncolor1bronx.style.display="block"
       })
+     
+      function exitButton2bronx (chefbuttonbronx){ 
+        console.log (chefbuttonbronx)
+        //hide popup once clicked
+        const $chefpopupbronx= document.getElementById ('chefpopupbronx')
+        $chefpopupbronx.style.display="none"
+    //show new popup
+    const $certificatepopupbronx =  document.getElementById ('certificatepopupbronx')
+    console.log ($certificatepopupbronx)  
+    $certificatepopupbronx.style.display="block"
+    //close popup
+    $certificatepopupbronx.addEventListener('click', function(){
+    $certificatepopupbronx.style.display= "none"
+
+        
+        violationsFound = violationsFound + 1
+  
+        if (violationsFound === totalNumberOfViolations) {
+          showEndScreenbronx()
+        }
+        function showEndScreenbronx() {
+            const $endpopupbronx =  document.getElementById ('endpopupbronx')
+            console.log ($endpopup)  
+            $endpopupbronx.style.display="block"
+        }
+    })}
+
+
+    const $eleanorbronx= document.getElementById ("lunchladybronx")
+    $eleanorbronx.addEventListener("click",function (){
+        console.log($eleanorbronx)
+        // hide rats
+       $eleanorbronx.style.display= "none"
+        // show rat in footer
+        document.getElementById ("footerhandwashbronx").style.opacity=1
+        // show popup
+     const $eleanorpopupbronx =  document.getElementById ('eleanorpopupbronx')
+      console.log ($eleanorpopupbronx)  
+     $eleanorpopupbronx.style.display= "block"
+     //change apron color
+     const $aproncolor2bronx =  document.getElementById ('characterbox3bronx')
+     console.log ($aproncolor2bronx)  
+     $aproncolor2bronx.style.display= "block"
+    })
+    function exitButton3bronx (eleanorbuttonbronx){ 
+        console.log (eleanorbuttonbronx)
+        //hide popup once clicked
+        const $eleanorpopupbronx= document.getElementById ('eleanorpopupbronx')
+        $eleanorpopupbronx.style.display= "none"
+        //show new popup
+    
+        const $handwashpopupbronx =  document.getElementById ('handwashpopupbronx')
+        console.log ($handwashpopupbronx)  
+        $handwashpopupbronx.style.display= "block"
+        //close popup
+        $handwashpopupbronx.addEventListener('click', function(){
+        $handwashpopupbronx.style.display= "none"
+        violationsFound = violationsFound + 1
+  
+        if (violationsFound === totalNumberOfViolations) {
+          showEndScreenbronx()
+        }
+        function showEndScreenbronx() {
+            const $endpopupbronx =  document.getElementById ('endpopupbronx')
+            console.log ($endpopupbronx)  
+            $endpopupbronx.style.display="block"
+        }
+    })} 
+     
+
+
+    const $contaminationbronx= document.getElementById ("contaminationbronx")
+    $contaminationbronx.addEventListener("click",function (){
+        console.log($contaminationbronx)
+        // hide light
+       $contaminationbronx.style.display="none"
+        // show light in footer
+        document.getElementById ("footercontaminationbronx").style.opacity=1
+        // show popup
+        const $contaminationpopupbronx =  document.getElementById ('contaminationpopupbronx')
+        console.log ($contaminationpopupbronx)  
+        $contaminationpopupbronx.style.display="block"
+        //close popup
+        $contaminationpopupbronx.addEventListener('click', function(){
+        $contaminationpopupbronx.style.display= "none"
+    
+            violationsFound = violationsFound + 1
+      
+            if (violationsFound === totalNumberOfViolations) {
+              showEndScreenbronx()
+            }
+        })
+        function showEndScreenbronx() {
+            const $endpopupbronx =  document.getElementById ('endpopupbronx')
+            console.log ($endpopupbronx)  
+            $endpopupbronx.style.display="block"
+        }
+    }) 
+
+    const $bulbbronx= document.getElementById ("bulbbronx")
+    $bulbbronx.addEventListener("click",function (){
+        console.log($bulbbronx)
+        // hide light
+       $bulbbronx.style.display="none"
+        // show light in footer
+        document.getElementById ("footerbulbbronx").style.opacity=1
+        // show popup
+        const $bulbpopupbronx =  document.getElementById ('bulbpopupbronx')
+        console.log ($bulbpopupbronx)  
+        $bulbpopupbronx.style.display="block"
+        //close popup
+        $bulbpopupbronx.addEventListener('click', function(){
+        $bulbpopupbronx.style.display= "none"
+    
+            violationsFound = violationsFound + 1
+      
+            if (violationsFound === totalNumberOfViolations) {
+              showEndScreenbronx()
+            }
+      })
+      function showEndScreenbronx() {
+        const $endpopupbronx =  document.getElementById ('endpopupbronx')
+        console.log ($endpopupbronx)  
+        $endpopupbronx.style.display="block"
+    }
+    }) 
+
+    const $improperbronx= document.getElementById ("nonfoodcontactbronx")
+    $improperbronx.addEventListener("click",function (){
+        console.log($improperbronx)
+        // hide light
+       $improperbronx.style.display="none"
+        // show light in footer
+        document.getElementById ("footernonfoodcontactbronx").style.opacity=1
+        // show popup
+        const $improperpopupbronx =  document.getElementById ('improperpopupbronx')
+        console.log ($improperpopupbronx)  
+        $improperpopupbronx.style.display="block"
+        //close popup
+        $improperpopupbronx.addEventListener('click', function(){
+        $improperpopupbronx.style.display= "none"
+         violationsFound = violationsFound + 1
+       
+         if (violationsFound === totalNumberOfViolations) {
+           showEndScreenbronx()
+         }
+       })
+       function showEndScreenbronx() {
+        const $endpopupbronx =  document.getElementById ('endpopupbronx')
+        console.log ($endpopupbronx)  
+        $endpopupbronx.style.display="block"
+    }
+    }) 
    
-const $map= document.getElementById ("map")
-$map.addEventListener("click",function (){
-    console.log($map)
+
+   const $plumbingbronx= document.getElementById ("plumbingbronx")
+   $plumbingbronx.addEventListener("click",function (){
+       console.log($plumbingbronx)
+       // hide light
+      $plumbingbronx.style.display="none"
+       // show light in footer
+       document.getElementById ("footerplumbingbronx").style.opacity=1
+       // show popup
+       const $plumbingpopupbronx =  document.getElementById ('plumbingpopupbronx')
+       console.log ($plumbingpopupbronx)  
+       $plumbingpopupbronx.style.display="block"
+       //close popup
+       $plumbingpopupbronx.addEventListener('click', function(){
+       $plumbingpopupbronx.style.display= "none"
+       violationsFound = violationsFound + 1
+       
+       if (violationsFound === totalNumberOfViolations) {
+         showEndScreenbronx()
+       }
+      })
+      function showEndScreenbronx() {
+        const $endpopupbronx =  document.getElementById ('endpopupbronx')
+        console.log ($endpopupbronx)  
+        $endpopupbronx.style.display="block"
+    }
+      })
+
+
+const $mapbronx= document.getElementById ("mapbronx")
+$mapbronx.addEventListener("click",function (){
+    console.log($mapbronx)
 //bring up map popup
-const $mappopup = document.getElementById ('mappopup')
-console.log (mappopup)
-mappopup.style.display = 'block'
+const $mappopupbronx = document.getElementById ('mappopupbronx')
+console.log (mappopupbronx)
+mappopupbronx.style.display = 'block'
    })
 
-   const mappopup = document.getElementById('mappopup')
-   console.log (mappopup)
-   mappopup.addEventListener('click', function() {
-    mappopup.style.display = 'none'
+   const mappopupbronx = document.getElementById('mappopupbronx')
+   console.log (mappopupbronx)
+   mappopupbronx.addEventListener('click', function() {
+    mappopupbronx.style.display = 'none'
   })
 
-function gotoLocation(locationname){
+function gotoLocationbronx(locationname){
 console.log (locationname)
 //hide all levels
-$kitchenLevel.style.display="none"
-$cafe1Level.style.display="none"
-$cafe2evel.style.display="none"
-$lunchlineLevel.style.display="none"
+$kitchenLevelbronx.style.display="none"
+$cafe1Levelbronx.style.display="none"
+$cafe2Levelbronx.style.display="none"
+$lunchlineLevelbronx.style.display="none"
 
 //show level for location name
 //use location name as id to find specific level element
@@ -239,8 +424,56 @@ console.log (selectedlevel)
 selectedlevel.style.display= "block"
 }
 
-function exitButton (buttonname) {
+
+
+function exitButtonbronx(buttonname) {
     console.log (buttonname)
     //hide popup once clicked
-    beginningpopup.style.display="none"
+    beginningpopupbronx.style.display="none"
 }
+
+
+function gotoLevelSelectbronx (buttonname) {
+   endpopupbronx.style.display="none"
+   $bronxLevel.style.display="none"
+   $brooklynLevel.style.display="none"
+   $queensLevel.style.display="none"
+   $manhattanLevel.style.display="none"
+   $statenislandLevel.style.display="none"
+   $enterscreen.style.display="none"
+   $levelselect.style.display="block"
+   
+   const $bronxfinished = document.getElementById ('bronxfinished')
+   console.log ($bronxfinished)
+   $bronxfinished.style.display = 'block'
+
+}
+   //show level for location name
+
+
+//END BRONX
+
+  
+
+
+
+
+ 
+
+   
+    
+
+    
+
+
+   
+    
+
+
+
+  
+
+
+
+
+

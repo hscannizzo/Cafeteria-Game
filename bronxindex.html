@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="bronxmystyle.css" type="text/css"/>
   </head>
   <body> 
+    
+    
     <div class="beginningpopup" id="beginningpopup">
       <div class="topwriting">
         Welcome Cafeteria Inspectors!
@@ -34,6 +36,13 @@
       <div class="footertiny"><img src="footertiny.png" width='360px' alt="tiny footer"></div>
      <button class="buttonfirst" onclick="exitButton('instructionbutton')">Continue</button>
     </div>
+
+    <div class="endpopup" id="endpopup">
+     <div class="endtitle">You Have Found All The Health Code Violations!</div>
+     <div class="endwritup">Hurry now, brave inspector. We have many more schools to go through!</div>
+     <button class="buttonlast" onclick="exitButton4('finalbutton')">Continue to <br> next school</button>
+    </div>
+
 
     <div class="map" id="map"><img src="map.png" width="20%" height="20%"></div>
     
@@ -134,37 +143,37 @@
 <div class="plumbingviolation"><img src="plumbing.png" width='200px' alt="plumbing"></div>
 </div>
 
-<div id="kitchen">
+<div id="bronxkitchen">
   <div class="game-screen">
-   / <img class="plumbingimage" id="plumbing" src="plumbing.png" alt="plumbing">
-   / <img class="chefimage" id="chef" src="chef.png" alt="chef">
+   / <img class="bronxplumbingimage" id="plumbing" src="plumbing.png" alt="plumbing">
+   / <img class="bronxchefimage" id="chef" src="chef.png" alt="chef">
 </div>
 </div>
 
-<div id="cafe2">
+<div id="bronxcafe2">
   <div class="game-screen">
-    <img class="fliesimage" id="flies" src="flies.png" alt="flies">
-    <img class="verminproofimage" id="verminproof" src="verminproof.png" alt="vermin proof">
+    <img class="bronxfliesimage" id="flies" src="flies.png" alt="flies">
+    <img class="bronxverminproofimage" id="verminproof" src="verminproof.png" alt="vermin proof">
   </div>
   </div>
 
-  <div id="lunchline">
+  <div id="bronxlunchline">
     <div class="game-screen">
-      <img class="nonfoodcontactimage" id="nonfoodcontact" src="nonfoodcontact.png" alt="nonfoodcontact">
-      <img class="bulbimage" id="bulb" src="bulb.png" alt="bulb">
-      <img class="contaminationimage" id="contamination" src="contamination.png" alt="contamination">
-      <img class="lunchladyimage" id="lunchlady" src="lunchladyelenor.png" alt="lunch lady eleanor">
+      <img class="bronxnonfoodcontactimage" id="nonfoodcontact" src="nonfoodcontact.png" alt="nonfoodcontact">
+      <img class="bronxbulbimage" id="bronxbulb" src="bulb.png" alt="bulb">
+      <img class="bronxcontaminationimage" id="contamination" src="contamination.png" alt="contamination">
+      <img class="bronxlunchladyimage" id="lunchlady" src="lunchladyelenor.png" alt="lunch lady eleanor">
     </div>
     </div>
 
-    <div id="cafe1">
+    <div id="bronxcafe1">
       <div class="game-screen">
  <img class="ratsimage" id="rats" src="rats.png" alt="rats">
 <img class="lightingimage" id="lighting" src="badlighting.png" alt="lighting">
       </div>
       </div>
 
-<div class="gamefooter">
+<div class="gamefooterbronx">
     <div class="flex-container">
       <div class="item1"><img src="nonfoodcontact.png" id="footernonfoodcontact" width="140px" alt="improper construction"></div>
       <div class="item2"><img src="plumbing.png" id="footerplumbing" width="70px" alt="plumbing"></div>
@@ -186,11 +195,11 @@
    <button class="button3" onclick="gotoLocation('lunchline')">Lunch Line</button>
    <button class="button4" onclick="gotoLocation('kitchen')">Kitchen</button>
    </div>
-
+ 
    
  
 
 
-<script src="script.js"></script>
+<script src="bronx.js"></script>
   </body>
 </html>

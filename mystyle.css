@@ -1,0 +1,1043 @@
+#title-screen {
+    position: fixed;
+    top: 0;;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: opacity 1s ease;
+    z-index: 2;
+    
+  }
+ 
+  .fadeButton {
+    background-color: none;
+    z-index: 2;
+    border: 5px solid #901A14;
+    color: #901A14;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 60px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: absolute;
+    font-family: 'Courier Prime', monospace;
+    left: 35%;
+    bottom: 20%;
+
+  }
+
+.elementToFadeOut {
+    animation: fadeOut 3s linear forwards;
+}
+
+@keyframes fadeOut {
+ 0% { opacity:1; } 
+ 100% { opacity:0; } 
+}
+
+.back {
+    z-index: 0;
+position: absolute;
+}
+.bronx{
+    position: absolute;
+  left: 10%;
+  top: 3%;
+  z-index: 1;
+}
+.brooklyn {
+    position: absolute;  
+    top: 2%;
+    right: 10%; 
+    z-index: 1;  
+}
+.queens {
+    position: absolute;  
+      left: 40%;
+  top: 32%;    
+  z-index: 1;
+}
+.statenisland {
+    position: absolute;   
+    top: 62%; 
+    right: 10%; 
+    z-index: 1;
+
+}
+.manhattan {
+    position: absolute;  
+    top: 62%;
+    left: 10%; 
+    z-index: 1;
+
+}
+.bronxfinished{
+    position: absolute;
+  left: 10%;
+  top: 3%;
+  z-index: 2;
+  display:none;
+}
+.brooklynfinished {
+    position: absolute;  
+    top: 2%;
+    right: 10%; 
+    z-index: 2;  
+    display: none;
+}
+.queensfinished {
+    position: absolute;  
+      left: 40%;
+  top: 32%;    
+  z-index: 2;
+  display: none;
+}
+.statenislandfinished {
+    position: absolute;   
+    top: 62%; 
+    right: 10%; 
+    z-index: 2;
+    display: none;
+}
+.manhattanfinished {
+    position: absolute;  
+    top: 62%;
+    left: 10%; 
+    z-index: 2;
+    display: none;
+}
+
+
+.bronx1 {
+    left: 15%;
+    top: 32%; 
+    z-index: 1; 
+    position: absolute; 
+    font-family: 'Courier Prime', monospace; 
+    font-size: 40px;
+}
+
+.brooklyn1 {
+    right: 13%;
+    top: 32%; 
+    z-index: 1; 
+    position: absolute; 
+    font-family: 'Courier Prime', monospace; 
+    font-size: 40px;
+}
+
+.queens1 {
+    left: 45%;
+    top: 62%; 
+    z-index: 1; 
+    position: absolute; 
+    font-family: 'Courier Prime', monospace; 
+    font-size: 40px;
+}
+.manhattan1 {
+    position: absolute;
+    font-family: 'Courier Prime', monospace;
+    left: 12%;
+    top: 92%; 
+    z-index: 1; 
+    position: absolute; 
+    font-family: 'Courier Prime', monospace; 
+    font-size: 40px; 
+}
+
+.statenisland1 {
+    position: absolute;
+    font-family: 'Courier Prime', monospace;
+    right: 10%;
+    top: 92%; 
+    z-index: 1; 
+    position: absolute; 
+    font-family: 'Courier Prime', monospace; 
+    font-size: 40px;  
+}
+
+/*end of enter screen*/
+
+
+
+    .game-screenbronx {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: scale-down;
+        }
+        
+        #cafe1bronx .game-screenbronx {
+          background-image: url("bronxpage1.png");
+        }
+        
+        #cafe2bronx .game-screenbronx {
+          background-image: url("bronxpage2.png"); 
+        }
+        
+        #kitchenbronx .game-screenbronx {
+          background-image: url("kitchen.png"); 
+        
+        }
+        
+        #lunchlinebronx .game-screenbronx {
+          background-image: url("line.png"); 
+        
+        }
+      
+      
+    
+     .mapbronx {
+     top: 0;
+     left: 0;
+      position: fixed;
+      z-index: 1; 
+      right: 65%;
+    
+     }
+    
+    .characterboxbronx {
+      top: 0;
+     right: 0;
+      position: fixed;
+      z-index: 1; 
+    }
+    .characterbox2bronx {
+      top: 0;
+     right: .1%;
+      position: fixed;
+      z-index: 1; 
+      display: none;
+    }
+    .characterbox3bronx {
+      top: 0;
+     right: 7.6%;
+      position: fixed;
+      z-index: 1; 
+      display: none;
+    }
+    
+    
+    *, *::before, *::after{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box; 
+    }
+    
+    .gamefooterbronx{
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    
+    .flex-containerbronx {
+      display: flex;
+      flex-direction: row;
+      background-color: rgba(217, 217, 217, .8);
+      align-items: flex-end;
+      justify-content: space-evenly;
+      flex: 0 1 auto;
+    
+    
+    }
+    .flex-containerbronx img {
+      opacity: 0;
+    }
+    .flex-containerbronx > div {
+      color: rgba(217, 217, 217, .8);
+      height: 140px;
+      border-style: solid;
+      border: #B5B3B3, 5px;
+      width: 150px;
+    }
+    
+    .item1bronx {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    
+    .item2bronx {
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 10px;
+    }
+    .item3bronx {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .item4bronx {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    .item5bronx {
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 5px;
+    }
+    .item6bronx {
+      padding-top: -10px;
+    }
+    .item7bronx {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .item8bronx {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    .item9bronx {
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 25px;
+    }
+    .item10bronx {
+      padding-left: 30px;
+      padding-right: 30px;
+    padding-top: 5px;
+    }
+    
+    
+    .ratsimagebronx {
+      position: absolute;
+      bottom: 30%;
+      right: 3%;
+      width: 80px;
+    }
+    .lightingimagebronx {
+      position: absolute;
+      left: 40%;
+      bottom: 41%;
+      width: 100px;
+    }
+    .chefimagebronx {
+      position: absolute;
+      bottom: 10%;
+      left: 20%;
+      width: 600px; 
+    } 
+    
+    .plumbingimagebronx {
+      position: absolute;
+      bottom: 25%;
+      left: 36%;
+      width: 80px; 
+    
+    }
+    
+    .fliesimagebronx {
+    position: absolute;
+    bottom: 50%;
+    left: 27%;
+    width: 70px;
+    }
+    
+    .verminproofimagebronx {
+      position: absolute;
+      bottom: 50%;
+    left: 80%;
+    width: 50px;
+    }
+    
+    .nonfoodcontactimagebronx {
+      position: absolute;
+      bottom: 42%;
+    left: 30%;
+    width: 200px;
+    }
+    
+    .bulbimagebronx {
+      position: absolute;
+      bottom: 93%;
+    left: 35%;
+    width: 50px;
+    }
+    
+   .contaminationimagebronx {
+      position: absolute;
+      bottom: 68%;
+    left: 40%;
+    width: 250px;
+    }
+    
+    .lunchladyimagebronx {
+      position: absolute;
+      bottom: 2%;
+    left: 80%;
+    width: 400px;
+    }
+
+    
+    
+    #mappopupbronx {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      background-color: #10487C;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 -4px 16px -3px #742830a1, 0 3px 13px -3px #742830a1;
+      border-radius: 25px;
+      padding-right: 260px;
+      font-size: 20px;
+      font-weight: bold;
+    
+    }
+    
+    .mapcafebronx {
+      position: fixed;
+      width: 80px;
+    }
+    
+    #mappopupbronx {
+      display: none;
+    }
+   .button1bronx {
+      background-color: #C74238; 
+      border: none;
+      color: #d3d3d3;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 25px;
+      margin: 4px 2px;
+      cursor: pointer;
+      font-family: 'Courier Prime', monospace;
+     position: absolute;
+     bottom: 66%;
+     left: 50%;
+    }
+    
+    
+ .button2bronx {
+      background-color: #C74238; 
+      border: none;
+      color: #d3d3d3;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 25px;
+      margin: 4px 2px;
+      cursor: pointer;
+      font-family: 'Courier Prime', monospace;
+      position: absolute;
+    left: 60%;
+    bottom: 30%;
+    }
+    
+    .button3bronx {
+      background-color: #C74238; 
+      border: none;
+      color: #d3d3d3;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 25px;
+      margin: 4px 2px;
+      cursor: pointer;
+      font-family: 'Courier Prime', monospace;
+      position: absolute;
+      bottom: 48%;
+    left: 40%;
+    }
+    
+   .button4bronx {
+      background-color: #C74238; 
+      border: none;
+      color: #d3d3d3;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 25px;
+      margin: 4px 2px;
+      cursor: pointer;
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      left: 30%;
+      bottom: 28%;
+    }
+    
+    .beginningpopupbronx {
+      background-color: #FBFBFB;
+      width: 1295px;
+      height: 634px;
+      position: absolute;
+      z-index: 1;
+      left: 15%;
+      bottom: 20%;
+      border-radius: 25px;
+      
+    }
+    
+    .topwritingbronx {
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 64px;
+    left: 15%;
+    position: absolute;
+    }
+    
+    .frontwritingbronx {
+      font-size: 36px;
+    left: 13%;
+    right: 9%;
+    position: absolute;
+    font-family: 'Courier Prime', monospace;
+    bottom: 60%;
+    }
+    .maptinybronx {
+      position: absolute;
+      left: 5%;
+      bottom:35%;
+    }
+    .apron1tinybronx {
+      position: absolute;
+      left: 32%;
+      bottom: 35%;
+    }
+    .apron2tinybronx {
+      position: absolute;
+      left: 42%;
+      bottom: 35%;
+    }
+    
+    .footertinybronx {
+      position: absolute;
+      left: 67%;
+      bottom: 40%;
+    }
+    
+    .mapwritingbronx {
+      font-size: 22px;
+    left: 2%;
+    position: absolute;
+    font-family: 'Courier Prime', monospace;
+    bottom: 15%;
+    }
+    
+    .footerwritingbronx {
+      font-size: 22px;
+    left: 64%;
+    position: absolute;
+    font-family: 'Courier Prime', monospace;
+    bottom: 18%;
+    
+    }
+    
+    .apronwritingbronx {
+      font-size: 22px;
+    left: 28%;
+    position: absolute;
+    font-family: 'Courier Prime', monospace;
+    bottom: 18%;
+    }
+    
+    .buttonfirstbronx {
+      background-color: #FBFBFB; 
+      border: 5px solid black;
+      color: black;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 40px;
+      margin: 4px 2px;
+      cursor: pointer;
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      left: 40%;
+      bottom: 6%;
+      border-radius: 25px;
+    }
+    
+    .chefpopupbronx {
+      position: absolute;
+      z-index: 1;
+      background-color:#FBFBFB;
+      width: 1790px;
+      height: 350px;
+      bottom: -3%;
+      display: none;
+    }
+    .titlechefbronx {
+      font-family: "proxima-nova", sans-serif;
+      font-weight: 800;
+      font-style: normal;
+      font-size: 80px;
+      left: 2%;
+      position: absolute;  
+    }
+    
+    .dialogchefbronx {
+      font-size: 40px;
+      left: 2%;
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      bottom: 40%; 
+    }
+    
+    .chefbuttonbronx {
+      background-color: #FBFBFB; 
+      border: 5px solid black;
+      color: black;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 40px;
+      margin: 4px 2px;
+      cursor: pointer;
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      left: 85%;
+      bottom: 10%;
+      border-radius: 25px;
+    }
+    
+    .chefheadbronx {
+      position: absolute;
+      bottom: 99%;
+      left: 74%;
+    
+    }
+    
+    .certificatepopupbronx {
+      position: absolute;
+      z-index: 1;
+      background-color:#FBFBFB;
+      width: 959px;
+      height: 397px;
+      bottom: 40%;
+      left: 20%;
+      border-radius: 25px;
+      display: none;
+    }
+    
+    .titlehealthbronx {
+      position: absolute;
+      font-family: "proxima-nova", sans-serif;
+      font-weight: 800;
+      font-style: normal;
+      font-size: 55px; 
+      left: 2%;
+    }
+    
+    .certtitlebronx {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 44px; 
+      bottom: 56%;
+      left: 2%;
+    }
+    
+    .certificatewritupbronx {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 28px; 
+      bottom: 5%;
+      right: 40%;
+      left: 2%;
+    }
+    .certificateviolationbronx {
+      position: absolute;
+      left: 70%;
+      bottom: 20%;
+    }
+    
+    
+    .ratspopupbronx {
+      position: absolute;
+      z-index: 1;
+      background-color:#FBFBFB;
+      width: 959px;
+      height: 397px;
+      bottom: 40%;
+      left: 20%;
+      border-radius: 25px;
+      display: none;
+    }
+    .rattitlebronx {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 44px; 
+      bottom: 58%;
+      left: 2%;
+    }
+    
+    .ratwritupbronx {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 28px; 
+      bottom: 8%;
+      right: 40%;
+      left: 2%;
+    }
+    .ratviolationbronx {
+      position: absolute;
+      left: 70%;
+      bottom: 15%;
+    }
+    
+    .badlightingpopupbronx {
+      position: absolute;
+      z-index: 1;
+      background-color:#FBFBFB;
+      width: 959px;
+      height: 397px;
+      bottom: 40%;
+      left: 20%;
+      border-radius: 25px;
+      display: none;
+    }
+    .lightingtitlebronx {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 44px; 
+      bottom: 65%;
+      left: 2%;
+    }
+    
+    .lightingwritupbronx {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 28px; 
+      bottom: 8%;
+      right: 40%;
+      left: 2%;
+    }
+    .lightingviolationbronx {
+      position: absolute;
+      left: 70%;
+      bottom: 15%;
+    }
+    
+    .fliespopupbronx {
+      position: absolute;
+      z-index: 1;
+      background-color:#FBFBFB;
+      width: 959px;
+      height: 397px;
+      bottom: 40%;
+      left: 20%;
+      border-radius: 25px;
+      display: none;
+    }
+    .fliestitlebronx {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 44px; 
+      bottom: 65%;
+      left: 2%;
+    }
+    
+    .flieswritupbronx {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 28px; 
+      bottom: 8%;
+      right: 40%;
+      left: 2%;
+    }
+    .fliesviolationbronx {
+      position: absolute;
+      left: 70%;
+      bottom: 15%;
+    }
+    .verminproofpopupbronx {
+      position: absolute;
+      z-index: 1;
+      background-color:#FBFBFB;
+      width: 959px;
+      height: 397px;
+      bottom: 40%;
+      left: 20%;
+      border-radius: 25px;
+      display: none;
+    }
+    .verminprooftitlebronx {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 44px; 
+      bottom: 66%;
+      left: 2%;
+    }
+    
+    .verminproofwritupbronx {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 28px; 
+      bottom: 8%;
+      right: 40%;
+      left: 2%;
+    }
+    .verminproofviolationbronx {
+      position: absolute;
+      left: 70%;
+      bottom: 15%;
+    }
+    .eleanorpopupbronx {
+      position: absolute;
+      z-index: 1;
+      background-color:#FBFBFB;
+      width: 1790px;
+      height: 350px;
+      bottom: -3%;
+      display: none;
+    }
+    .titleeleanorbronx {
+      font-family: "proxima-nova", sans-serif;
+      font-weight: 800;
+      font-style: normal;
+      font-size: 80px;
+      left: 2%;
+      position: absolute;  
+    }
+    
+    .dialogeleanorbronx {
+      font-size: 40px;
+      left: 2%;
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      bottom: 40%; 
+    }
+    
+    .eleanorbuttonbronx {
+      background-color: #FBFBFB; 
+      border: 5px solid black;
+      color: black;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 40px;
+      margin: 4px 2px;
+      cursor: pointer;
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      left: 85%;
+      bottom: 10%;
+      border-radius: 25px;
+    }
+    
+    .eleanorheadbronx {
+      position: absolute;
+      bottom: 99%;
+      left: 74%;
+    
+    }
+    .handwashpopupbronx {
+      position: absolute;
+      z-index: 1;
+      background-color:#FBFBFB;
+      width: 959px;
+      height: 397px;
+      bottom: 40%;
+      left: 20%;
+      border-radius: 25px;
+      display: none;
+    }
+    .handwashtitlebronx {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 44px; 
+      bottom: 66%;
+      left: 2%;
+    }
+    
+    .handwashwritupbronx {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 28px; 
+      bottom: 8%;
+      right: 40%;
+      left: 2%;
+    }
+    .handwashviolationbronx {
+      position: absolute;
+      left: 70%;
+      bottom: 8%;
+    }
+    
+    .contaminationpopupbronx {
+      position: absolute;
+      z-index: 1;
+      background-color:#FBFBFB;
+      width: 959px;
+      height: 397px;
+      bottom: 40%;
+      left: 20%;
+      border-radius: 25px;
+      display: none;
+    }
+    .contaminationtitlebronx {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 44px; 
+      bottom: 58%;
+      left: 2%;
+    }
+    
+    .contaminationwritupbronx {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 28px; 
+      bottom: 3%;
+      right: 40%;
+      left: 2%;
+    }
+    .contaminationviolationbronx {
+      position: absolute;
+      left: 70%;
+      bottom: 15%;
+    }
+    
+    .bulbpopupbronx {
+      position: absolute;
+      z-index: 1;
+      background-color:#FBFBFB;
+      width: 959px;
+      height: 397px;
+      bottom: 40%;
+      left: 20%;
+      border-radius: 25px;
+      display: none;
+    }
+    .bulbtitlebronx {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 44px; 
+      bottom: 58%;
+      left: 2%;
+    }
+    
+    .bulbwritupbronx {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 28px; 
+      bottom: 3%;
+      right: 40%;
+      left: 2%;
+    }
+    .bulbviolationbronx {
+      position: absolute;
+      left: 70%;
+      bottom: 5%;
+    }
+    
+    .improperpopupbronx {
+      position: absolute;
+      z-index: 1;
+      background-color:#FBFBFB;
+      width: 959px;
+      height: 397px;
+      bottom: 40%;
+      left: 20%;
+      border-radius: 25px;
+      display: none;
+    }
+    .impropertitlebronx {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 44px; 
+      bottom: 67%;
+      left: 2%;
+    }
+    
+    .improperwritupbronx {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 28px; 
+      bottom: 8%;
+      right: 40%;
+      left: 2%;
+    }
+    .improperviolationbronx {
+      position: absolute;
+      left: 70%;
+      bottom: 15%;
+    }
+    
+    .plumbingpopupbronx {
+      position: absolute;
+      z-index: 1;
+      background-color:#FBFBFB;
+      width: 959px;
+      height: 397px;
+      bottom: 40%;
+      left: 20%;
+      border-radius: 25px;
+      display: none;
+    }
+    .plumbingtitlebronx {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 44px; 
+      bottom: 68%;
+      left: 2%;
+    }
+    
+    .plumbingwritupbronx {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 28px; 
+      bottom: 3%;
+      right: 40%;
+      left: 2%;
+    }
+    .plumbingviolationbronx {
+      position: absolute;
+      left: 68.5%;
+      bottom: 5%;
+    }
+    
+    .endpopupbronx {
+      position: absolute;
+      z-index: 1;
+      background-color:#FBFBFB;
+      width: 1259px;
+      height: 497px;
+      bottom: 35%;
+      left: 15%;
+      border-radius: 25px;
+      display: none;
+    }
+    
+    .endtitlebronx {
+      position: absolute;
+      font-family: "proxima-nova", sans-serif;
+      font-weight: 800;
+      font-style: normal;
+      font-size: 55px; 
+      left: 1%; 
+      top: 3%;
+    }
+    
+    .endwritupbronx {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 40px; 
+      bottom: 55%;
+     left: 10%;
+     right: 10%;
+     text-align: center;
+    }
+    
+    .buttonlastbronx {
+      background-color: #FBFBFB; 
+      border: 5px solid black;
+      color: black;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      padding: 2%;
+      font-size: 40px;
+      margin: 4px 2px;
+      cursor: pointer;
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      left: 35%;
+      bottom: 10%;
+      border-radius: 25px;
+    }
+
+    
