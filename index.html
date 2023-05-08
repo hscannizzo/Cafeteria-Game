@@ -12,7 +12,19 @@
     <link rel="stylesheet" href="mystyle.css" type="text/css"/>
   </head>
   <body> 
-  <div class="enterscreen" id="title-screen">
+    <audio id="levelselectmusic" src="levelselectmusic.mp3"></audio>
+    <audio id="bronxmusic" src="bronxmusic.mp3"></audio>
+    <audio id="brooklynmusic" src="brooklynmusic.mp3"></audio>
+    <audio id="queensmusic" src="queensmusic.mp3"></audio>
+    <audio id="manhattanmusic" src="manhattanmusic.mp3"></audio>
+    <audio id="statenislandmusic" src="statenislandmusic.mp3"></audio>
+    <audio id="levelpassedmusic" src="levelpassedmusic.mp3"></audio>
+    <audio id="eleanorsound" src="eleanor sound.mp3"></audio>
+    <audio id="chefsound" src="chef sound.mp3"></audio>
+    <audio id="itemcollectsound" src="item collect sound.mp3"></audio>
+    <audio id="buttonclicksound" src="buttonclicksound.mp3"></audio>
+ 
+    <div class="enterscreen" id="title-screen">
     <button class="fadeButton" id="fadeButton" onclick="gotoLocationEnter('levelselect')">Enter</button>
 <div class="fade"> <img src="enterscreen.png" alt=" Image"></div>
    
@@ -28,15 +40,15 @@
     <div class="manhattan1">MANHATTAN</div>
     <div class="queens1">QUEENS</div>
 
-    <div class="queens"><img src="queensschool.png" width="300px" alt=" Image" onclick="gotoLocationLevels('queens')"></div>
+    <div class="queens"><img src="queensschool.png" width="300px" alt=" Image" onclick="gotoLocationLevels('queens')" onclick="playMusic ('queenslevelmusic')"></div>
     <div class="queensfinished"id="queensfinished"><img src="finished schools.png" width="300px" alt=" Image"></div>
-    <div class="manhattan"><img src="manhattanschool.png" width="300px" alt=" Image" onclick="gotoLocationLevels('manhattan')"></div>
+    <div class="manhattan"><img src="manhattanschool.png" width="300px" alt=" Image" onclick="gotoLocationLevels('manhattan')"onclick="playMusic ('manhattanlevelmusic')"></div>
     <div class="manhattanfinished"id="manhattanfinished"><img src="finished schools.png" width="300px" alt=" Image"></div>
-    <div class="statenisland"><img src="statenislandschool.png" width="300px" alt=" Image" onclick="gotoLocationLevels('statenisland')"></div>
+    <div class="statenisland"><img src="statenislandschool.png" width="300px" alt=" Image" onclick="gotoLocationLevels('statenisland')"onclick="playMusic ('statenislandlevelmusic')"></div>
     <div class="statenislandfinished"id="statenislandfinished"><img src="finished schools.png" width="300px" alt=" Image"></div>
-     <div class="brooklyn"><img src="brooklynschool.png" width="300px" alt=" Image" onclick="gotoLocationLevels('brooklyn')"></div>
+     <div class="brooklyn"><img src="brooklynschool.png" width="300px" alt=" Image" onclick="gotoLocationLevels('brooklyn')"onclick="playMusic ('brooklynlevelmusic')"></div>
      <div class="brooklynfinished"id="brooklynfinished"><img src="finished schools.png" width="300px" alt=" Image"></div>
-    <div class="bronx"><img src="bronxschool.png" width="300px" alt=" Image" onclick="gotoLocationLevels('bronx')"></div>
+    <div class="bronx"><img src="bronxschool.png" width="300px" alt=" Image" onclick="gotoLocationLevels('bronx')"onclick="playMusic ('bronxlevelmusic')"></div>
     <div class="bronxfinished"id="bronxfinished"><img src="finished schools.png" width="300px" alt=" Image"></div>
     <div class="back"> <img src="backgroundlevelselect.png" width="103%" alt="Enter Image"></div>
 

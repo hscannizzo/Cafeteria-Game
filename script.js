@@ -13,11 +13,30 @@ const $levelselect = document.getElementById('levelselect')
 
 
 
+let playBtn = document.getElementsByClassName("play");
+let pauseBtn = document.getElementsByClassName("pause");
+
+const levelselectmusic = document.getElementById('levelselectmusic')
+const bronxmusic = document.getElementById('bronxmusic')
+const brooklynmusic = document.getElementById('brooklynmusic')
+const queensmusic = document.getElementById('queensmusic')
+const manhattanmusic = document.getElementById('manhattanmusic')
+const statenislandmusic = document.getElementById('statenislandmusic')
+const levelpassedmusic = document.getElementById('levelpassedmusic')
+const eleanorsound = document.getElementById('eleanorsound')
+const chefsound = document.getElementById('chefsound')
+const itemcollectsound = document.getElementById('itemcollectsound')
+const buttonclicksound = document.getElementById('buttonclicksound')
 
 function gotoLocationEnter(locationname){
    const $levelbutton =  document.getElementById ('fadeButton')
-console.log ($levelbutton)  
-$levelbutton.style.display="none";  
+console.log ($levelbutton) 
+buttonclicksound.play();
+$levelbutton.style.display="none";
+levelselectmusic.play();
+
+loop=true,
+ 
 //hide all levels
 console.log (locationname)
    $bronxLevel.style.display="none"
@@ -34,6 +53,7 @@ console.log (locationname)
    console.log (selectedlevel)
    selectedlevel.style.display= "block"
    ;
+  
 }
 
 
@@ -69,7 +89,63 @@ console.log (selectedlevel)
 selectedlevel.style.display= "block"
 }
 
+$bronxLevel.addEventListener("click",function (){
+  brooklynmusic.pause();
+  levelselectmusic.pause();
+  queensmusic.pause();
+  manhattanmusic.pause();
+  statenislandmusic.pause();
+   bronxmusic.play();
+   loop=true 
+})
+$brooklynLevel.addEventListener("click",function (){
+   bronxmusic.pause();
+   levelselectmusic.pause();
+   queensmusic.pause();
+   manhattanmusic.pause();
+   statenislandmusic.pause();
+    brooklynmusic.play();
+    loop=true
+})
 
+$queensLevel.addEventListener("click",function (){
+   brooklynmusic.pause();
+   levelselectmusic.pause();
+   bronxmusic.pause();
+   manhattanmusic.pause();
+   statenislandmusic.pause();
+    queensmusic.play();
+    loop=true 
+})
+$manhattanLevel.addEventListener("click",function (){
+   brooklynmusic.pause();
+   levelselectmusic.pause();
+   queensmusic.pause();
+   bronxmusic.pause();
+   statenislandmusic.pause();
+   manhattanmusic.play();
+    loop=true 
+})
+
+$bronxLevel.addEventListener("click",function (){
+   brooklynmusic.pause();
+   levelselectmusic.pause();
+   queensmusic.pause();
+   manhattanmusic.pause();
+   statenislandmusic.pause();
+    bronxmusic.play();
+    loop=true 
+})
+
+$statenislandLevel.addEventListener("click",function (){
+   brooklynmusic.pause();
+   levelselectmusic.pause();
+   queensmusic.pause();
+   manhattanmusic.pause();
+   bronxmusic.pause();
+   statenislandmusic.play();
+    loop=true 
+})
 //bronx
 
 
@@ -90,7 +166,11 @@ const $ratsbronx= document.getElementById ("ratsbronx")
 $ratsbronx.addEventListener("click",function (){
  console.log($ratsbronx)
  // hide rats
-$ratsbronx.style.display="none"
+
+   itemcollectsound.play();
+  volume: 2
+
+ $ratsbronx.style.display="none"
  // show rat in footer
  document.getElementById ("footerratsbronx").style.opacity=1
  // show popup
@@ -118,6 +198,8 @@ $ratsbronx.style.display="none"
 const $lightbronx= document.getElementById ("lightingbronx")
 $lightbronx.addEventListener("click",function (){
     console.log($lightbronx)
+    itemcollectsound.play();
+    volume: 2
     // hide light
    $lightbronx.style.display="none"
     // show light in footer
@@ -147,6 +229,8 @@ $lightbronx.addEventListener("click",function (){
 const $fliesbronx= document.getElementById ("fliesbronx")
 $fliesbronx.addEventListener("click",function (){
     console.log($fliesbronx)
+    itemcollectsound.play();
+    volume: 2
     // hide light
    $fliesbronx.style.display="none"
     // show light in footer
@@ -176,6 +260,8 @@ $fliesbronx.addEventListener("click",function (){
 const $verminproofbronx= document.getElementById ("verminproofbronx")
 $verminproofbronx.addEventListener("click",function (){
     console.log($verminproofbronx)
+    itemcollectsound.play();
+    volume: 2
     // hide light
    $verminproofbronx.style.display="none"
     // show light in footer
@@ -202,6 +288,8 @@ $verminproofbronx.addEventListener("click",function (){
    const $chefbronx= document.getElementById ("chefbronx")
    $chefbronx.addEventListener("click",function (){
        console.log($chefbronx)
+       chefsound.play();
+       volume: 2
        // hide rats
       $chefbronx.style.display="none"
        // show rat in footer
@@ -246,6 +334,8 @@ $verminproofbronx.addEventListener("click",function (){
     const $eleanorbronx= document.getElementById ("lunchladybronx")
     $eleanorbronx.addEventListener("click",function (){
         console.log($eleanorbronx)
+        eleanorsound.play();
+        volume: 2
         // hide rats
        $eleanorbronx.style.display= "none"
         // show rat in footer
@@ -289,6 +379,8 @@ $verminproofbronx.addEventListener("click",function (){
     const $contaminationbronx= document.getElementById ("contaminationbronx")
     $contaminationbronx.addEventListener("click",function (){
         console.log($contaminationbronx)
+        itemcollectsound.play();
+        volume: 2
         // hide light
        $contaminationbronx.style.display="none"
         // show light in footer
@@ -317,6 +409,8 @@ $verminproofbronx.addEventListener("click",function (){
     const $bulbbronx= document.getElementById ("bulbbronx")
     $bulbbronx.addEventListener("click",function (){
         console.log($bulbbronx)
+        itemcollectsound.play();
+        volume: 2
         // hide light
        $bulbbronx.style.display="none"
         // show light in footer
@@ -345,6 +439,8 @@ $verminproofbronx.addEventListener("click",function (){
     const $improperbronx= document.getElementById ("nonfoodcontactbronx")
     $improperbronx.addEventListener("click",function (){
         console.log($improperbronx)
+        itemcollectsound.play();
+        volume: 2
         // hide light
        $improperbronx.style.display="none"
         // show light in footer
@@ -373,6 +469,8 @@ $verminproofbronx.addEventListener("click",function (){
    const $plumbingbronx= document.getElementById ("plumbingbronx")
    $plumbingbronx.addEventListener("click",function (){
        console.log($plumbingbronx)
+       itemcollectsound.play();
+       volume: 2
        // hide light
       $plumbingbronx.style.display="none"
        // show light in footer
@@ -480,9 +578,10 @@ const totalNumberOfViolationsbrooklyn = 10 // Change this to the total number of
 let violationsFoundbrooklyn = 0
 
 const $ratsbrooklyn= document.getElementById ("ratsbrooklyn")
-
 $ratsbrooklyn.addEventListener("click",function (){
  console.log($ratsbrooklyn)
+ itemcollectsound.play();
+ volume: 2
  // hide rats
 $ratsbrooklyn.style.display="none"
  // show rat in footer
@@ -511,6 +610,8 @@ $endpopupbrooklyn.style.display="block"
 const $fliesbrooklyn= document.getElementById ("fliesbrooklyn")
 $fliesbrooklyn.addEventListener("click",function (){
     console.log($fliesbrooklyn)
+    itemcollectsound.play();
+    volume: 2
     // hide light
    $fliesbrooklyn.style.display="none"
     // show light in footer
@@ -539,6 +640,8 @@ $fliesbrooklyn.addEventListener("click",function (){
 const $verminproofbrooklyn= document.getElementById ("verminproofbrooklyn")
 $verminproofbrooklyn.addEventListener("click",function (){
     console.log($verminproofbrooklyn)
+    itemcollectsound.play();
+    volume: 2
     // hide light
    $verminproofbrooklyn.style.display="none"
     // show light in footer
@@ -566,6 +669,8 @@ function showEndScreenbrooklyn() {
    const $chefbrooklyn= document.getElementById ("chefbrooklyn")
    $chefbrooklyn.addEventListener("click",function (){
        console.log($chefbrooklyn)
+       chefsound.play();
+       volume: 2
        // hide rats
       $chefbrooklyn.style.display="none"
        // show rat in footer
@@ -612,6 +717,8 @@ $endpopupbrooklyn.style.display="block"
     const $contaminationbrooklyn= document.getElementById ("contaminationbrooklyn")
     $contaminationbrooklyn.addEventListener("click",function (){
         console.log($contaminationbrooklyn)
+        itemcollectsound.play();
+        volume: 2
         // hide light
        $contaminationbrooklyn.style.display="none"
         // show light in footer
@@ -640,6 +747,8 @@ $endpopupbrooklyn.style.display="block"
     const $bulbbrooklyn= document.getElementById ("bulbbrooklyn")
     $bulbbrooklyn.addEventListener("click",function (){
         console.log($bulbbrooklyn)
+        itemcollectsound.play();
+        volume: 2
         // hide light
        $bulbbrooklyn.style.display="none"
         // show light in footer
@@ -668,6 +777,8 @@ $endpopupbrooklyn.style.display="block"
     const $improperbrooklyn= document.getElementById ("nonfoodcontactbrooklyn")
     $improperbrooklyn.addEventListener("click",function (){
         console.log($improperbrooklyn)
+        itemcollectsound.play();
+        volume: 2
         // hide light
        $improperbrooklyn.style.display="none"
         // show light in footer
@@ -697,6 +808,8 @@ $endpopupbrooklyn.style.display="block"
    const $plumbingbrooklyn= document.getElementById ("plumbingbrooklyn")
    $plumbingbrooklyn.addEventListener("click",function (){
        console.log($plumbingbrooklyn)
+       itemcollectsound.play();
+       volume: 2
        // hide light
       $plumbingbrooklyn.style.display="none"
        // show light in footer
@@ -725,6 +838,8 @@ $endpopupbrooklyn.style.display="block"
       const $uncleansurfacebrooklyn= document.getElementById ("uncleansurfacebrooklyn")
       $uncleansurfacebrooklyn.addEventListener("click",function (){
           console.log($uncleansurfacebrooklyn)
+          itemcollectsound.play();
+          volume: 2
           // hide light
          $uncleansurfacebrooklyn.style.display="none"
           // show light in footer
@@ -753,6 +868,8 @@ $endpopupbrooklyn.style.display="block"
          const $pesticidesbrooklyn= document.getElementById ("pesticidesbrooklyn")
          $pesticidesbrooklyn.addEventListener("click",function (){
              console.log($pesticidesbrooklyn)
+             itemcollectsound.play();
+             volume: 2
              // hide light
             $pesticidesbrooklyn.style.display="none"
              // show light in footer
@@ -860,6 +977,8 @@ const $ratsqueens= document.getElementById ("ratsqueens")
 
 $ratsqueens.addEventListener("click",function (){
  console.log($ratsqueens)
+ itemcollectsound.play();
+ volume: 2
  // hide rats
 $ratsqueens.style.display="none"
  // show rat in footer
@@ -867,7 +986,9 @@ $ratsqueens.style.display="none"
  // show popup
 
  const $ratspopupqueens =  document.getElementById ('ratspopupqueens')
- console.log ($ratspopupqueens)  
+ console.log ($ratspopupqueens) 
+ itemcollectsound.play();
+ volume: 2 
  $ratspopupqueens.style.display="block"
  //close popup
  $ratspopupqueens.addEventListener('click', function(){
@@ -889,6 +1010,8 @@ $ratsqueens.style.display="none"
 const $roachqueens= document.getElementById ("roachqueens")
 $roachqueens.addEventListener("click",function (){
     console.log($roachqueens)
+    itemcollectsound.play();
+    volume: 2
     // hide light
    $roachqueens.style.display="none"
     // show light in footer
@@ -918,6 +1041,8 @@ $roachqueens.addEventListener("click",function (){
 const $fliesqueens= document.getElementById ("fliesqueens")
 $fliesqueens.addEventListener("click",function (){
     console.log($fliesqueens)
+    itemcollectsound.play();
+    volume: 2
     // hide light
    $fliesqueens.style.display="none"
     // show light in footer
@@ -947,6 +1072,8 @@ $fliesqueens.addEventListener("click",function (){
 const $verminproofqueens= document.getElementById ("verminproofqueens")
 $verminproofqueens.addEventListener("click",function (){
     console.log($verminproofqueens)
+    itemcollectsound.play();
+    volume: 2
     // hide light
    $verminproofqueens.style.display="none"
     // show light in footer
@@ -973,6 +1100,8 @@ $verminproofqueens.addEventListener("click",function (){
    const $chefqueens= document.getElementById ("chefqueens")
    $chefqueens.addEventListener("click",function (){
        console.log($chefqueens)
+       chefsound.play();
+       volume: 2
        // hide rats
       $chefqueens.style.display="none"
        // show rat in footer
@@ -1017,6 +1146,8 @@ $verminproofqueens.addEventListener("click",function (){
     const $uncleansurfacequeens= document.getElementById ("uncleansurfacesqueens")
     $uncleansurfacequeens.addEventListener("click",function (){
         console.log($uncleansurfacequeens)
+        itemcollectsound.play();
+        volume: 2
         // hide light
        $uncleansurfacequeens.style.display="none"
         // show light in footer
@@ -1034,7 +1165,7 @@ $verminproofqueens.addEventListener("click",function (){
           showEndScreenqueens()
         }
         })
-        function showEndScreen() {
+        function showEndScreenqueens() {
         const $endpopupqueens =  document.getElementById ('endpopupqueens')
         console.log ($endpopupqueens)  
         $endpopupqueens.style.display="block"
@@ -1047,6 +1178,8 @@ $verminproofqueens.addEventListener("click",function (){
     const $contaminationqueens= document.getElementById ("contaminationqueens")
     $contaminationqueens.addEventListener("click",function (){
         console.log($contaminationqueens)
+        itemcollectsound.play();
+        volume: 2
         // hide light
        $contaminationqueens.style.display="none"
         // show light in footer
@@ -1075,6 +1208,8 @@ $verminproofqueens.addEventListener("click",function (){
     const $bulbqueens= document.getElementById ("bulbqueens")
     $bulbqueens.addEventListener("click",function (){
         console.log($bulbqueens)
+        itemcollectsound.play();
+        volume: 2
         // hide light
        $bulbqueens.style.display="none"
         // show light in footer
@@ -1094,7 +1229,7 @@ $verminproofqueens.addEventListener("click",function (){
             }
       })
       function showEndScreenqueens() {
-        const $endpopup =  document.getElementById ('endpopupqueens')
+        const $endpopupqueens =  document.getElementById ('endpopupqueens')
         console.log ($endpopupqueens)  
         $endpopupqueens.style.display="block"
     }
@@ -1103,6 +1238,8 @@ $verminproofqueens.addEventListener("click",function (){
     const $improperqueens= document.getElementById ("nonfoodcontactqueens")
     $improperqueens.addEventListener("click",function (){
         console.log($improperqueens)
+        itemcollectsound.play();
+        volume: 2
         // hide light
        $improperqueens.style.display="none"
         // show light in footer
@@ -1131,6 +1268,8 @@ $verminproofqueens.addEventListener("click",function (){
    const $plumbingqueens= document.getElementById ("plumbingqueens")
    $plumbingqueens.addEventListener("click",function (){
        console.log($plumbingqueens)
+       itemcollectsound.play();
+       volume: 2
        // hide light
       $plumbingqueens.style.display="none"
        // show light in footer
@@ -1158,6 +1297,8 @@ $verminproofqueens.addEventListener("click",function (){
 const $mapqueens= document.getElementById ("mapqueens")
 $mapqueens.addEventListener("click",function (){
     console.log($mapqueens)
+    itemcollectsound.play();
+    volume: 2
 //bring up map popup
 const $mappopupqueens = document.getElementById ('mappopupqueens')
 console.log ($mappopupqueens)
