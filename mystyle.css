@@ -1040,4 +1040,843 @@ position: absolute;
       border-radius: 25px;
     }
 
+
+
+/*BROOKlYN*/
+
+
+    .game-screenbrooklyn {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: scale-down;
+        }
+        
+        #cafe1brooklyn .game-screenbrooklyn {
+          background-image: url("brooklynpage1.png");
+        }
+        
+        #cafe2brooklyn .game-screenbrooklyn {
+          background-image: url("brooklynpage2.png"); 
+        }
+        
+        #kitchenbrooklyn .game-screenbrooklyn {
+          background-image: url("kitchen.png"); 
+        
+        }
+        
+        #lunchlinebrooklyn .game-screenbrooklyn {
+          background-image: url("line.png"); 
+        
+        }
+        
+         .mapbrooklyn {
+         top: 0;
+         left: 0;
+          position: fixed;
+          z-index: 1; 
+          right: 65%;
+        
+         }
+        
+        .characterboxbrooklyn {
+          top: 0;
+         right: 0;
+          position: fixed;
+          z-index: 1; 
+        }
+        .characterbox2brooklyn {
+          top: 0;
+         right: .1%;
+          position: fixed;
+          z-index: 1; 
+          display: none;
+        }
+        .characterbox3brooklyn {
+          top: 0;
+         right: 7.6%;
+          position: fixed;
+          z-index: 1; 
+          display: none;
+        }
+        
+        
+        *, *::before, *::after{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box; 
+        }
+        
+        .gamefooterbrooklyn{
+          position: fixed;
+          left: 0;
+          right: 0;
+          bottom: 0;
+        }
+        
+        .flex-containerbrooklyn {
+          display: flex;
+          flex-direction: row;
+          background-color: rgba(217, 217, 217, .8);
+          align-items: flex-end;
+          justify-content: space-evenly;
+          flex: 0 1 auto;
+        
+        
+        }
+        .flex-containerbrooklyn img {
+          opacity: 0;
+        }
+        .flex-containerbrooklyn > div {
+          color: rgba(217, 217, 217, .8);
+          height: 140px;
+          border-style: solid;
+          border: #B5B3B3, 5px;
+          width: 150px;
+        }
+        
+        .item1brooklyn {
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+        
+        .item2brooklyn {
+          padding-left: 40px;
+          padding-right: 40px;
+          padding-top: 10px;
+        }
+        .item3brooklyn {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+        .item4brooklyn {
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+        .item5brooklyn {
+          padding-left: 30px;
+          padding-right: 30px;
+          padding-top: 5px;
+        }
+        .item6brooklyn {
+          padding-top: -10px;
+        }
+        .item7brooklyn {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+        .item8brooklyn {
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+        .item9brooklyn {
+          padding-left: 15px;
+          padding-right: 15px;
+          padding-top: 25px;
+        }
+        .item10brooklyn {
+          padding-left: 30px;
+          padding-right: 30px;
+        padding-top: 5px;
+        }
+        
+        
+        .ratsimagebrooklyn {
+          position: absolute;
+          bottom: 48%;
+          left: 23%;
+          width: 80px;
+        }
+    
+        .chefimagebrooklyn {
+          position: absolute;
+          bottom: 10%;
+          left: 20%;
+          width: 600px; 
+        } 
+        
+        .plumbingimagebrooklyn {
+          position: absolute;
+          bottom: 25%;
+          left: 36%;
+          width: 80px; 
+        
+        }
+        
+        .fliesimagebrooklyn {
+        position: absolute;
+        bottom: 50%;
+        left: 77%;
+        width: 70px;
+        }
+        
+        .verminproofimagebrooklyn {
+          position: absolute;
+          bottom: 45%;
+        left: 8.5%;
+        width: 44px;
+        }
+        
+        .nonfoodcontactimagebrooklyn {
+          position: absolute;
+          bottom: 20%;
+        left: 85%;
+        width: 200px;
+        }
+        
+        .bulbimagebrooklyn {
+          position: absolute;
+          bottom: 94%;
+        left: 47%;
+        width: 45px;
+        }
+        
+        .contaminationimagebrooklyn {
+          position: absolute;
+          bottom: 68%;
+        left: 40%;
+        width: 250px;
+        }
+    
+        .pesticidesimagebrooklyn {
+            position: absolute;
+            bottom: 40%;
+          left:10%;
+          width: 100px;
+          }
+          
+          .uncleansurfaceimagebrooklyn {
+            position: absolute;
+            bottom: 25%;
+          left:35%;
+          width: 200px;
+          }
+        
+     
+        
+        #mappopupbrooklyn {
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          background-color: #10487C;
+          transform: translate(-50%, -50%);
+          box-shadow: 0 -4px 16px -3px #742830a1, 0 3px 13px -3px #742830a1;
+          border-radius: 25px;
+          padding-right: 260px;
+          font-size: 20px;
+          font-weight: bold;
+        
+        }
+        
+        .mapcafebrooklyn {
+          position: fixed;
+          width: 80px;
+        }
+        
+        #mappopupbrooklyn {
+          display: none;
+        }
+        .button1brooklyn {
+          background-color: #C74238; 
+          border: none;
+          color: #d3d3d3;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 25px;
+          margin: 4px 2px;
+          cursor: pointer;
+          font-family: 'Courier Prime', monospace;
+         position: absolute;
+         bottom: 66%;
+         left: 50%;
+        }
+        
+        
+        .button2brooklyn {
+          background-color: #C74238; 
+          border: none;
+          color: #d3d3d3;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 25px;
+          margin: 4px 2px;
+          cursor: pointer;
+          font-family: 'Courier Prime', monospace;
+          position: absolute;
+        left: 60%;
+        bottom: 30%;
+        }
+        
+        .button3brooklyn {
+          background-color: #C74238; 
+          border: none;
+          color: #d3d3d3;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 25px;
+          margin: 4px 2px;
+          cursor: pointer;
+          font-family: 'Courier Prime', monospace;
+          position: absolute;
+          bottom: 48%;
+        left: 40%;
+        }
+        
+        .button4brooklyn {
+          background-color: #C74238; 
+          border: none;
+          color: #d3d3d3;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 25px;
+          margin: 4px 2px;
+          cursor: pointer;
+          position: absolute;
+          font-family: 'Courier Prime', monospace;
+          left: 30%;
+          bottom: 28%;
+        }
+        
+        .beginningpopupbrooklyn {
+          background-color: #FBFBFB;
+          width: 1295px;
+          height: 634px;
+          position: absolute;
+          z-index: 1;
+          left: 15%;
+          bottom: 20%;
+          border-radius: 25px;
+          
+        }
+        
+        .topwritingbrooklyn {
+        font-family: "proxima-nova", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 64px;
+        left: 15%;
+        position: absolute;
+        }
+        
+        .frontwritingbrooklyn {
+          font-size: 36px;
+        left: 13%;
+        right: 9%;
+        position: absolute;
+        font-family: 'Courier Prime', monospace;
+        bottom: 60%;
+        }
+        .maptinybrooklyn {
+          position: absolute;
+          left: 5%;
+          bottom:35%;
+        }
+        .apron1tinybrooklyn {
+          position: absolute;
+          left: 32%;
+          bottom: 35%;
+        }
+        .apron2tinybrooklyn {
+          position: absolute;
+          left: 42%;
+          bottom: 35%;
+        }
+        
+        .footertinybrooklyn {
+          position: absolute;
+          left: 67%;
+          bottom: 40%;
+        }
+        
+        .mapwritingbrooklyn {
+          font-size: 22px;
+        left: 2%;
+        position: absolute;
+        font-family: 'Courier Prime', monospace;
+        bottom: 15%;
+        }
+        
+        .footerwritingbrooklyn {
+          font-size: 22px;
+        left: 64%;
+        position: absolute;
+        font-family: 'Courier Prime', monospace;
+        bottom: 18%;
+        
+        }
+        
+        .apronwritingbrooklyn {
+          font-size: 22px;
+        left: 28%;
+        position: absolute;
+        font-family: 'Courier Prime', monospace;
+        bottom: 18%;
+        }
+        
+        .buttonfirstbrooklyn {
+          background-color: #FBFBFB; 
+          border: 5px solid black;
+          color: black;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 40px;
+          margin: 4px 2px;
+          cursor: pointer;
+          position: absolute;
+          font-family: 'Courier Prime', monospace;
+          left: 40%;
+          bottom: 6%;
+          border-radius: 25px;
+        }
+        
+        .chefpopupbrooklyn {
+          position: absolute;
+          z-index: 1;
+          background-color:#FBFBFB;
+          width: 1790px;
+          height: 350px;
+          bottom: -3%;
+          display: none;
+        }
+        .titlechefbrooklyn {
+          font-family: "proxima-nova", sans-serif;
+          font-weight: 800;
+          font-style: normal;
+          font-size: 80px;
+          left: 2%;
+          position: absolute;  
+        }
+        
+        .dialogchefbrooklyn {
+          font-size: 40px;
+          left: 2%;
+          position: absolute;
+          font-family: 'Courier Prime', monospace;
+          bottom: 40%; 
+        }
+        
+        .chefbuttonbrooklyn {
+          background-color: #FBFBFB; 
+          border: 5px solid black;
+          color: black;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 40px;
+          margin: 4px 2px;
+          cursor: pointer;
+          position: absolute;
+          font-family: 'Courier Prime', monospace;
+          left: 85%;
+          bottom: 10%;
+          border-radius: 25px;
+        }
+        
+        .chefheadbrooklyn {
+          position: absolute;
+          bottom: 99%;
+          left: 74%;
+        
+        }
+        
+        .certificatepopupbrooklyn {
+          position: absolute;
+          z-index: 1;
+          background-color:#FBFBFB;
+          width: 959px;
+          height: 397px;
+          bottom: 40%;
+          left: 20%;
+          border-radius: 25px;
+          display: none;
+        }
+        
+        .titlehealthbrooklyn {
+          position: absolute;
+          font-family: "proxima-nova", sans-serif;
+          font-weight: 800;
+          font-style: normal;
+          font-size: 55px; 
+          left: 2%;
+        }
+        
+        .certtitlebrooklyn {
+          position: absolute;
+          font-family: 'Courier Prime', monospace;
+          font-size: 44px; 
+          bottom: 56%;
+          left: 2%;
+        }
+        
+        .certificatewritupbrooklyn {
+          position: absolute;
+          font-family: 'Courier Prime', monospace;
+          font-size: 28px; 
+          bottom: 5%;
+          right: 40%;
+          left: 2%;
+        }
+        .certificateviolationbrooklyn {
+          position: absolute;
+          left: 70%;
+          bottom: 20%;
+        }
+        
+        
+        .ratspopupbrooklyn {
+          position: absolute;
+          z-index: 1;
+          background-color:#FBFBFB;
+          width: 959px;
+          height: 397px;
+          bottom: 40%;
+          left: 20%;
+          border-radius: 25px;
+          display: none;
+        }
+        .rattitlebrooklyn {
+          position: absolute;
+          font-family: 'Courier Prime', monospace;
+          font-size: 44px; 
+          bottom: 58%;
+          left: 2%;
+        }
+        
+        .ratwritupbrooklyn {
+          position: absolute;
+          font-family: 'Courier Prime', monospace;
+          font-size: 28px; 
+          bottom: 8%;
+          right: 40%;
+          left: 2%;
+        }
+        .ratviolationbrooklyn {
+          position: absolute;
+          left: 70%;
+          bottom: 15%;
+        }
+        
+        
+        
+        .fliespopupbrooklyn {
+          position: absolute;
+          z-index: 1;
+          background-color:#FBFBFB;
+          width: 959px;
+          height: 397px;
+          bottom: 40%;
+          left: 20%;
+          border-radius: 25px;
+          display: none;
+        }
+        .fliestitlebrooklyn {
+          position: absolute;
+          font-family: 'Courier Prime', monospace;
+          font-size: 44px; 
+          bottom: 65%;
+          left: 2%;
+        }
+        
+        .flieswritupbrooklyn {
+          position: absolute;
+          font-family: 'Courier Prime', monospace;
+          font-size: 28px; 
+          bottom: 8%;
+          right: 40%;
+          left: 2%;
+        }
+        .fliesviolationbrooklyn {
+          position: absolute;
+          left: 70%;
+          bottom: 15%;
+        }
+        .verminproofpopupbrooklyn {
+          position: absolute;
+          z-index: 1;
+          background-color:#FBFBFB;
+          width: 959px;
+          height: 397px;
+          bottom: 40%;
+          left: 20%;
+          border-radius: 25px;
+          display: none;
+        }
+        .verminprooftitlebrooklyn {
+          position: absolute;
+          font-family: 'Courier Prime', monospace;
+          font-size: 44px; 
+          bottom: 66%;
+          left: 2%;
+        }
+        
+        .verminproofwritupbrooklyn {
+          position: absolute;
+          font-family: 'Courier Prime', monospace;
+          font-size: 28px; 
+          bottom: 8%;
+          right: 40%;
+          left: 2%;
+        }
+        .verminproofviolationbrooklyn {
+          position: absolute;
+          left: 70%;
+          bottom: 15%;
+        }
+        
+        
+        .contaminationpopupbrooklyn {
+          position: absolute;
+          z-index: 1;
+          background-color:#FBFBFB;
+          width: 959px;
+          height: 397px;
+          bottom: 40%;
+          left: 20%;
+          border-radius: 25px;
+          display: none;
+        }
+        .contaminationtitlebrooklyn {
+          position: absolute;
+          font-family: 'Courier Prime', monospace;
+          font-size: 44px; 
+          bottom: 58%;
+          left: 2%;
+        }
+        
+        .contaminationwritupbrooklyn {
+          position: absolute;
+          font-family: 'Courier Prime', monospace;
+          font-size: 28px; 
+          bottom: 3%;
+          right: 40%;
+          left: 2%;
+        }
+        .contaminationviolationbrooklyn {
+          position: absolute;
+          left: 70%;
+          bottom: 15%;
+        }
+        
+        .bulbpopupbrooklyn {
+          position: absolute;
+          z-index: 1;
+          background-color:#FBFBFB;
+          width: 959px;
+          height: 397px;
+          bottom: 40%;
+          left: 20%;
+          border-radius: 25px;
+          display: none;
+        }
+        .bulbtitlebrooklyn {
+          position: absolute;
+          font-family: 'Courier Prime', monospace;
+          font-size: 44px; 
+          bottom: 58%;
+          left: 2%;
+        }
+        
+        .bulbwritupbrooklyn {
+          position: absolute;
+          font-family: 'Courier Prime', monospace;
+          font-size: 28px; 
+          bottom: 3%;
+          right: 40%;
+          left: 2%;
+        }
+        .bulbviolationbrooklyn {
+          position: absolute;
+          left: 70%;
+          bottom: 5%;
+        }
+        
+        .improperpopupbrooklyn {
+          position: absolute;
+          z-index: 1;
+          background-color:#FBFBFB;
+          width: 959px;
+          height: 397px;
+          bottom: 40%;
+          left: 20%;
+          border-radius: 25px;
+          display: none;
+        }
+        .impropertitlebrooklyn {
+          position: absolute;
+          font-family: 'Courier Prime', monospace;
+          font-size: 44px; 
+          bottom: 67%;
+          left: 2%;
+        }
+        
+        .improperwritupbrooklyn {
+          position: absolute;
+          font-family: 'Courier Prime', monospace;
+          font-size: 28px; 
+          bottom: 8%;
+          right: 40%;
+          left: 2%;
+        }
+        .improperviolationbrooklyn {
+          position: absolute;
+          left: 70%;
+          bottom: 15%;
+        }
+        
+        .plumbingpopupbrooklyn {
+          position: absolute;
+          z-index: 1;
+          background-color:#FBFBFB;
+          width: 959px;
+          height: 397px;
+          bottom: 40%;
+          left: 20%;
+          border-radius: 25px;
+          display: none;
+        }
+        .plumbingtitlebrooklyn {
+          position: absolute;
+          font-family: 'Courier Prime', monospace;
+          font-size: 44px; 
+          bottom: 70%;
+          left: 2%;
+        }
+        
+        .plumbingwritupbrooklyn {
+          position: absolute;
+          font-family: 'Courier Prime', monospace;
+          font-size: 28px; 
+          bottom: 8%;
+          right: 40%;
+          left: 2%;
+        }
+        .plumbingviolationbrooklyn {
+          position: absolute;
+          left: 68.5%;
+          bottom: 5%;
+        }
+    
+        .uncleansurfacespopupbrooklyn {
+            position: absolute;
+            z-index: 1;
+            background-color:#FBFBFB;
+            width: 959px;
+            height: 397px;
+            bottom: 40%;
+            left: 20%;
+            border-radius: 25px;
+            display: none;
+          }
+          .uncleansurfacestitlebrooklyn {
+            position: absolute;
+            font-family: 'Courier Prime', monospace;
+            font-size: 44px; 
+            bottom: 58%;
+            left: 2%;
+          }
+          
+          .uncleansurfaceswritupbrooklyn {
+            position: absolute;
+            font-family: 'Courier Prime', monospace;
+            font-size: 28px; 
+            bottom: 5%;
+            right: 40%;
+            left: 2%;
+          }
+          .uncleansurfacesviolationbrooklyn {
+            position: absolute;
+            left: 63%;
+            bottom: 15%;
+          }
+          
+          .pesticidespopupbrooklyn {
+            position: absolute;
+            z-index: 1;
+            background-color:#FBFBFB;
+            width: 959px;
+            height: 397px;
+            bottom: 40%;
+            left: 20%;
+            border-radius: 25px;
+            display: none;
+          }
+          .pesticidestitlebrooklyn {
+            position: absolute;
+            font-family: 'Courier Prime', monospace;
+            font-size: 44px; 
+            bottom: 58%;
+            left: 2%;
+          }
+          
+          .pesticideswritupbrooklyn {
+            position: absolute;
+            font-family: 'Courier Prime', monospace;
+            font-size: 28px; 
+            bottom: 5%;
+            right: 40%;
+            left: 2%;
+          }
+          .pesticidesviolationbrooklyn {
+            position: absolute;
+            left: 70%;
+            bottom: 1%;
+          }
+
+          .endpopupbrooklyn {
+            position: absolute;
+            z-index: 1;
+            background-color:#FBFBFB;
+            width: 1259px;
+            height: 497px;
+            bottom: 35%;
+            left: 15%;
+            border-radius: 25px;
+            display: none;
+          }
+          
+          .endtitlebrooklyn {
+            position: absolute;
+            font-family: "proxima-nova", sans-serif;
+            font-weight: 800;
+            font-style: normal;
+            font-size: 55px; 
+            left: 1%; 
+            top: 3%;
+          }
+          
+          .endwritupbrooklyn {
+            position: absolute;
+            font-family: 'Courier Prime', monospace;
+            font-size: 40px; 
+            bottom: 55%;
+           left: 10%;
+           right: 10%;
+           text-align: center;
+          }
+          
+          .buttonlastbrooklyn {
+            background-color: #FBFBFB; 
+            border: 5px solid black;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            padding: 2%;
+            font-size: 40px;
+            margin: 4px 2px;
+            cursor: pointer;
+            position: absolute;
+            font-family: 'Courier Prime', monospace;
+            left: 35%;
+            bottom: 10%;
+            border-radius: 25px;
+          }
+
     

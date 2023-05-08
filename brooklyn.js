@@ -1,233 +1,233 @@
 // These are the levels of our game
-const $kitchenLevel = document.getElementById('kitchen')
-const $cafe1Level = document.getElementById('cafe1')
-const $cafe2Level = document.getElementById('cafe2')
-const $lunchlineLevel = document.getElementById('lunchline')
+const $kitchenLevelbrooklyn = document.getElementById('kitchenbrooklyn')
+const $cafe1Levelbrooklyn = document.getElementById('cafe1brooklyn')
+const $cafe2Levelbrooklyn = document.getElementById('cafe2brooklyn')
+const $lunchlineLevelbrooklyn = document.getElementById('lunchlinebrooklyn')
 
 
 
-const $rats= document.getElementById ("rats")
+const $ratsbrooklyn= document.getElementById ("ratsbrooklyn")
 
-$rats.addEventListener("click",function (){
- console.log($rats)
+$ratsbrooklyn.addEventListener("click",function (){
+ console.log($ratsbrooklyn)
  // hide rats
-$rats.style.display="none"
+$ratsbrooklyn.style.display="none"
  // show rat in footer
- document.getElementById ("footerrats").style.opacity=1
+ document.getElementById ("footerratsbrooklyn").style.opacity=1
  // show popup
- const $ratspopup =  document.getElementById ('ratspopup')
-console.log ($ratspopup)  
-$ratspopup.style.display="block"
+ const $ratspopupbrooklyn =  document.getElementById ('ratspopupbrooklyn')
+console.log ($ratspopupbrooklyn)  
+$ratspopupbrooklyn.style.display="block"
 //close popup
-$ratspopup.addEventListener('click', function(){
-$ratspopup.style.display= "none"}
+$ratspopupbrooklyn.addEventListener('click', function(){
+$ratspopupbrooklyn.style.display= "none"}
 )
 })
 
    
-const $flies= document.getElementById ("flies")
-$flies.addEventListener("click",function (){
-    console.log($flies)
+const $fliesbrooklyn= document.getElementById ("fliesbrooklyn")
+$fliesbrooklyn.addEventListener("click",function (){
+    console.log($fliesbrooklyn)
     // hide light
-   $flies.style.display="none"
+   $fliesbrooklyn.style.display="none"
     // show light in footer
-    document.getElementById ("footerflies").style.opacity=1
+    document.getElementById ("footerfliesbrooklyn").style.opacity=1
     // show popup
-    const $fliespopup =  document.getElementById ('fliespopup')
-    console.log ($fliespopup)  
-    $fliespopup.style.display="block"
+    const $fliespopupbrooklyn =  document.getElementById ('fliespopupbrooklyn')
+    console.log ($fliespopupbrooklyn)  
+    $fliespopupbrooklyn.style.display="block"
     //close popup
-    $fliespopup.addEventListener('click', function(){
-    $fliespopup.style.display= "none"}
+    $fliespopupbrooklyn.addEventListener('click', function(){
+    $fliespopupbrooklyn.style.display= "none"}
     )
 }) 
-const $verminproof= document.getElementById ("verminproof")
-$verminproof.addEventListener("click",function (){
-    console.log($verminproof)
+const $verminproofbrooklyn= document.getElementById ("verminproofbrooklyn")
+$verminproofbrooklyn.addEventListener("click",function (){
+    console.log($verminproofbrooklyn)
     // hide light
-   $verminproof.style.display="none"
+   $verminproofbrooklyn.style.display="none"
     // show light in footer
-    document.getElementById ("footerverminproof").style.opacity=1
+    document.getElementById ("footerverminproofbrooklyn").style.opacity=1
     // show popup
-    const $verminproofpopup =  document.getElementById ('verminproofpopup')
-    console.log ($verminproofpopup)  
-    $verminproofpopup.style.display="block"
+    const $verminproofpopupbrooklyn =  document.getElementById ('verminproofpopupbrooklyn')
+    console.log ($verminproofpopupbrooklyn)  
+    $verminproofpopupbrooklyn.style.display="block"
     //close popup
-    $verminproofpopup.addEventListener('click', function(){
-    $verminproofpopup.style.display= "none"}
+    $verminproofpopupbrooklyn.addEventListener('click', function(){
+    $verminproofpopupbrooklyn.style.display= "none"}
     )
 })  
-   const $chef= document.getElementById ("chef")
-   $chef.addEventListener("click",function (){
-       console.log($chef)
+   const $chefbrooklyn= document.getElementById ("chefbrooklyn")
+   $chefbrooklyn.addEventListener("click",function (){
+       console.log($chefbrooklyn)
        // hide rats
-      $chef.style.display="none"
+      $chefbrooklyn.style.display="none"
        // show rat in footer
-       document.getElementById ("footercertificate").style.opacity=1
+       document.getElementById ("footercertificatebrooklyn").style.opacity=1
        // show popup
-    const $chefpopup =  document.getElementById ('chefpopup')
-     console.log ($chefpopup)  
+    const $chefpopupbrooklyn =  document.getElementById ('chefpopupbrooklyn')
+     console.log ($chefpopupbrooklyn)  
     $chefpopup.style.display="block"
     //change apron color
-    const $aproncolor1 =  document.getElementById ('characterbox2')
-    console.log ($aproncolor1)  
-   $aproncolor1.style.display="block"
+    const $aproncolor1brooklyn =  document.getElementById ('characterbox2brooklyn')
+    console.log ($aproncolor1brooklyn)  
+   $aproncolor1brooklyn.style.display="block"
       })
 
 
-    function exitButton2 (chefbutton){ 
-    console.log (chefbutton)
+    function exitButton2brooklyn (chefbuttonbrooklyn){ 
+    console.log (chefbuttonbrooklyn)
     //hide popup once clicked
-    const $chefpopup= document.getElementById ('chefpopup')
-    $chefpopup.style.display="none"
+    const $chefpopupbrooklyn= document.getElementById ('chefpopupbrooklyn')
+    $chefpopupbrooklyn.style.display="none"
 //show new popup
-const $certificatepopup =  document.getElementById ('certificatepopup')
-console.log ($certificatepopup)  
-$certificatepopup.style.display="block"
+const $certificatepopupbrooklyn =  document.getElementById ('certificatepopupbrooklyn')
+console.log ($certificatepopupbrooklyn)  
+$certificatepopupbrooklyn.style.display="block"
 //close popup
-$certificatepopup.addEventListener('click', function(){
-$certificatepopup.style.display= "none"}
+$certificatepopupbrooklyn.addEventListener('click', function(){
+$certificatepopupbrooklyn.style.display= "none"}
 )
     }
 
   
 
-    const $contamination= document.getElementById ("contamination")
-    $contamination.addEventListener("click",function (){
-        console.log($contamination)
+    const $contaminationbrooklyn= document.getElementById ("contaminationbrooklyn")
+    $contaminationbrooklyn.addEventListener("click",function (){
+        console.log($contaminationbrooklyn)
         // hide light
-       $contamination.style.display="none"
+       $contaminationbrooklyn.style.display="none"
         // show light in footer
-        document.getElementById ("footercontamination").style.opacity=1
+        document.getElementById ("footercontaminationbrooklyn").style.opacity=1
         // show popup
-        const $contaminationpopup =  document.getElementById ('contaminationpopup')
-        console.log ($contaminationpopup)  
-        $contaminationpopup.style.display="block"
+        const $contaminationpopupbrooklyn =  document.getElementById ('contaminationpopupbrooklyn')
+        console.log ($contaminationpopupbrooklyn)  
+        $contaminationpopupbrooklyn.style.display="block"
         //close popup
-        $contaminationpopup.addEventListener('click', function(){
-        $contaminationpopup.style.display= "none"}
+        $contaminationpopupbrooklyn.addEventListener('click', function(){
+        $contaminationpopupbrooklyn.style.display= "none"}
         )
     }) 
 
-    const $bulb= document.getElementById ("bulb")
-    $bulb.addEventListener("click",function (){
-        console.log($bulb)
+    const $bulbbrooklyn= document.getElementById ("bulbbrooklyn")
+    $bulbbrooklyn.addEventListener("click",function (){
+        console.log($bulbbrooklyn)
         // hide light
-       $bulb.style.display="none"
+       $bulbbrooklyn.style.display="none"
         // show light in footer
-        document.getElementById ("footerbulb").style.opacity=1
+        document.getElementById ("footerbulbbrooklyn").style.opacity=1
         // show popup
-        const $bulbpopup =  document.getElementById ('bulbpopup')
-        console.log ($bulbpopup)  
-        $bulbpopup.style.display="block"
+        const $bulbpopupbrooklyn =  document.getElementById ('bulbpopupbrooklyn')
+        console.log ($bulbpopupbrooklyn)  
+        $bulbpopupbrooklyn.style.display="block"
         //close popup
-        $bulbpopup.addEventListener('click', function(){
-        $bulbpopup.style.display= "none"}
+        $bulbpopupbrooklyn.addEventListener('click', function(){
+        $bulbpopupbrooklyn.style.display= "none"}
         )
     }) 
 
-    const $improper= document.getElementById ("nonfoodcontact")
-    $improper.addEventListener("click",function (){
-        console.log($improper)
+    const $improperbrooklyn= document.getElementById ("nonfoodcontactbrooklyn")
+    $improperbrooklyn.addEventListener("click",function (){
+        console.log($improperbrooklyn)
         // hide light
-       $improper.style.display="none"
+       $improperbrooklyn.style.display="none"
         // show light in footer
-        document.getElementById ("footernonfoodcontact").style.opacity=1
+        document.getElementById ("footernonfoodcontactbrooklyn").style.opacity=1
         // show popup
-        const $improperpopup =  document.getElementById ('improperpopup')
-        console.log ($improperpopup)  
-        $improperpopup.style.display="block"
+        const $improperpopupbrooklyn =  document.getElementById ('improperpopupbrooklyn')
+        console.log ($improperpopupbrooklyn)  
+        $improperpopupbrooklyn.style.display="block"
         //close popup
-        $improperpopup.addEventListener('click', function(){
-        $improperpopup.style.display= "none"}
+        $improperpopupbrooklyn.addEventListener('click', function(){
+        $improperpopupbrooklyn.style.display= "none"}
         )
     }) 
    
 
-   const $plumbing= document.getElementById ("plumbing")
-   $plumbing.addEventListener("click",function (){
-       console.log($plumbing)
+   const $plumbingbrooklyn= document.getElementById ("plumbingbrooklyn")
+   $plumbingbrooklyn.addEventListener("click",function (){
+       console.log($plumbingbrooklyn)
        // hide light
-      $plumbing.style.display="none"
+      $plumbingbrooklyn.style.display="none"
        // show light in footer
-       document.getElementById ("footerplumbing").style.opacity=1
+       document.getElementById ("footerplumbingbrooklyn").style.opacity=1
        // show popup
-       const $plumbingpopup =  document.getElementById ('plumbingpopup')
-       console.log ($plumbingpopup)  
-       $plumbingpopup.style.display="block"
+       const $plumbingpopupbrooklyn =  document.getElementById ('plumbingpopupbrooklyn')
+       console.log ($plumbingpopupbrooklyn)  
+       $plumbingpopupbrooklyn.style.display="block"
        //close popup
-       $plumbingpopup.addEventListener('click', function(){
-       $plumbingpopup.style.display= "none"}
+       $plumbingpopupbrooklyn.addEventListener('click', function(){
+       $plumbingpopupbrooklyn.style.display= "none"}
        )
       })
       
-      const $uncleansurface= document.getElementById ("uncleansurface")
-      $uncleansurface.addEventListener("click",function (){
-          console.log($uncleansurface)
+      const $uncleansurfacebrooklyn= document.getElementById ("uncleansurfacebrooklyn")
+      $uncleansurfacebrooklyn.addEventListener("click",function (){
+          console.log($uncleansurfacebrooklyn)
           // hide light
-         $uncleansurface.style.display="none"
+         $uncleansurfacebrooklyn.style.display="none"
           // show light in footer
-          document.getElementById ("footeruncleansurface").style.opacity=1
+          document.getElementById ("footeruncleansurfacebrooklyn").style.opacity=1
           // show popup
-          const $uncleansurfacespopup =  document.getElementById ('uncleansurfacespopup')
-          console.log ($uncleansurfacespopup)  
-          $uncleansurfacespopup.style.display="block"
+          const $uncleansurfacespopupbrooklyn =  document.getElementById ('uncleansurfacespopupbrooklyn')
+          console.log ($uncleansurfacespopupbrooklyn)  
+          $uncleansurfacespopupbrooklyn.style.display="block"
           //close popup
-          $uncleansurfacespopup.addEventListener('click', function(){
-          $uncleansurfacespopup.style.display= "none"}
+          $uncleansurfacespopupbrooklyn.addEventListener('click', function(){
+          $uncleansurfacespopupbrooklynstyle.display= "none"}
           )
          })
 
-         const $pesticides= document.getElementById ("pesticides")
-         $pesticides.addEventListener("click",function (){
-             console.log($pesticides)
+         const $pesticidesbrooklyn= document.getElementById ("pesticides")
+         $pesticidesbrooklyn.addEventListener("click",function (){
+             console.log($pesticidesbrooklyn)
              // hide light
-            $pesticides.style.display="none"
+            $pesticidesbrooklyn.style.display="none"
              // show light in footer
-             document.getElementById ("footerpesticides").style.opacity=1
+             document.getElementById ("footerpesticidesbrooklyn").style.opacity=1
              // show popup
-             const $pesticidespopup =  document.getElementById ('pesticidespopup')
-             console.log ($pesticidespopup)  
-             $pesticidespopup.style.display="block"
+             const $pesticidespopupbrooklyn =  document.getElementById ('pesticidespopupbrooklyn')
+             console.log ($pesticidespopupbrooklyn)  
+             $pesticidespopupbrooklyn.style.display="block"
              //close popup
-             $pesticidespopup.addEventListener('click', function(){
-             $pesticidespopup.style.display= "none"}
+             $pesticidespopupbrooklyn.addEventListener('click', function(){
+             $pesticidespopupbrooklyn.style.display= "none"}
              )
             })
 
    
-const $map= document.getElementById ("map")
-$map.addEventListener("click",function (){
-    console.log($map)
+const $mapbrooklyn= document.getElementById ("mapbrooklyn")
+$mapbrooklyn.addEventListener("click",function (){
+    console.log($mapbrooklyn)
 //bring up map popup
-const $mappopup = document.getElementById ('mappopup')
-console.log (mappopup)
-mappopup.style.display = 'block'
+const $mappopupbrooklyn = document.getElementById ('mappopupbrooklyn')
+console.log (mappopupbrooklyn)
+mappopupbrooklyn.style.display = 'block'
    })
 
-   const mappopup = document.getElementById('mappopup')
-   console.log (mappopup)
-   mappopup.addEventListener('click', function() {
-    mappopup.style.display = 'none'
+   const mappopupbrooklyn = document.getElementById('mappopupbrooklyn')
+   console.log (mappopupbrooklyn)
+   mappopupbrooklyn.addEventListener('click', function() {
+    mappopupbrooklyn.style.display = 'none'
   })
 
-function gotoLocation(locationname){
-console.log (locationname)
+function gotoLocationbrooklyn(locationnamebrooklyn){
+console.log (locationnamebrooklyn)
 //hide all levels
-$kitchenLevel.style.display="none"
-$cafe1Level.style.display="none"
-$cafe2Level.style.display="none"
-$lunchlineLevel.style.display="none"
+$kitchenLevelbrooklyn.style.display="none"
+$cafe1Levelbrooklyn.style.display="none"
+$cafe2Levelbrooklyn.style.display="none"
+$lunchlineLevelbrooklyn.style.display="none"
 
 //show level for location name
 //use location name as id to find specific level element
-const selectedlevel=document.getElementById (locationname)
+const selectedlevel=document.getElementById (locationnamebrooklyn)
 console.log (selectedlevel)
 selectedlevel.style.display= "block"
 }
 
-function exitButton (buttonname) {
-    console.log (buttonname)
+function exitButtonbrooklyn (buttonnamebrooklyn) {
+    console.log (buttonnamebrooklyn)
     //hide popup once clicked
-    beginningpopup.style.display="none"
+    beginningpopupbrooklyn.style.display="none"
 }
