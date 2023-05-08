@@ -79,8 +79,8 @@ const $cafe1Levelbronx = document.getElementById('cafe1bronx')
 const $cafe2Levelbronx = document.getElementById('cafe2bronx')
 
 
-const totalNumberOfViolations = 10 // Change this to the total number of violations on each level
-let violationsFound = 0
+const totalNumberOfViolationsbronx = 10 // Change this to the total number of violations on each level
+let violationsFoundbronx = 0
 
 
 
@@ -102,9 +102,9 @@ $ratsbronx.style.display="none"
  $ratspopupbronx.addEventListener('click', function(){
  $ratspopupbronx.style.display= "none"
 
-   violationsFound = violationsFound + 1
+   violationsFoundbronx = violationsFoundbronx + 1
  
-   if (violationsFound === totalNumberOfViolations) {
+   if (violationsFoundbronx === totalNumberOfViolationsbronx) {
      showEndScreenbronx()
    }
 })
@@ -131,9 +131,9 @@ $lightbronx.addEventListener("click",function (){
     $lightingpopupbronx.addEventListener('click', function(){
     $lightingpopupbronx.style.display= "none"
     
-          violationsFound = violationsFound + 1
-    
-          if (violationsFound === totalNumberOfViolations) {
+    violationsFoundbronx = violationsFoundbronx + 1
+ 
+    if (violationsFoundbronx === totalNumberOfViolationsbronx) {
             showEndScreenbronx()
           }
       })
@@ -160,9 +160,9 @@ $fliesbronx.addEventListener("click",function (){
     $fliespopupbronx.addEventListener('click', function(){
     $fliespopupbronx.style.display= "none"
 
-        violationsFound = violationsFound + 1
-  
-        if (violationsFound === totalNumberOfViolations) {
+    violationsFoundbronx = violationsFoundbronx + 1
+ 
+    if (violationsFoundbronx === totalNumberOfViolationsbronx) {
           showEndScreenbronx()
         }
     })
@@ -187,9 +187,9 @@ $verminproofbronx.addEventListener("click",function (){
     //close popup
     $verminproofpopupbronx.addEventListener('click', function(){
     $verminproofpopupbronx.style.display= "none"
-        violationsFound = violationsFound + 1
-  
-        if (violationsFound === totalNumberOfViolations) {
+    violationsFoundbronx = violationsFoundbronx + 1
+ 
+    if (violationsFoundbronx === totalNumberOfViolationsbronx) {
           showEndScreenbronx()
         }
     })
@@ -230,9 +230,9 @@ $verminproofbronx.addEventListener("click",function (){
     $certificatepopupbronx.style.display= "none"
 
         
-        violationsFound = violationsFound + 1
-  
-        if (violationsFound === totalNumberOfViolations) {
+    violationsFoundbronx = violationsFoundbronx + 1
+ 
+    if (violationsFoundbronx === totalNumberOfViolationsbronx) {
           showEndScreenbronx()
         }
         function showEndScreenbronx() {
@@ -272,9 +272,9 @@ $verminproofbronx.addEventListener("click",function (){
         //close popup
         $handwashpopupbronx.addEventListener('click', function(){
         $handwashpopupbronx.style.display= "none"
-        violationsFound = violationsFound + 1
-  
-        if (violationsFound === totalNumberOfViolations) {
+        violationsFoundbronx = violationsFoundbronx + 1
+ 
+        if (violationsFoundbronx === totalNumberOfViolationsbronx) {
           showEndScreenbronx()
         }
         function showEndScreenbronx() {
@@ -301,9 +301,9 @@ $verminproofbronx.addEventListener("click",function (){
         $contaminationpopupbronx.addEventListener('click', function(){
         $contaminationpopupbronx.style.display= "none"
     
-            violationsFound = violationsFound + 1
-      
-            if (violationsFound === totalNumberOfViolations) {
+        violationsFoundbronx = violationsFoundbronx + 1
+ 
+        if (violationsFoundbronx === totalNumberOfViolationsbronx) {
               showEndScreenbronx()
             }
         })
@@ -329,9 +329,9 @@ $verminproofbronx.addEventListener("click",function (){
         $bulbpopupbronx.addEventListener('click', function(){
         $bulbpopupbronx.style.display= "none"
     
-            violationsFound = violationsFound + 1
-      
-            if (violationsFound === totalNumberOfViolations) {
+        violationsFoundbronx = violationsFoundbronx + 1
+ 
+        if (violationsFoundbronx === totalNumberOfViolationsbronx) {
               showEndScreenbronx()
             }
       })
@@ -356,9 +356,9 @@ $verminproofbronx.addEventListener("click",function (){
         //close popup
         $improperpopupbronx.addEventListener('click', function(){
         $improperpopupbronx.style.display= "none"
-         violationsFound = violationsFound + 1
-       
-         if (violationsFound === totalNumberOfViolations) {
+        violationsFoundbronx = violationsFoundbronx + 1
+ 
+        if (violationsFoundbronx === totalNumberOfViolationsbronx) {
            showEndScreenbronx()
          }
        })
@@ -384,9 +384,9 @@ $verminproofbronx.addEventListener("click",function (){
        //close popup
        $plumbingpopupbronx.addEventListener('click', function(){
        $plumbingpopupbronx.style.display= "none"
-       violationsFound = violationsFound + 1
-       
-       if (violationsFound === totalNumberOfViolations) {
+       violationsFoundbronx = violationsFoundbronx + 1
+ 
+       if (violationsFoundbronx === totalNumberOfViolationsbronx) {
          showEndScreenbronx()
        }
       })
@@ -430,8 +430,8 @@ selectedlevel.style.display= "block"
 
 
 
-function exitButtonbronx(buttonnamebrooklyn) {
-    console.log (buttonnamebrooklyn)
+function exitButtonbronx(buttonnamebronx) {
+    console.log (buttonnamebronx)
     //hide popup once clicked
     beginningpopupbronx.style.display="none"
     
@@ -476,7 +476,8 @@ const $cafe1Levelbrooklyn = document.getElementById('cafe1brooklyn')
 const $cafe2Levelbrooklyn = document.getElementById('cafe2brooklyn')
 const $lunchlineLevelbrooklyn = document.getElementById('lunchlinebrooklyn')
 
-
+const totalNumberOfViolationsbrooklyn = 10 // Change this to the total number of violations on each level
+let violationsFoundbrooklyn = 0
 
 const $ratsbrooklyn= document.getElementById ("ratsbrooklyn")
 
@@ -493,9 +494,9 @@ $ratspopupbrooklyn.style.display="block"
 //close popup
 $ratspopupbrooklyn.addEventListener('click', function(){
 $ratspopupbrooklyn.style.display= "none"
-violationsFound = violationsFound + 1
+violationsFoundbrooklyn = violationsFoundbrooklyn + 1
     
-if (violationsFound === totalNumberOfViolations) {
+if (violationsFoundbrooklyn === totalNumberOfViolationsbrooklyn) {
   showEndScreenbrooklyn()
 }
 })
@@ -521,9 +522,9 @@ $fliesbrooklyn.addEventListener("click",function (){
     //close popup
     $fliespopupbrooklyn.addEventListener('click', function(){
     $fliespopupbrooklyn.style.display= "none"
-    violationsFound = violationsFound + 1
+    violationsFoundbrooklyn = violationsFoundbrooklyn + 1
     
-    if (violationsFound === totalNumberOfViolations) {
+    if (violationsFoundbrooklyn === totalNumberOfViolationsbrooklyn) {
       showEndScreenbrooklyn()
     }
     })
@@ -549,9 +550,9 @@ $verminproofbrooklyn.addEventListener("click",function (){
     //close popup
     $verminproofpopupbrooklyn.addEventListener('click', function(){
     $verminproofpopupbrooklyn.style.display= "none"
-    violationsFound = violationsFound + 1
+    violationsFoundbrooklyn = violationsFoundbrooklyn + 1
     
-    if (violationsFound === totalNumberOfViolations) {
+    if (violationsFoundbrooklyn === totalNumberOfViolationsbrooklyn) {
       showEndScreenbrooklyn()
     }
 })
@@ -592,9 +593,9 @@ $certificatepopupbrooklyn.style.display="block"
 //close popup
 $certificatepopupbrooklyn.addEventListener('click', function(){
 $certificatepopupbrooklyn.style.display= "none"
-violationsFound = violationsFound + 1
+violationsFoundbrooklyn = violationsFoundbrooklyn + 1
     
-if (violationsFound === totalNumberOfViolations) {
+if (violationsFoundbrooklyn === totalNumberOfViolationsbrooklyn) {
   showEndScreenbrooklyn()
 }
 })
@@ -622,9 +623,9 @@ $endpopupbrooklyn.style.display="block"
         //close popup
         $contaminationpopupbrooklyn.addEventListener('click', function(){
         $contaminationpopupbrooklyn.style.display= "none"
-        violationsFound = violationsFound + 1
+        violationsFoundbrooklyn = violationsFoundbrooklyn + 1
     
-        if (violationsFound === totalNumberOfViolations) {
+        if (violationsFoundbrooklyn === totalNumberOfViolationsbrooklyn) {
           showEndScreenbrooklyn()
         }
     })
@@ -650,9 +651,9 @@ $endpopupbrooklyn.style.display="block"
         //close popup
         $bulbpopupbrooklyn.addEventListener('click', function(){
         $bulbpopupbrooklyn.style.display= "none"
-        violationsFound = violationsFound + 1
+        violationsFoundbrooklyn = violationsFoundbrooklyn + 1
     
-        if (violationsFound === totalNumberOfViolations) {
+        if (violationsFoundbrooklyn === totalNumberOfViolationsbrooklyn) {
           showEndScreenbrooklyn()
         }
         })
@@ -678,9 +679,9 @@ $endpopupbrooklyn.style.display="block"
         //close popup
         $improperpopupbrooklyn.addEventListener('click', function(){
         $improperpopupbrooklyn.style.display= "none"
-        violationsFound = violationsFound + 1
+        violationsFoundbrooklyn = violationsFoundbrooklyn + 1
     
-        if (violationsFound === totalNumberOfViolations) {
+        if (violationsFoundbrooklyn === totalNumberOfViolationsbrooklyn) {
           showEndScreenbrooklyn()
         }
         })
@@ -707,9 +708,9 @@ $endpopupbrooklyn.style.display="block"
        //close popup
        $plumbingpopupbrooklyn.addEventListener('click', function(){
        $plumbingpopupbrooklyn.style.display= "none"
-       violationsFound = violationsFound + 1
+       violationsFoundbrooklyn = violationsFoundbrooklyn + 1
     
-       if (violationsFound === totalNumberOfViolations) {
+       if (violationsFoundbrooklyn === totalNumberOfViolationsbrooklyn) {
          showEndScreenbrooklyn()
        }
        })
@@ -735,9 +736,9 @@ $endpopupbrooklyn.style.display="block"
           //close popup
           $uncleansurfacespopupbrooklyn.addEventListener('click', function(){
           $uncleansurfacespopupbrooklyn.style.display= "none"
-          violationsFound = violationsFound + 1
+          violationsFoundbrooklyn = violationsFoundbrooklyn + 1
     
-          if (violationsFound === totalNumberOfViolations) {
+          if (violationsFoundbrooklyn === totalNumberOfViolationsbrooklyn) {
             showEndScreenbrooklyn()
           }
           })
@@ -763,9 +764,9 @@ $endpopupbrooklyn.style.display="block"
              //close popup
              $pesticidespopupbrooklyn.addEventListener('click', function(){
              $pesticidespopupbrooklyn.style.display= "none"
-             violationsFound = violationsFound + 1
+             violationsFoundbrooklyn = violationsFoundbrooklyn + 1
     
-             if (violationsFound === totalNumberOfViolations) {
+             if (violationsFoundbrooklyn === totalNumberOfViolationsbrooklyn) {
                showEndScreenbrooklyn()
              }
              })
@@ -844,6 +845,404 @@ function showEndScreenCongrats() {
 //END BROOKLYN
 
 //START QUEENS
+const $kitchenLevelqueens = document.getElementById('kitchenqueens')
+const $cafe1Levelqueens = document.getElementById('cafe1queens')
+const $cafe2Levelqueens = document.getElementById('cafe2queens')
+const $lunchlineLevelqueens = document.getElementById('lunchlinequeens')
+
+const totalNumberOfViolationsqueens = 10 // Change this to the total number of violations on each level
+let violationsFoundqueens = 0
+
+
+
+
+const $ratsqueens= document.getElementById ("ratsqueens")
+
+$ratsqueens.addEventListener("click",function (){
+ console.log($ratsqueens)
+ // hide rats
+$ratsqueens.style.display="none"
+ // show rat in footer
+ document.getElementById ("footerratsqueens").style.opacity=1
+ // show popup
+
+ const $ratspopupqueens =  document.getElementById ('ratspopupqueens')
+ console.log ($ratspopupqueens)  
+ $ratspopupqueens.style.display="block"
+ //close popup
+ $ratspopupqueens.addEventListener('click', function(){
+ $ratspopupqueens.style.display= "none"
+
+   violationsFoundqueens = violationsFoundqueens + 1
+ 
+   if (violationsFoundqueens === totalNumberOfViolationsqueens) {
+     showEndScreenqueens()
+   }
+})
+   function showEndScreenqueens() {
+    const $endpopupqueens =  document.getElementById ('endpopupqueens')
+    console.log ($endpopupqueens)  
+    $endpopupqueens.style.display="block"
+}
+ })
+
+const $roachqueens= document.getElementById ("roachqueens")
+$roachqueens.addEventListener("click",function (){
+    console.log($roachqueens)
+    // hide light
+   $roachqueens.style.display="none"
+    // show light in footer
+    document.getElementById ("footerroachqueens").style.opacity=1
+    // show popup
+    
+    const $roachpopupqueens =  document.getElementById ('roachpopupqueens')
+    console.log ($roachpopupqueens)  
+    $roachpopupqueens.style.display="block"
+    //close popup
+    $roachpopupqueens.addEventListener('click', function(){
+    $roachpopupqueens.style.display= "none"
+    
+    violationsFoundqueens = violationsFoundqueens + 1
+ 
+    if (violationsFoundqueens === totalNumberOfViolationsqueens) {
+            showEndScreenqueens()
+          }
+      })
+      function showEndScreenqueens() {
+        const $endpopupqueens =  document.getElementById ('endpopupqueens')
+        console.log ($endpopupqueens)  
+        $endpopupqueens.style.display="block"
+    }
+})
+   
+const $fliesqueens= document.getElementById ("fliesqueens")
+$fliesqueens.addEventListener("click",function (){
+    console.log($fliesqueens)
+    // hide light
+   $fliesqueens.style.display="none"
+    // show light in footer
+    document.getElementById ("footerfliesqueens").style.opacity=1
+    // show popup
+    
+    const $fliespopupqueens =  document.getElementById ('fliespopupqueens')
+    console.log ($fliespopupqueens)  
+    $fliespopupqueens.style.display="block"
+    //close popup
+    $fliespopupqueens.addEventListener('click', function(){
+    $fliespopupqueens.style.display= "none"
+
+    violationsFoundqueens = violationsFoundqueens + 1
+ 
+    if (violationsFoundqueens === totalNumberOfViolationsqueens) {
+          showEndScreenqueens()
+        }
+    })
+    function showEndScreenqueens() {
+        const $endpopupqueens =  document.getElementById ('endpopupqueens')
+        console.log ($endpopupqueens)  
+        $endpopupqueens.style.display="block"
+    }
+}) 
+
+const $verminproofqueens= document.getElementById ("verminproofqueens")
+$verminproofqueens.addEventListener("click",function (){
+    console.log($verminproofqueens)
+    // hide light
+   $verminproofqueens.style.display="none"
+    // show light in footer
+    document.getElementById ("footerverminproofqueens").style.opacity=1
+    // show popup
+    const $verminproofpopupqueens =  document.getElementById ('verminproofpopupqueens')
+    console.log ($verminproofpopupqueens)  
+    $verminproofpopupqueens.style.display="block"
+    //close popup
+    $verminproofpopupqueens.addEventListener('click', function(){
+    $verminproofpopupqueens.style.display= "none"
+    violationsFoundqueens = violationsFoundqueens + 1
+ 
+    if (violationsFoundqueens === totalNumberOfViolationsqueens) {
+          showEndScreenqueens()
+        }
+    })
+    function showEndScreenqueens() {
+        const $endpopupqueens =  document.getElementById ('endpopupqueens')
+        console.log ($endpopupqueens)  
+        $endpopupqueens.style.display="block"
+    }
+})  
+   const $chefqueens= document.getElementById ("chefqueens")
+   $chefqueens.addEventListener("click",function (){
+       console.log($chefqueens)
+       // hide rats
+      $chefqueens.style.display="none"
+       // show rat in footer
+       document.getElementById ("footercertificatequeens").style.opacity=1
+       // show popup
+    const $chefpopupqueens =  document.getElementById ('chefpopupqueens')
+     console.log ($chefpopupqueens)  
+    $chefpopupqueens.style.display="block"
+    //change apron color
+    const $aproncolor1queens =  document.getElementById ('characterbox2queens')
+    console.log ($aproncolor1queens)  
+   $aproncolor1queens.style.display="block"
+      })
+     
+      function exitButton2queens (chefbuttonqueens){ 
+        console.log (chefbuttonqueens)
+        //hide popup once clicked
+        const $chefpopupqueens= document.getElementById ('chefpopupqueens')
+        $chefpopupqueens.style.display="none"
+    //show new popup
+    const $certificatepopupqueens =  document.getElementById ('certificatepopupqueens')
+    console.log ($certificatepopupqueens)  
+    $certificatepopupqueens.style.display="block"
+    //close popup
+    $certificatepopupqueens.addEventListener('click', function(){
+    $certificatepopupqueens.style.display= "none"
+
+        
+    violationsFoundqueens = violationsFoundqueens + 1
+ 
+    if (violationsFoundqueens === totalNumberOfViolationsqueens) {
+          showEndScreenqueens()
+        }
+        function showEndScreenqueens() {
+            const $endpopupqueens =  document.getElementById ('endpopupqueens')
+            console.log ($endpopupqueens)  
+            $endpopupqueens.style.display="block"
+        }
+    })}
+
+
+    const $uncleansurfacequeens= document.getElementById ("uncleansurfacesqueens")
+    $uncleansurfacequeens.addEventListener("click",function (){
+        console.log($uncleansurfacequeens)
+        // hide light
+       $uncleansurfacequeens.style.display="none"
+        // show light in footer
+        document.getElementById ("footeruncleansurfacequeens").style.opacity=1
+        // show popup
+        const $uncleansurfacespopupqueens =  document.getElementById ('uncleansurfacespopupqueens')
+        console.log ($uncleansurfacespopupqueens)  
+        $uncleansurfacespopupqueens.style.display="block"
+        //close popup
+        $uncleansurfacespopupqueens.addEventListener('click', function(){
+        $uncleansurfacespopupqueens.style.display= "none"
+        violationsFoundqueens = violationsFoundqueens + 1
+ 
+        if (violationsFoundqueens === totalNumberOfViolationsqueens) {
+          showEndScreenqueens()
+        }
+        })
+        function showEndScreen() {
+        const $endpopupqueens =  document.getElementById ('endpopupqueens')
+        console.log ($endpopupqueens)  
+        $endpopupqueens.style.display="block"
+       }
+        
+       })
+     
+
+
+    const $contaminationqueens= document.getElementById ("contaminationqueens")
+    $contaminationqueens.addEventListener("click",function (){
+        console.log($contaminationqueens)
+        // hide light
+       $contaminationqueens.style.display="none"
+        // show light in footer
+        document.getElementById ("footercontaminationqueens").style.opacity=1
+        // show popup
+        const $contaminationpopupqueens =  document.getElementById ('contaminationpopupqueens')
+        console.log ($contaminationpopupqueens)  
+        $contaminationpopupqueens.style.display="block"
+        //close popup
+        $contaminationpopupqueens.addEventListener('click', function(){
+        $contaminationpopupqueens.style.display= "none"
+    
+        violationsFoundqueens = violationsFoundqueens + 1
+ 
+        if (violationsFoundqueens === totalNumberOfViolationsqueens) {
+              showEndScreenqueens()
+            }
+        })
+        function showEndScreenqueens() {
+            const $endpopupqueens =  document.getElementById ('endpopupqueens')
+            console.log ($endpopupqueens)  
+            $endpopupqueens.style.display="block"
+        }
+    }) 
+
+    const $bulbqueens= document.getElementById ("bulbqueens")
+    $bulbqueens.addEventListener("click",function (){
+        console.log($bulbqueens)
+        // hide light
+       $bulbqueens.style.display="none"
+        // show light in footer
+        document.getElementById ("footerbulbqueens").style.opacity=1
+        // show popup
+        const $bulbpopupqueens =  document.getElementById ('bulbpopupqueens')
+        console.log ($bulbpopupqueens)  
+        $bulbpopupqueens.style.display="block"
+        //close popup
+        $bulbpopupqueens.addEventListener('click', function(){
+        $bulbpopupqueens.style.display= "none"
+    
+        violationsFoundqueens = violationsFoundqueens + 1
+ 
+        if (violationsFoundqueens === totalNumberOfViolationsqueens) {
+              showEndScreenqueens()
+            }
+      })
+      function showEndScreenqueens() {
+        const $endpopup =  document.getElementById ('endpopupqueens')
+        console.log ($endpopupqueens)  
+        $endpopupqueens.style.display="block"
+    }
+    }) 
+
+    const $improperqueens= document.getElementById ("nonfoodcontactqueens")
+    $improperqueens.addEventListener("click",function (){
+        console.log($improperqueens)
+        // hide light
+       $improperqueens.style.display="none"
+        // show light in footer
+        document.getElementById ("footernonfoodcontactqueens").style.opacity=1
+        // show popup
+        const $improperpopupqueens =  document.getElementById ('improperpopupqueens')
+        console.log ($improperpopupqueens)  
+        $improperpopupqueens.style.display="block"
+        //close popup
+        $improperpopupqueens.addEventListener('click', function(){
+        $improperpopupqueens.style.display= "none"
+        violationsFoundqueens = violationsFoundqueens + 1
+ 
+        if (violationsFoundqueens === totalNumberOfViolationsqueens) {
+           showEndScreenqueens()
+         }
+       })
+       function showEndScreenqueens() {
+        const $endpopupqueens =  document.getElementById ('endpopupqueens')
+        console.log ($endpopupqueens)  
+        $endpopupqueens.style.display="block"
+    }
+    }) 
+   
+
+   const $plumbingqueens= document.getElementById ("plumbingqueens")
+   $plumbingqueens.addEventListener("click",function (){
+       console.log($plumbingqueens)
+       // hide light
+      $plumbingqueens.style.display="none"
+       // show light in footer
+       document.getElementById ("footerplumbingqueens").style.opacity=1
+       // show popup
+       const $plumbingpopupqueens =  document.getElementById ('plumbingpopupqueens')
+       console.log ($plumbingpopupqueens)  
+       $plumbingpopupqueens.style.display="block"
+       //close popup
+       $plumbingpopupqueens.addEventListener('click', function(){
+       $plumbingpopupqueens.style.display= "none"
+       violationsFoundqueens = violationsFoundqueens + 1
+ 
+       if (violationsFoundqueens === totalNumberOfViolationsqueens) {
+         showEndScreenqueens()
+       }
+      })
+      function showEndScreenqueens() {
+        const $endpopupqueens =  document.getElementById ('endpopupqueens')
+        console.log ($endpopupqueens)  
+        $endpopupqueens.style.display="block"
+    }
+      })
+   
+const $mapqueens= document.getElementById ("mapqueens")
+$mapqueens.addEventListener("click",function (){
+    console.log($mapqueens)
+//bring up map popup
+const $mappopupqueens = document.getElementById ('mappopupqueens')
+console.log ($mappopupqueens)
+$mappopupqueens.style.display = 'block'
+   })
+
+   const mappopupqueens = document.getElementById('mappopupqueens')
+   console.log (mappopupqueens)
+   mappopupqueens.addEventListener('click', function() {
+    mappopupqueens.style.display = 'none'
+  })
+
+function gotoLocationqueens(locationnamequeens){
+console.log (locationnamequeens)
+//hide all levels
+$kitchenLevelqueens.style.display="none"
+$cafe1Levelqueens.style.display="none"
+$cafe2Levelqueens.style.display="none"
+$lunchlineLevelqueens.style.display="none"
+
+//show level for location name
+//use location name as id to find specific level element
+const selectedlevel=document.getElementById (locationnamequeens)
+console.log (selectedlevel)
+selectedlevel.style.display= "block"
+}
+
+function exitButtonqueens(buttonnamequeens) {
+    console.log (buttonnamequeens)
+    //hide popup once clicked
+    beginningpopupqueens.style.display="none"
+}
+
+function gotoLevelSelectqueens (buttonname) {
+   endpopupqueens.style.display="none"
+   $bronxLevel.style.display="none"
+   $brooklynLevel.style.display="none"
+   $queensLevel.style.display="none"
+   $manhattanLevel.style.display="none"
+   $statenislandLevel.style.display="none"
+   $enterscreen.style.display="none"
+   $levelselect.style.display="block"
+   
+   const $queensfinished = document.getElementById ('queensfinished')
+   console.log ($queensfinished)
+   $queensfinished.style.display = 'block'
+   levelsFinished = levelsFinished+ 1
+    
+   if (levelsFinished === totalNumberOfLevels) {
+     showEndScreenCongrats()
+   }
+}
+function showEndScreenCongrats() {
+ const $endpopupcongrats =  document.getElementById ('endpopupcongrats')
+ console.log ($endpopupcongrats)  
+ $endpopupcongrats.style.display="block"
+
+}
+
+
+
+  
+
+
+
+
+ 
+
+   
+    
+
+    
+
+
+   
+    
+
+
+
+  
+
+
+
+
+
 
 
   
