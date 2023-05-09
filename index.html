@@ -12,26 +12,34 @@
     <link rel="stylesheet" href="mystyle.css" type="text/css"/>
   </head>
   <body> 
-    <audio id="levelselectmusic" src="levelselectmusic.mp3"></audio>
-    <audio id="bronxmusic" src="bronxmusic.mp3"></audio>
-    <audio id="brooklynmusic" src="brooklynmusic.mp3"></audio>
-    <audio id="queensmusic" src="queensmusic.mp3"></audio>
-    <audio id="manhattanmusic" src="manhattanmusic.mp3"></audio>
-    <audio id="statenislandmusic" src="statenislandmusic.mp3"></audio>
-    <audio id="levelpassedmusic" src="levelpassedmusic.mp3"></audio>
-    <audio id="eleanorsound" src="eleanor sound.mp3"></audio>
-    <audio id="chefsound" src="chef sound.mp3"></audio>
-    <audio id="itemcollectsound" src="item collect sound.mp3"></audio>
-    <audio id="buttonclicksound" src="buttonclicksound.mp3"></audio>
+    <audio  loop id="levelselectmusic" src="levelselectmusic.mp3"></audio>
+    <audio  loop id="bronxmusic" src="bronxmusic.mp3"></audio>
+    <audio  loop id="brooklynmusic" src="brooklynmusic.mp3"></audio>
+    <audio  loop id="queensmusic" src="queensmusic.mp3"></audio>
+    <audio  loop id="manhattanmusic" src="manhattanmusic.mp3"></audio>
+    <audio  loop id="statenislandmusic" src="statenislandmusic.mp3"></audio>
+    <audio  loop id="levelpassedmusic" src="levelpassedmusic.mp3"></audio>
+    <audio   id="eleanorsound" src="eleanor sound.mp3"></audio>
+    <audio   id="chefsound" src="chef sound.mp3"></audio>
+    <audio   id="itemcollectsound" src="item collect sound.mp3"></audio>
+    <audio   id="buttonclicksound" src="buttonclicksound.mp3"></audio>
+    <audio  loop id="congratsmusic" src="congratsmusic.mp3"></audio>
  
     <div class="enterscreen" id="title-screen">
     <button class="fadeButton" id="fadeButton" onclick="gotoLocationEnter('levelselect')">Enter</button>
 <div class="fade"> <img src="enterscreen.png" alt=" Image"></div>
    
 </div>
-<div class="congrats" id="endpopupcongrats">
 
-</div>
+<div class="endpopupcongrats" id="endpopupcongrats">
+    <div class="endtitlepopupcongrats">You Have Cleaned Up Every School! Congrats!</div>
+    <div class="endwrituppopupcongrats">We knew you could do it! what a big help you have been to the city of New York. Take this medal to honor your achievements!</div>
+    <form method="get" action="medal.png" target="_blank">
+        <button class="endpopupcongratsbutton" id="endpopupcongratsbutton" type="submit">click me!!</button>
+     </form>
+     <div class="medal" id="medal"><img src="medal.png" width="170px"></div>
+     <canvas class="confetti" id="canvas"></canvas>
+   </div>
 
     <div class="levelselect" id="levelselect">
     <div class="brooklyn1">BROOKLYN</div>
@@ -40,15 +48,15 @@
     <div class="manhattan1">MANHATTAN</div>
     <div class="queens1">QUEENS</div>
 
-    <div class="queens"><img src="queensschool.png" width="300px" alt=" Image" onclick="gotoLocationLevels('queens')" onclick="playMusic ('queenslevelmusic')"></div>
+    <div class="queens" id="queensschool"><img src="queensschool.png" width="300px" alt=" Image" onclick="gotoLocationLevels('queens')" onclick="playMusic ('queenslevelmusic')"></div>
     <div class="queensfinished"id="queensfinished"><img src="finished schools.png" width="300px" alt=" Image"></div>
-    <div class="manhattan"><img src="manhattanschool.png" width="300px" alt=" Image" onclick="gotoLocationLevels('manhattan')"onclick="playMusic ('manhattanlevelmusic')"></div>
+    <div class="manhattan" id="manhattanschool"><img src="manhattanschool.png" width="300px" alt=" Image" onclick="gotoLocationLevels('manhattan')"onclick="playMusic ('manhattanlevelmusic')"></div>
     <div class="manhattanfinished"id="manhattanfinished"><img src="finished schools.png" width="300px" alt=" Image"></div>
-    <div class="statenisland"><img src="statenislandschool.png" width="300px" alt=" Image" onclick="gotoLocationLevels('statenisland')"onclick="playMusic ('statenislandlevelmusic')"></div>
+    <div class="statenisland" id="statenislandschool"><img src="statenislandschool.png" width="300px" alt=" Image" onclick="gotoLocationLevels('statenisland')"onclick="playMusic ('statenislandlevelmusic')"></div>
     <div class="statenislandfinished"id="statenislandfinished"><img src="finished schools.png" width="300px" alt=" Image"></div>
-     <div class="brooklyn"><img src="brooklynschool.png" width="300px" alt=" Image" onclick="gotoLocationLevels('brooklyn')"onclick="playMusic ('brooklynlevelmusic')"></div>
+     <div class="brooklyn" id="brooklynschool"><img src="brooklynschool.png" width="300px" alt=" Image" onclick="gotoLocationLevels('brooklyn')"onclick="playMusic ('brooklynlevelmusic')"></div>
      <div class="brooklynfinished"id="brooklynfinished"><img src="finished schools.png" width="300px" alt=" Image"></div>
-    <div class="bronx"><img src="bronxschool.png" width="300px" alt=" Image" onclick="gotoLocationLevels('bronx')"onclick="playMusic ('bronxlevelmusic')"></div>
+    <div class="bronx" id="bronxschool"><img src="bronxschool.png" width="300px" alt=" Image" onclick="gotoLocationLevels('bronx')"onclick="playMusic ('bronxlevelmusic')"></div>
     <div class="bronxfinished"id="bronxfinished"><img src="finished schools.png" width="300px" alt=" Image"></div>
     <div class="back"> <img src="backgroundlevelselect.png" width="103%" alt="Enter Image"></div>
 
@@ -272,7 +280,7 @@
       <div class="endpopupbrooklyn" id="endpopupbrooklyn">
         <div class="endtitlebrooklyn">You Have Found All The Health Code Violations!</div>
         <div class="endwritupbrooklyn">Hurry now, brave inspector. We have many more schools to go through!</div>
-        <button class="buttonlastbrooklyn" onclick="gotoLevelSelectbrooklyn ('finalbuttonbrooklyn')">Continue to <br> next school</button>
+        <button class="buttonlastbrooklyn" onclick="gotoLevelSelectbrooklyn ('finalbuttonbrooklyn')" >Continue to <br> next school</button>
        </div>
   
       <div class="mapbrooklyn" id="mapbrooklyn"><img src="map.png" width="20%" height="20%"></div>
@@ -604,11 +612,356 @@
 </div>
 
 <div id="manhattan">
-
+    <div class="beginningpopupmanhattan" id="beginningpopupmanhattan">
+        <div class="topwritingmanhattan">
+          Welcome Cafeteria Inspectors!
+        </div>
+        <div class="frontwritingmanhattan">
+          Thank heavens you’re here. We need your help to clean up this school! Find all the violations in this cafeteria and click on them to capture them. Good luck!
+        </div>
+        <div class="mapwritingmanhattan">
+          This is your Map. <br> Use it to navigate <br> around the different <br> cafeteria areas.
+        </div>
+        <div class="apronwritingmanhattan">
+         This keeps track of the people <br> you need to talk to. Click on <br> workers to interact with them!
+        </div>
+        <div class="footerwritingmanhattan">
+          This is your violation bar. All of the health code violations you’ve found will show here! 
+        </div>
+        <div class="maptinymanhattan"><img src="map.png" width='120px' alt="tiny map"></div>
+        <div class="apron1tinymanhattan"><img src="apronunlock.png" width='120px' alt="apron tiny"></div>
+        <div class="apron2tinymanhattan"><img src="fullapron.png" width='120px' alt="apron tiny"></div> 
+        <div class="footertinymanhattan"><img src="footertiny.png" width='360px' alt="tiny footer"></div>
+       <button class="buttonfirstmanhattan" onclick="exitButtonmanhattan('instructionbuttonmanhattan')">Continue</button>
+      </div>
+      
+      <div class="endpopupmanhattan" id="endpopupmanhattan">
+        <div class="endtitlemanhattan">You Have Found All The Health Code Violations!</div>
+        <div class="endwritupmanhattan">Hurry now, brave inspector. We have many more schools to go through!</div>
+        <button class="buttonlastmanhattan" onclick="gotoLevelSelectmanhattan('finalbuttonmanhattan')">Continue to <br> next school</button>
+       </div>
+   
+  
+  
+      <div class="mapmanhattan" id="mapmanhattan"><img src="map.png" width="20%" height="20%"></div>
+      
+     <div class="characterboxmanhattan">
+      <div class="apronunlock1manhattan"><img align="right" src="apronunlock copy.png" width="15%" height="15%"></div>
+     
+  </div>
+  
+  <div class="characterbox2manhattan" id="characterbox2manhattan">
+    <div class="apronunlock3manhattan"><img align="right" src="fullapron.png" width="15%" height="15%"></div>
+  </div>
+  
+  
+  
+  <div class="ratspopupmanhattan" id="ratspopupmanhattan">
+    <div class="titlehealthmanhattan">You Found A Health Code Violation!</div>
+    <div class="rattitlemanhattan">Rats</div>
+    <div class="ratwritupmanhattan">Wild rats carry many diseases that can contaminate food. They are most often found in Manhattan and the Bronx. In Manhattan, they are found in 10.60% of public schools, or 415 schools.</div>
+  <div class="ratviolationmanhattan"><img src="rats.png" width='200px' alt="rats"></div>
+  </div>
+  
+  <div class="badlightingpopupmanhattan" id="badlightingpopupmanhattan">
+    <div class="titlehealthmanhattan">You Found A Health Code Violation!</div>
+    <div class="lightingtitlemanhattan">Inadequate lighting</div>
+    <div class="lightingwritupmanhattan">Inadequate lighting can lead to injuries due to minimized range of vision This is most often found in Staten Island and the Bronx. In Manhattan, it is found in 2.60% of public schools, or 103 schools.</div>
+  <div class="lightingviolationmanhattan"><img src="badlighting.png" width='250px' alt="lighting"></div>
+  </div>
+  
+  <div class="fliespopupmanhattan" id="fliespopupmanhattan">
+    <div class="titlehealthmanhattan">You Found A Health Code Violation!</div>
+    <div class="fliestitlemanhattan">Filth Flies</div>
+    <div class="flieswritupmanhattan">Filth flies carry diseases and can lay eggs in food, which hatch into maggots. They are most often found in Manhattan and Queens. In Manhattan, they are found in 2.70% of public schools, or 106 schools.</div>
+  <div class="fliesviolationmanhattan"><img src="flies.png" width='200px' alt="flies"></div>
+  </div>
+  
+  <div class="verminproofpopupmanhattan" id="verminproofpopupmanhattan">
+    <div class="titlehealthmanhattan">You Found A Health Code Violation!</div>
+    <div class="verminprooftitlemanhattan">Facility not vermin proof</div>
+    <div class="verminproofwritupmanhattan">While not as bad as actual mice and rats, this is still an invitation for them. This problem is most often found in Manhattan and Queens. In Manhattan, this is found in 11.80% of public schools, or 461 schools.</div>
+  <div class="verminproofviolationmanhattan"><img src="verminproof.png" width='200px' alt="verminproof"></div>
+  </div>
+  
+  
+  <div class="temppopupmanhattan" id="temppopupmanhattan">
+    <div class="titlehealthmanhattan">You Found A Health Code Violation!</div>
+    <div class="temptitlemanhattan">Accurate thermometer not provided</div>
+    <div class="tempwritupmanhattan">Improper temperatures can lead to spoiled food and sickness. This is most often seen in Manhattan. In Manhattan, it is seen in 2.20% of public schools, or 86 schools.</div>
+  <div class="tempviolationmanhattan"><img src="temp.png" width='100px' alt="temp"></div>
+  </div>
+  
+  <div class="contaminationpopupmanhattan" id="contaminationpopupmanhattan">
+    <div class="titlehealthmanhattan">You Found A Health Code Violation!</div>
+    <div class="contaminationtitlemanhattan">food not protected from contamination</div>
+    <div class="contaminationwritupmanhattan">Food left out in sub-optimal temperatures can be cause many illnesses. This is most often found in Manhattan and Brooklyn. In Manhattan, it is found in 3.20% of public schools, or 124 schools.</div>
+  <div class="contaminationviolationmanhattan"><img src="contamination.png" width='200px' alt="contamination"></div>
+  </div>
+  
+  <div class="bulbpopupmanhattan" id="bulbpopupmanhattan">
+    <div class="titlehealthmanhattan">You Found A Health Code Violation!</div>
+    <div class="bulbtitlemanhattan">Light bulb not shielded or shatterproof</div>
+    <div class="bulbwritupmanhattan">Light bulbs unprotected or improperly built can lead to burns or shattered glass. These are most often found in Staten Island and Manhattan. In Manhattan, it is found in 4.20% of public schools, or 164 schools.</div>
+  <div class="bulbviolationmanhattan"><img src="bulb.png" width='200px' alt="bulb"></div>
+  </div>
+  
+  <div class="improperpopupmanhattan" id="improperpopupmanhattan">
+    <div class="titlehealthmanhattan">You Found A Health Code Violation!</div>
+    <div class="impropertitlemanhattan">Surface improperly constructed</div>
+    <div class="improperwritupmanhattan">Food left out on surfaces not constructed for food can become hazardous. This is most often found in Staten Island and the Bronx. In Manhattan, it is found in 29.90% of public schools, or 1171 schools.</div>
+  <div class="improperviolationmanhattan"><img src="nonfoodcontact.png" width='250px' alt="improperfoodsurface"></div>
+  </div>
+  
+  <div class="chefpopupmanhattan" id="chefpopupmanhattan">
+    <div class="titlechefmanhattan">CHEF</div>
+    <div class="dialogchefmanhattan">What’s the big deal? So what I don’t have a certificate? Who cares? <br> I got 800 kids to feed, MOVE! </div>
+  <div class="chefheadmanhattan"><img src="chef head.png" width='400px' alt="chef head"></div>
+    <button class="chefbuttonmanhattan" onclick="exitButton2manhattan('chefbuttonmanhattan')">Continue</button>
+  </div>
+  
+  <div class="certificatepopupmanhattan" id="certificatepopupmanhattan">
+    <div class="titlehealthmanhattan">You Found A Health Code Violation!</div>
+    <div class="certtitlemanhattan">Food Protection Certificate not held by supervisor</div>
+    <div class="certificatewritupmanhattan">These certificates are mandatory for serving food in NYC. They are most often missing in Queens and the Bronx. In Manhattan, they are found in 2.30% of public schools, or 91 schools.</div>
+  <div class="certificateviolationmanhattan"><img src="certificate.png" width='200px' alt="certificate"></div>
+  </div>
+  
+  <div class="plumbingpopupmanhattan" id="plumbingpopupmanhattan">
+    <div class="titlehealthmanhattan">You Found A Health Code Violation!</div>
+    <div class="plumbingtitlemanhattan">Plumbing not properly installed</div>
+    <div class="plumbingwritupmanhattan">Poor water quality and hazardous material in water are the biggest threats posed by improper plumbing. It is seen most often in Staten Island and the Bronx. In Manhattan, they are found in 12.40% of public schools, or 487 schools.</div>
+  <div class="plumbingviolationmanhattan"><img src="plumbing.png" width='200px' alt="plumbing"></div>
+  </div>
+  
+  <div id="kitchenmanhattan">
+    <div class="game-screenmanhattan">
+     <img class="plumbingimagemanhattan" id="plumbingmanhattan" src="plumbing.png" alt="plumbing">
+     <img class="chefimagemanhattan" id="chefmanhattan" src="chef.png" alt="chef">
+     <img class="tempimagemanhattan" id="tempmanhattan" src="temp.png" alt="temp">
+  </div>
+  </div>
+  
+  <div id="cafe2manhattan">
+    <div class="game-screenmanhattan">
+      <img class="fliesimagemanhattan" id="fliesmanhattan" src="flies.png" alt="flies">
+      <img class="lightingimagemanhattan" id="lightingmanhattan" src="badlighting.png" alt="lighting">
+    </div>
+    </div>
+  
+    <div id="lunchlinemanhattan">
+      <div class="game-screenmanhattan">
+        <img class="nonfoodcontactimagemanhattan" id="nonfoodcontactmanhattan" src="nonfoodcontact.png" alt="nonfoodcontact">
+        <img class="bulbimagemanhattan" id="bulbmanhattan" src="bulb.png" alt="bulb">
+        <img class="contaminationimagemanhattan" id="contaminationmanhattan" src="contamination.png" alt="contamination">
+      </div>
+  </div>
+  
+      <div id="cafe1manhattan">
+        <div class="game-screenmanhattan">
+   <img class="ratsimagemanhattan" id="ratsmanhattan" src="rats.png" alt="rats">
+  <img class="verminproofimagemanhattan" id="verminproofmanhattan" src="verminproof.png" alt="vermin proof">
+        </div>
+        </div>
+  
+  <div class="gamefootermanhattan">
+      <div class="flex-containermanhattan">
+        <div class="item1manhattan"><img src="nonfoodcontact.png" id="footernonfoodcontactmanhattan" width="140px" alt="improper construction"></div>
+        <div class="item2manhattan"><img src="plumbing.png" id="footerplumbingmanhattan" width="70px" alt="plumbing"></div>
+        <div class="item3manhattan"><img src="verminproof.png" id="footerverminproofmanhattan" width="110px" alt="not vermin proof"></div>
+        <div class="item4manhattan" ><img id="footerratsmanhattan" src="rats.png" width="140px" alt="rats"></div>
+        <div class="item5manhattan"><img src="bulb.png" id="footerbulbmanhattan" width="90px" alt="bulb not shielded"></div>
+        <div class="item6manhattan"><img src="badlighting.png" id="footerlightmanhattan" width="150px" alt="bad lighting"></div>
+        <div class="item7manhattan"><img src="flies.png" id="footerfliesmanhattan" width="110px" alt="flith flies"></div>
+        <div class="item8manhattan"><img src="contamination.png" id="footercontaminationmanhattan"  width="130px" alt="food contamination"></div>
+        <div class="item9manhattan"><img src="certificate.png" id="footercertificatemanhattan" width="120px" alt="certificate"></div>
+        <div class="item10manhattan"><img src="temp.png" id="footertempmanhattan" width="50px" alt="temp"></div>
+      </div>
+     </div>
+  
+     <div id="mappopupmanhattan">
+      <img class="mapcafeimagemanhattan" id="mapcafemanhattan" src="mapcafe.png" width="150%" alt="mapcafe">
+     <button class="button1manhattan" onclick="gotoLocationmanhattan('cafe1manhattan')">Cafe 1</button>
+     <button class="button2manhattan" onclick="gotoLocationmanhattan('cafe2manhattan')">Cafe 2</button>
+     <button class="button3manhattan" onclick="gotoLocationmanhattan('lunchlinemanhattan')">Lunch Line</button>
+     <button class="button4manhattan" onclick="gotoLocationmanhattan('kitchenmanhattan')">Kitchen</button>
+     </div>
+   
 </div>
 
 <div id="statenisland">
-
+    <div class="beginningpopupstatenisland" id="beginningpopupstatenisland">
+        <div class="topwritingstatenisland">
+          Welcome Cafeteria Inspectors!
+        </div>
+        <div class="frontwritingstatenisland">
+          Thank heavens you’re here. We need your help to clean up this school! Find all the violations in this cafeteria and click on them to capture them. Good luck!
+        </div>
+        <div class="mapwritingstatenisland">
+          This is your Map. <br> Use it to navigate <br> around the different <br> cafeteria areas.
+        </div>
+        <div class="apronwritingstatenisland">
+         This keeps track of the people <br> you need to talk to. Click on <br> workers to interact with them!
+        </div>
+        <div class="footerwritingstatenisland">
+          This is your violation bar. All of the health code violations you’ve found will show here! 
+        </div>
+        <div class="maptinystatenisland"><img src="map.png" width='120px' alt="tiny map"></div>
+        <div class="apron1tinystatenisland"><img src="apronunlock.png" width='120px' alt="apron tiny"></div>
+        <div class="apron2tinystatenisland"><img src="fullapron.png" width='120px' alt="apron tiny"></div> 
+        <div class="footertinystatenisland"><img src="footertiny.png" width='360px' alt="tiny footer"></div>
+       <button class="buttonfirststatenisland" onclick="exitButtonstatenisland('instructionbuttonstatenisland')">Continue</button>
+      </div>
+  
+      <div class="endpopupstatenisland" id="endpopupstatenisland">
+       <div class="endtitlestatenisland">You Have Found All The Health Code Violations!</div>
+       <div class="endwritupstatenisland">Hurry now, brave inspector. We have many more schools to go through!</div>
+       <button class="buttonlaststatenisland" onclick="gotoLevelSelectstatenisland('finalbuttonstatenisland')">Continue to <br> next school</button>
+      </div>
+  
+  
+      <div class="mapstatenisland" id="mapstatenisland"><img src="map.png" width="20%" height="20%"></div>
+      
+     <div class="characterboxstatenisland">
+      <div class="apronunlock1statenisland"><img align="right" src="apronunlock copy.png" width="15%" height="15%"></div>
+  </div>
+  
+  <div class="characterbox2statenisland" id="characterbox2statenisland">
+    <div class="apronunlock3statenisland"><img align="right" src="fullapron.png" width="15%" height="15%"></div>
+  </div>
+  
+  
+  
+  <div class="ratspopupstatenisland" id="ratspopupstatenisland">
+    <div class="titlehealthstatenisland">You Found A Health Code Violation!</div>
+    <div class="rattitlestatenisland">Rats</div>
+    <div class="ratwritupstatenisland">Wild rats carry many diseases that can contaminate food. They are most often found in Manhattan and the Bronx. In Staten Island, they are found in 5.00% of public schools, or 50 schools.</div>
+  <div class="ratviolationstatenisland"><img src="rats.png" width='200px' alt="rats"></div>
+  </div>
+  
+  <div class="badlightingpopupstatenisland" id="badlightingpopupstatenisland">
+    <div class="titlehealthstatenisland">You Found A Health Code Violation!</div>
+    <div class="lightingtitlestatenisland">Inadequate lighting</div>
+    <div class="lightingwritupstatenisland">Inadequate lighting can lead to injuries due to minimized range of vision This is most often found in Staten Island and the Bronx. In Staten Island, it is found in 3.30% of public schools, or 33 schools.</div>
+  <div class="lightingviolationstatenisland"><img src="badlighting.png" width='250px' alt="lighting"></div>
+  </div>
+  
+  <div class="fliespopupstatenisland" id="fliespopupstatenisland">
+    <div class="titlehealthstatenisland">You Found A Health Code Violation!</div>
+    <div class="fliestitlestatenisland">Filth Flies</div>
+    <div class="flieswritupstatenisland">Filth flies carry diseases and can lay eggs in food, which hatch into maggots. They are most often found in Manhattan and Queens. In Staten Island, they are found in 2.60% of public schools, or 27 schools.</div>
+  <div class="fliesviolationstatenisland"><img src="flies.png" width='200px' alt="flies"></div>
+  </div>
+  
+  <div class="verminproofpopupstatenisland" id="verminproofpopupstatenisland">
+    <div class="titlehealthstatenisland">You Found A Health Code Violation!</div>
+    <div class="verminprooftitlestatenisland">Facility not vermin proof</div>
+    <div class="verminproofwritupstatenisland">While not as bad as actual mice and rats, this is still an invitation for them. This problem is most often found in Manhattan and Queens. In Staten Island, this is found in 7.00% of public schools, or 70 schools.</div>
+  <div class="verminproofviolationstatenisland"><img src="verminproof.png" width='200px' alt="verminproof"></div>
+  </div>
+  
+  
+  <div class="temppopupstatenisland" id="temppopupstatenisland">
+      <div class="titlehealthstatenisland">You Found A Health Code Violation!</div>
+      <div class="temptitlestatenisland">Accurate thermometer not provided</div>
+      <div class="tempwritupstatenisland">Improper temperatures can lead to spoiled food and sickness. This is most often seen in Manhattan. In Staten Island, it is seen in 3.00% of public schools, or 30 schools.</div>
+    <div class="tempviolationstatenisland"><img src="temp.png" width='100px' alt="temp"></div>
+    </div>
+  
+  <div class="contaminationpopupstatenisland" id="contaminationpopupstatenisland">
+    <div class="titlehealthstatenisland">You Found A Health Code Violation!</div>
+    <div class="contaminationtitlestatenisland">food not protected from contamination</div>
+    <div class="contaminationwritupstatenisland">Food left out in sub-optimal temperatures can be cause many illnesses. This is most often found in Manhattan and Brooklyn. In Staten Island, it is found in 3.30% of public schools, or 33 schools.</div>
+  <div class="contaminationviolationstatenisland"><img src="contamination.png" width='200px' alt="contamination"></div>
+  </div>
+  
+  <div class="bulbpopupstatenisland" id="bulbpopupstatenisland">
+    <div class="titlehealthstatenisland">You Found A Health Code Violation!</div>
+    <div class="bulbtitlestatenisland">Light bulb not shielded or shatterproof</div>
+    <div class="bulbwritupstatenisland">Light bulbs unprotected or improperly built can lead to burns or shattered glass. These are most often found in Staten Island and Manhattan. In Staten Island, it is found in 5.00% of public schools, or 50 schools.</div>
+  <div class="bulbviolationstatenisland"><img src="bulb.png" width='200px' alt="bulb"></div>
+  </div>
+  
+  <div class="improperpopupstatenisland" id="improperpopupstatenisland">
+    <div class="titlehealthstatenisland">You Found A Health Code Violation!</div>
+    <div class="impropertitlestatenisland">Surface improperly constructed</div>
+    <div class="improperwritupstatenisland">Food left out on surfaces not constructed for food can become hazardous. This is most often found in Staten Island and the Bronx. In Staten Island, it is found in 35.70% of public schools, or 355 schools.</div>
+  <div class="improperviolationstatenisland"><img src="nonfoodcontact.png" width='250px' alt="improperfoodsurface"></div>
+  </div>
+  
+  <div class="chefpopupstatenisland" id="chefpopupstatenisland">
+    <div class="titlechefstatenisland">CHEF</div>
+    <div class="dialogchefstatenisland">What’s the big deal? So what I don’t have a certificate? Who cares? <br> I got 800 kids to feed, MOVE! </div>
+  <div class="chefheadstatenisland"><img src="chef head.png" width='400px' alt="chef head"></div>
+    <button class="chefbuttonstatenisland" onclick="exitButton2statenisland('chefbuttonstatenisland')">Continue</button>
+  </div>
+  
+  <div class="certificatepopupstatenisland" id="certificatepopupstatenisland">
+    <div class="titlehealthstatenisland">You Found A Health Code Violation!</div>
+    <div class="certtitlestatenisland">Food Protection Certificate not held by supervisor</div>
+    <div class="certificatewritupstatenisland">These certificates are mandatory for serving food in NYC. They are most often missing in Queens and the Bronx. In Staten Island, they are found in 2.70% of public schools, or 27 schools.</div>
+  <div class="certificateviolationstatenisland"><img src="certificate.png" width='200px' alt="certificate"></div>
+  </div>
+  
+  <div class="plumbingpopupstatenisland" id="plumbingpopupstatenisland">
+    <div class="titlehealthstatenisland">You Found A Health Code Violation!</div>
+    <div class="plumbingtitlestatenisland">Plumbing not properly installed</div>
+    <div class="plumbingwritupstatenisland">Poor water quality and hazardous material in water are the biggest threats posed by improper plumbing. It is seen most often in Staten Island and the Bronx. In Staten Island, they are found in 13.20% of public schools, or 131 schools.</div>
+  <div class="plumbingviolationstatenisland"><img src="plumbing.png" width='200px' alt="plumbing"></div>
+  </div>
+  
+  <div id="kitchenstatenisland">
+    <div class="game-screenstatenisland">
+     / <img class="plumbingimagestatenisland" id="plumbingstatenisland" src="plumbing.png" alt="plumbing">
+     / <img class="chefimagestatenisland" id="chefstatenisland" src="chef.png" alt="chef">
+     <img class="ratsimagestatenisland" id="ratsstatenisland" src="rats.png" alt="rats">
+  </div>
+  </div>
+  
+  <div id="cafe2statenisland">
+    <div class="game-screenstatenisland">
+      <img class="fliesimagestatenisland" id="fliesstatenisland" src="flies.png" alt="flies">
+      <img class="bulbimagestatenisland" id="bulbstatenisland" src="bulb.png" alt="bulb">
+    </div>
+    </div>
+  
+    <div id="lunchlinestatenisland">
+      <div class="game-screenstatenisland">
+        <img class="nonfoodcontactimagestatenisland" id="nonfoodcontactstatenisland" src="nonfoodcontact.png" alt="nonfoodcontact">
+        <img class="contaminationimagestatenisland" id="contaminationstatenisland" src="contamination.png" alt="contamination">
+        <img class="tempimagestatenisland" id="tempstatenisland" src="temp.png" alt="temp">
+      </div>
+      </div>
+  
+      <div id="cafe1statenisland">
+        <div class="game-screenstatenisland">
+          <img class="verminproofimagestatenisland" id="verminproofstatenisland" src="verminproof.png" alt="vermin proof">
+  <img class="lightingimagestatenisland" id="lightingstatenisland" src="badlighting.png" alt="lighting">
+        </div>
+        </div>
+  
+  <div class="gamefooterstatenisland">
+      <div class="flex-containerstatenisland">
+        <div class="item1statenisland"><img src="nonfoodcontact.png" id="footernonfoodcontactstatenisland" width="140px" alt="improper construction"></div>
+        <div class="item2statenisland"><img src="plumbing.png" id="footerplumbingstatenisland" width="70px" alt="plumbing"></div>
+        <div class="item3statenisland"><img src="verminproof.png" id="footerverminproofstatenisland" width="110px" alt="not vermin proof"></div>
+        <div class="item4statenisland" ><img id="footerratsstatenisland" src="rats.png" width="140px" alt="rats"></div>
+        <div class="item5statenisland"><img src="bulb.png" id="footerbulbstatenisland" width="90px" alt="bulb not shielded"></div>
+        <div class="item6statenisland"><img src="badlighting.png" id="footerlightstatenisland" width="150px" alt="bad lighting"></div>
+        <div class="item7statenisland"><img src="flies.png" id="footerfliesstatenisland" width="110px" alt="flith flies"></div>
+        <div class="item8statenisland"><img src="contamination.png" id="footercontaminationstatenisland"  width="130px" alt="food contamination"></div>
+        <div class="item9statenisland"><img src="certificate.png" id="footercertificatestatenisland" width="120px" alt="certificate"></div>
+        <div class="item10statenisland"><img src="temp.png" id="footertempstatenisland" width="50px" alt="temp"></div>
+      </div>
+     </div>
+  
+     <div id="mappopupstatenisland">
+      <img class="mapcafeimagestatenisland" id="mapcafestatenisland" src="mapcafe.png" width="150%" alt="mapcafe">
+     <button class="button1statenisland" onclick="gotoLocationstatenisland('cafe1statenisland')">Cafe 1</button>
+     <button class="button2statenisland" onclick="gotoLocationstatenisland('cafe2statenisland')">Cafe 2</button>
+     <button class="button3statenisland" onclick="gotoLocationstatenisland('lunchlinestatenisland')">Lunch Line</button>
+     <button class="button4statenisland" onclick="gotoLocationstatenisland('kitchenstatenisland')">Kitchen</button>
+     </div>
 </div>
 
 <script src="script.js"></script>

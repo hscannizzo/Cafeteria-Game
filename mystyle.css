@@ -107,7 +107,70 @@ position: absolute;
     z-index: 2;
     display: none;
 }
+.confetti{
+    max-width: 1000px;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    user-select: none;
+ }  
+.endpopupcongrats {
+    position: absolute;
+    z-index: 3;
+    background-color:#FBFBFB;
+    width: 1259px;
+    height: 497px;
+    bottom: 35%;
+    left: 15%;
+    border-radius: 25px;
+    z-index: 3;
+    display: none;
+  }
+  
+  .endtitlepopupcongrats {
+    position: absolute;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 55px; 
+    left: 1%; 
+    top: 3%;
+  }
+  
+  .endwrituppopupcongrats {
+    position: absolute;
+    font-family: 'Courier Prime', monospace;
+    font-size: 40px; 
+    bottom: 45%;
+   left: 10%;
+   right: 10%;
+   text-align: center;
+   
+  }
 
+.endpopupcongratsbutton {
+    background-color: #841619; 
+    border: none;
+    color: #FBFBFB;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-family: 'Courier Prime', monospace;
+    position: absolute;
+  left: 41%;
+  bottom: 20%;
+  z-index: 3;
+  }
+   .medal{
+    position: absolute;
+    bottom: 2%;
+    left: 42.5%;
+  
+  }
 
 .bronx1 {
     left: 15%;
@@ -2787,4 +2850,1661 @@ position: absolute;
       border-radius: 25px;
     }
 
+
+
+.game-screenmanhattan {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: scale-down;
+    }
     
+    #cafe1manhattan .game-screenmanhattan {
+      background-image: url("manhattanpage1.png");
+    }
+    
+    #cafe2manhattan .game-screenmanhattan {
+      background-image: url("manhattanpage2.png"); 
+    }
+    
+    #kitchenmanhattan .game-screenmanhattan {
+      background-image: url("kitchen.png"); 
+    
+    }
+    
+    #lunchlinemanhattan .game-screenmanhattan {
+      background-image: url("line.png"); 
+    
+    }
+    
+     .mapmanhattan {
+     top: 0;
+     left: 0;
+      position: fixed;
+      z-index: 1; 
+      right: 65%;
+    
+     }
+    
+    .characterboxmanhattan {
+      top: 0;
+     right: 0;
+      position: fixed;
+      z-index: 1; 
+    }
+    .characterbox2manhattan {
+      top: 0;
+     right: .1%;
+      position: fixed;
+      z-index: 1; 
+      display: none;
+    }
+
+    
+    
+    *, *::before, *::after{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box; 
+    }
+    
+    .gamefootermanhattan{
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    
+    .flex-containermanhattan {
+      display: flex;
+      flex-direction: row;
+      background-color: rgba(217, 217, 217, .8);
+      align-items: flex-end;
+      justify-content: space-evenly;
+      flex: 0 1 auto;
+    
+    
+    }
+    .flex-containermanhattan img {
+      opacity: 0;
+    }
+    .flex-containermanhattan > div {
+      color: rgba(217, 217, 217, .8);
+      height: 140px;
+      border-style: solid;
+      border: #B5B3B3, 5px;
+      width: 150px;
+    }
+    
+    .item1manhattan {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    
+    .item2manhattan {
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 10px;
+    }
+    .item3manhattan {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .item4manhattan {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    .item5manhattan {
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 5px;
+    }
+    .item6manhattan {
+      padding-top: -10px;
+    }
+    .item7manhattan {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .item8manhattan {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    .item9manhattan{
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 25px;
+    }
+    .item10manhattan {
+      padding-left: 30px;
+      padding-right: 30px;
+    padding-top: 5px;
+    }
+    
+    
+   .ratsimagemanhattan {
+      position: absolute;
+      bottom: 15%;
+      left: 8%;
+      width: 80px;
+    }
+    .lightingimagemanhattan {
+      position: absolute;
+      right: 80%;
+      bottom: 48%;
+      width: 100px;
+    }
+    .chefimagemanhattan {
+      position: absolute;
+      bottom: 10%;
+      left: 20%;
+      width: 600px; 
+    } 
+    
+    .plumbingimagemanhattan {
+      position: absolute;
+      bottom: 25%;
+      left: 36%;
+      width: 80px; 
+    
+    }
+    
+    .fliesimagemanhattan {
+    position: absolute;
+    bottom: 39%;
+    right: 0%;
+    width: 180px;
+    }
+    
+    .verminproofimagemanhattan {
+      position: absolute;
+      bottom: 50%;
+    left: 25%;
+    width: 50px;
+    }
+    
+    .nonfoodcontactimagemanhattan {
+      position: absolute;
+      bottom: 42%;
+    left: 30%;
+    width: 200px;
+    }
+    
+   .bulbimagemanhattan {
+      position: absolute;
+      bottom: 93%;
+    left: 35%;
+    width: 50px;
+    }
+    
+    .contaminationimagemanhattan {
+      position: absolute;
+      bottom: 68%;
+    left: 40%;
+    width: 250px;
+    }
+    
+  .tempimagemanhattan {
+      position: absolute;
+      bottom: 49%;
+    left: 72%;
+    width: 49px;
+    }
+    
+    #mappopupmanhattan {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      background-color: #10487C;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 -4px 16px -3px #742830a1, 0 3px 13px -3px #742830a1;
+      border-radius: 25px;
+      padding-right: 260px;
+      font-size: 20px;
+      font-weight: bold;
+    
+    }
+    
+    .mapcafemanhattan {
+      position: fixed;
+      width: 80px;
+    }
+    
+    #mappopupmanhattan {
+      display: none;
+    }
+    .button1manhattan {
+      background-color: #C74238; 
+      border: none;
+      color: #d3d3d3;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 25px;
+      margin: 4px 2px;
+      cursor: pointer;
+      font-family: 'Courier Prime', monospace;
+     position: absolute;
+     bottom: 66%;
+     left: 50%;
+    }
+    
+    
+    .button2manhattan {
+      background-color: #C74238; 
+      border: none;
+      color: #d3d3d3;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 25px;
+      margin: 4px 2px;
+      cursor: pointer;
+      font-family: 'Courier Prime', monospace;
+      position: absolute;
+    left: 60%;
+    bottom: 30%;
+    }
+    
+   .button3manhattan {
+      background-color: #C74238; 
+      border: none;
+      color: #d3d3d3;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 25px;
+      margin: 4px 2px;
+      cursor: pointer;
+      font-family: 'Courier Prime', monospace;
+      position: absolute;
+      bottom: 48%;
+    left: 40%;
+    }
+    
+.button4manhattan {
+      background-color: #C74238; 
+      border: none;
+      color: #d3d3d3;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 25px;
+      margin: 4px 2px;
+      cursor: pointer;
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      left: 30%;
+      bottom: 28%;
+    }
+    
+    .beginningpopupmanhattan {
+      background-color: #FBFBFB;
+      width: 1295px;
+      height: 634px;
+      position: absolute;
+      z-index: 1;
+      left: 15%;
+      bottom: 20%;
+      border-radius: 25px;
+      
+    }
+    
+    .topwritingmanhattan {
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 64px;
+    left: 15%;
+    position: absolute;
+    }
+    
+    .frontwritingmanhattan {
+      font-size: 36px;
+    left: 13%;
+    right: 9%;
+    position: absolute;
+    font-family: 'Courier Prime', monospace;
+    bottom: 60%;
+    }
+    .maptinymanhattan {
+      position: absolute;
+      left: 5%;
+      bottom:35%;
+    }
+    .apron1tinymanhattan {
+      position: absolute;
+      left: 32%;
+      bottom: 35%;
+    }
+    .apron2tinymanhattan {
+      position: absolute;
+      left: 42%;
+      bottom: 35%;
+    }
+    
+    .footertinymanhattan {
+      position: absolute;
+      left: 67%;
+      bottom: 40%;
+    }
+    
+    .mapwritingmanhattan {
+      font-size: 22px;
+    left: 2%;
+    position: absolute;
+    font-family: 'Courier Prime', monospace;
+    bottom: 15%;
+    }
+    
+    .footerwritingmanhattan {
+      font-size: 22px;
+    left: 64%;
+    position: absolute;
+    font-family: 'Courier Prime', monospace;
+    bottom: 18%;
+    
+    }
+    
+    .apronwritingmanhattan {
+      font-size: 22px;
+    left: 28%;
+    position: absolute;
+    font-family: 'Courier Prime', monospace;
+    bottom: 18%;
+    }
+    
+    .buttonfirstmanhattan {
+      background-color: #FBFBFB; 
+      border: 5px solid black;
+      color: black;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 40px;
+      margin: 4px 2px;
+      cursor: pointer;
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      left: 40%;
+      bottom: 6%;
+      border-radius: 25px;
+    }
+    
+    .chefpopupmanhattan {
+      position: absolute;
+      z-index: 1;
+      background-color:#FBFBFB;
+      width: 1790px;
+      height: 350px;
+      bottom: -3%;
+      display: none;
+    }
+    .titlechefmanhattan {
+      font-family: "proxima-nova", sans-serif;
+      font-weight: 800;
+      font-style: normal;
+      font-size: 80px;
+      left: 2%;
+      position: absolute;  
+    }
+    
+    .dialogchefmanhattan {
+      font-size: 40px;
+      left: 2%;
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      bottom: 40%; 
+    }
+    
+    .chefbuttonmanhattan {
+      background-color: #FBFBFB; 
+      border: 5px solid black;
+      color: black;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 40px;
+      margin: 4px 2px;
+      cursor: pointer;
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      left: 85%;
+      bottom: 10%;
+      border-radius: 25px;
+    }
+    
+    .chefheadmanhattan {
+      position: absolute;
+      bottom: 99%;
+      left: 74%;
+    
+    }
+    
+    .certificatepopupmanhattan {
+      position: absolute;
+      z-index: 1;
+      background-color:#FBFBFB;
+      width: 959px;
+      height: 397px;
+      bottom: 40%;
+      left: 20%;
+      border-radius: 25px;
+      display: none;
+    }
+    
+    .titlehealthmanhattan {
+      position: absolute;
+      font-family: "proxima-nova", sans-serif;
+      font-weight: 800;
+      font-style: normal;
+      font-size: 55px; 
+      left: 2%;
+    }
+    
+    .certtitlemanhattan {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 44px; 
+      bottom: 56%;
+      left: 2%;
+    }
+    
+    .certificatewritupmanhattan {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 28px; 
+      bottom: 5%;
+      right: 40%;
+      left: 2%;
+    }
+    .certificateviolationmanhattan {
+      position: absolute;
+      left: 70%;
+      bottom: 20%;
+    }
+    
+    
+    .ratspopupmanhattan {
+      position: absolute;
+      z-index: 1;
+      background-color:#FBFBFB;
+      width: 959px;
+      height: 397px;
+      bottom: 40%;
+      left: 20%;
+      border-radius: 25px;
+      display: none;
+    }
+    .rattitlemanhattan {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 44px; 
+      bottom: 58%;
+      left: 2%;
+    }
+    
+    .ratwritupmanhattan {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 28px; 
+      bottom: 8%;
+      right: 40%;
+      left: 2%;
+    }
+    .ratviolationmanhattan {
+      position: absolute;
+      left: 70%;
+      bottom: 15%;
+    }
+    
+    .badlightingpopupmanhattan {
+      position: absolute;
+      z-index: 1;
+      background-color:#FBFBFB;
+      width: 959px;
+      height: 397px;
+      bottom: 40%;
+      left: 20%;
+      border-radius: 25px;
+      display: none;
+    }
+    .lightingtitlemanhattan {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 44px; 
+      bottom: 65%;
+      left: 2%;
+    }
+    
+    .lightingwritupmanhattan {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 28px; 
+      bottom: 8%;
+      right: 40%;
+      left: 2%;
+    }
+    .lightingviolationmanhattan {
+      position: absolute;
+      left: 70%;
+      bottom: 15%;
+    }
+    
+    .fliespopupmanhattan {
+      position: absolute;
+      z-index: 1;
+      background-color:#FBFBFB;
+      width: 959px;
+      height: 397px;
+      bottom: 40%;
+      left: 20%;
+      border-radius: 25px;
+      display: none;
+    }
+    .fliestitlemanhattan {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 44px; 
+      bottom: 65%;
+      left: 2%;
+    }
+    
+    .flieswritupmanhattan {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 28px; 
+      bottom: 8%;
+      right: 40%;
+      left: 2%;
+    }
+    .fliesviolationmanhattan {
+      position: absolute;
+      left: 70%;
+      bottom: 15%;
+    }
+    .verminproofpopupmanhattan {
+      position: absolute;
+      z-index: 1;
+      background-color:#FBFBFB;
+      width: 959px;
+      height: 397px;
+      bottom: 40%;
+      left: 20%;
+      border-radius: 25px;
+      display: none;
+    }
+    .verminprooftitlemanhattan {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 44px; 
+      bottom: 66%;
+      left: 2%;
+    }
+    
+    .verminproofwritupmanhattan {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 28px; 
+      bottom: 8%;
+      right: 40%;
+      left: 2%;
+    }
+    .verminproofviolationmanhattan {
+      position: absolute;
+      left: 70%;
+      bottom: 15%;
+    }
+    
+    .contaminationpopupmanhattan {
+      position: absolute;
+      z-index: 1;
+      background-color:#FBFBFB;
+      width: 959px;
+      height: 397px;
+      bottom: 40%;
+      left: 20%;
+      border-radius: 25px;
+      display: none;
+    }
+    .contaminationtitlemanhattan {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 44px; 
+      bottom: 58%;
+      left: 2%;
+    }
+    
+    .contaminationwritupmanhattan {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 28px; 
+      bottom: 3%;
+      right: 40%;
+      left: 2%;
+    }
+    .contaminationviolationmanhattan {
+      position: absolute;
+      left: 70%;
+      bottom: 15%;
+    }
+    
+    .bulbpopupmanhattan {
+      position: absolute;
+      z-index: 1;
+      background-color:#FBFBFB;
+      width: 959px;
+      height: 397px;
+      bottom: 40%;
+      left: 20%;
+      border-radius: 25px;
+      display: none;
+    }
+    .bulbtitlemanhattan {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 44px; 
+      bottom: 58%;
+      left: 2%;
+    }
+    
+    .bulbwritupmanhattan {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 27px; 
+      bottom: 2%;
+      right: 40%;
+      left: 2%;
+    }
+    .bulbviolationmanhattan {
+      position: absolute;
+      left: 70%;
+      bottom: 5%;
+    }
+
+    .temppopupmanhattan {
+        position: absolute;
+        z-index: 1;
+        background-color:#FBFBFB;
+        width: 959px;
+        height: 397px;
+        bottom: 40%;
+        left: 20%;
+        border-radius: 25px;
+        display: none;
+      }
+      .temptitlemanhattan {
+        position: absolute;
+        font-family: 'Courier Prime', monospace;
+        font-size: 44px; 
+        bottom: 66%;
+        left: 2%;
+      }
+      
+      .tempwritupmanhattan {
+        position: absolute;
+        font-family: 'Courier Prime', monospace;
+        font-size: 29px; 
+        bottom: 12%;
+        right: 40%;
+        left: 2%;
+      }
+      .tempviolationmanhattan {
+        position: absolute;
+        left: 70%;
+        bottom: 5%;
+      }
+    
+    .improperpopupmanhattan {
+      position: absolute;
+      z-index: 1;
+      background-color:#FBFBFB;
+      width: 959px;
+      height: 397px;
+      bottom: 40%;
+      left: 20%;
+      border-radius: 25px;
+      display: none;
+    }
+    .impropertitlemanhattan {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 44px; 
+      bottom: 67%;
+      left: 2%;
+    }
+    
+    .improperwritupmanhattan {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 28px; 
+      bottom: 8%;
+      right: 40%;
+      left: 2%;
+    }
+    .improperviolationmanhattan {
+      position: absolute;
+      left: 70%;
+      bottom: 15%;
+    }
+    
+    .plumbingpopupmanhattan {
+      position: absolute;
+      z-index: 1;
+      background-color:#FBFBFB;
+      width: 959px;
+      height: 397px;
+      bottom: 40%;
+      left: 20%;
+      border-radius: 25px;
+      display: none;
+    }
+    .plumbingtitlemanhattan {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 44px; 
+      bottom: 70%;
+      left: 2%;
+    }
+    
+    .plumbingwritupmanhattan {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 28px; 
+      bottom: 8%;
+      right: 40%;
+      left: 2%;
+    }
+    .plumbingviolationmanhattan {
+      position: absolute;
+      left: 68.5%;
+      bottom: 5%;
+    }
+    
+    .endpopupmanhattan {
+      position: absolute;
+      z-index: 1;
+      background-color:#FBFBFB;
+      width: 1259px;
+      height: 497px;
+      bottom: 35%;
+      left: 15%;
+      border-radius: 25px;
+      display: none;
+    }
+    
+    .endtitlemanhattan {
+      position: absolute;
+      font-family: "proxima-nova", sans-serif;
+      font-weight: 800;
+      font-style: normal;
+      font-size: 55px; 
+      left: 1%; 
+      top: 3%;
+    }
+    
+    .endwritupmanhattan {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 40px; 
+      bottom: 55%;
+     left: 10%;
+     right: 10%;
+     text-align: center;
+    }
+    
+    .buttonlastmanhattan {
+      background-color: #FBFBFB; 
+      border: 5px solid black;
+      color: black;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      padding: 2%;
+      font-size: 40px;
+      margin: 4px 2px;
+      cursor: pointer;
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      left: 35%;
+      bottom: 10%;
+      border-radius: 25px;
+    }
+    
+    
+
+.game-screenstatenisland {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: scale-down;
+    }
+    
+    #cafe1statenisland .game-screenstatenisland {
+      background-image: url("statenislandpage1.png");
+    }
+    
+    #cafe2statenisland .game-screenstatenisland {
+      background-image: url("statenislandpage2.png"); 
+    }
+    
+    #kitchenstatenisland .game-screenstatenisland {
+      background-image: url("kitchen.png"); 
+    
+    }
+    
+    #lunchlinestatenisland .game-screenstatenisland {
+      background-image: url("line.png"); 
+    
+    }
+    
+     .mapstatenisland {
+     top: 0;
+     left: 0;
+      position: fixed;
+      z-index: 1; 
+      right: 65%;
+    
+     }
+    
+    .characterboxstatenisland {
+      top: 0;
+     right: 0;
+      position: fixed;
+      z-index: 1; 
+    }
+    .characterbox2statenisland {
+      top: 0;
+     right: .1%;
+      position: fixed;
+      z-index: 1; 
+      display: none;
+    }
+    .characterbox3statenisland {
+      top: 0;
+     right: 7.6%;
+      position: fixed;
+      z-index: 1; 
+      display: none;
+    }
+    
+    
+    *, *::before, *::after{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box; 
+    }
+    
+    .gamefooterstatenisland{
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    
+    .flex-containerstatenisland {
+      display: flex;
+      flex-direction: row;
+      background-color: rgba(217, 217, 217, .8);
+      align-items: flex-end;
+      justify-content: space-evenly;
+      flex: 0 1 auto;
+    
+    
+    }
+    .flex-containerstatenisland img {
+      opacity: 0;
+    }
+    .flex-containerstatenisland > div {
+      color: rgba(217, 217, 217, .8);
+      height: 140px;
+      border-style: solid;
+      border: #B5B3B3, 5px;
+      width: 150px;
+    }
+    
+    .item1statenisland {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    
+    .item2statenisland {
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 10px;
+    }
+    .item3statenisland {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .item4statenisland {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    .item5statenisland {
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 5px;
+    }
+    .item6statenisland {
+      padding-top: -10px;
+    }
+    .item7statenisland {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .item8statenisland {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    .item9statenisland {
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 25px;
+    }
+    .item10statenisland {
+      padding-left: 30px;
+      padding-right: 30px;
+    padding-top: 5px;
+    }
+    
+    
+   .ratsimagestatenisland {
+      position: absolute;
+      bottom: 10%;
+      left: 28%;
+      width: 80px;
+    }
+    .lightingimagestatenisland {
+      position: absolute;
+      left: 40%;
+      bottom: 41%;
+      width: 100px;
+    }
+    .chefimagestatenisland {
+      position: absolute;
+      bottom: 10%;
+      left: 20%;
+      width: 600px; 
+    } 
+    
+    .plumbingimagestatenisland {
+      position: absolute;
+      bottom: 25%;
+      left: 36%;
+      width: 80px; 
+    
+    }
+    
+    .fliesimagestatenisland {
+    position: absolute;
+    bottom: 50%;
+    left: 27%;
+    width: 70px;
+    }
+    
+    .verminproofimagestatenisland {
+      position: absolute;
+      bottom: 50%;
+    left: 24%;
+    width: 50px;
+    }
+    
+    .nonfoodcontactimagestatenisland {
+      position: absolute;
+      bottom: 42%;
+    left: 30%;
+    width: 200px;
+    }
+    
+   .bulbimagestatenisland {
+      position: absolute;
+      bottom: 93%;
+    left: 35%;
+    width: 50px;
+    }
+    
+    .contaminationimagestatenisland {
+      position: absolute;
+      bottom: 68%;
+    left: 40%;
+    width: 250px;
+    }
+    
+  .lunchladyimagestatenisland {
+      position: absolute;
+      bottom: 2%;
+    left: 80%;
+    width: 400px;
+    }
+    .tempimagestatenisland {
+        position: absolute;
+        bottom: 72%;
+      left: 8%;
+      width: 49px;
+      }
+    
+    #mappopupstatenisland {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      background-color: #10487C;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 -4px 16px -3px #742830a1, 0 3px 13px -3px #742830a1;
+      border-radius: 25px;
+      padding-right: 260px;
+      font-size: 20px;
+      font-weight: bold;
+    
+    }
+    
+    .mapcafestatenisland {
+      position: fixed;
+      width: 80px;
+    }
+    
+    #mappopupstatenisland {
+      display: none;
+    }
+    .button1statenisland {
+      background-color: #C74238; 
+      border: none;
+      color: #d3d3d3;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 25px;
+      margin: 4px 2px;
+      cursor: pointer;
+      font-family: 'Courier Prime', monospace;
+     position: absolute;
+     bottom: 66%;
+     left: 50%;
+    }
+    
+    
+    .button2statenisland {
+      background-color: #C74238; 
+      border: none;
+      color: #d3d3d3;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 25px;
+      margin: 4px 2px;
+      cursor: pointer;
+      font-family: 'Courier Prime', monospace;
+      position: absolute;
+    left: 60%;
+    bottom: 30%;
+    }
+    
+   .button3statenisland {
+      background-color: #C74238; 
+      border: none;
+      color: #d3d3d3;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 25px;
+      margin: 4px 2px;
+      cursor: pointer;
+      font-family: 'Courier Prime', monospace;
+      position: absolute;
+      bottom: 48%;
+    left: 40%;
+    }
+    
+.button4statenisland {
+      background-color: #C74238; 
+      border: none;
+      color: #d3d3d3;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 25px;
+      margin: 4px 2px;
+      cursor: pointer;
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      left: 30%;
+      bottom: 28%;
+    }
+    
+    .beginningpopupstatenisland {
+      background-color: #FBFBFB;
+      width: 1295px;
+      height: 634px;
+      position: absolute;
+      z-index: 1;
+      left: 15%;
+      bottom: 20%;
+      border-radius: 25px;
+      
+    }
+    
+    .topwritingstatenisland {
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 64px;
+    left: 15%;
+    position: absolute;
+    }
+    
+    .frontwritingstatenisland {
+      font-size: 36px;
+    left: 13%;
+    right: 9%;
+    position: absolute;
+    font-family: 'Courier Prime', monospace;
+    bottom: 60%;
+    }
+    .maptinystatenisland {
+      position: absolute;
+      left: 5%;
+      bottom:35%;
+    }
+    .apron1tinystatenisland {
+      position: absolute;
+      left: 32%;
+      bottom: 35%;
+    }
+    .apron2tinystatenisland {
+      position: absolute;
+      left: 42%;
+      bottom: 35%;
+    }
+    
+    .footertinystatenisland {
+      position: absolute;
+      left: 67%;
+      bottom: 40%;
+    }
+    
+    .mapwritingstatenisland {
+      font-size: 22px;
+    left: 2%;
+    position: absolute;
+    font-family: 'Courier Prime', monospace;
+    bottom: 15%;
+    }
+    
+    .footerwritingstatenisland {
+      font-size: 22px;
+    left: 64%;
+    position: absolute;
+    font-family: 'Courier Prime', monospace;
+    bottom: 18%;
+    
+    }
+    
+    .apronwritingstatenisland {
+      font-size: 22px;
+    left: 28%;
+    position: absolute;
+    font-family: 'Courier Prime', monospace;
+    bottom: 18%;
+    }
+    
+    .buttonfirststatenisland {
+      background-color: #FBFBFB; 
+      border: 5px solid black;
+      color: black;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 40px;
+      margin: 4px 2px;
+      cursor: pointer;
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      left: 40%;
+      bottom: 6%;
+      border-radius: 25px;
+    }
+    
+    .chefpopupstatenisland {
+      position: absolute;
+      z-index: 1;
+      background-color:#FBFBFB;
+      width: 1790px;
+      height: 350px;
+      bottom: -3%;
+      display: none;
+    }
+    .titlechefstatenisland {
+      font-family: "proxima-nova", sans-serif;
+      font-weight: 800;
+      font-style: normal;
+      font-size: 80px;
+      left: 2%;
+      position: absolute;  
+    }
+    
+    .dialogchefstatenisland {
+      font-size: 40px;
+      left: 2%;
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      bottom: 40%; 
+    }
+    
+    .chefbuttonstatenisland {
+      background-color: #FBFBFB; 
+      border: 5px solid black;
+      color: black;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 40px;
+      margin: 4px 2px;
+      cursor: pointer;
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      left: 85%;
+      bottom: 10%;
+      border-radius: 25px;
+    }
+    
+    .chefheadstatenisland {
+      position: absolute;
+      bottom: 99%;
+      left: 74%;
+    
+    }
+    
+    .certificatepopupstatenisland {
+      position: absolute;
+      z-index: 1;
+      background-color:#FBFBFB;
+      width: 959px;
+      height: 397px;
+      bottom: 40%;
+      left: 20%;
+      border-radius: 25px;
+      display: none;
+    }
+    
+    .titlehealthstatenisland {
+      position: absolute;
+      font-family: "proxima-nova", sans-serif;
+      font-weight: 800;
+      font-style: normal;
+      font-size: 55px; 
+      left: 2%;
+    }
+    
+    .certtitlestatenisland {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 44px; 
+      bottom: 56%;
+      left: 2%;
+    }
+    
+    .certificatewritupstatenisland {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 28px; 
+      bottom: 5%;
+      right: 40%;
+      left: 2%;
+    }
+    .certificateviolationstatenisland {
+      position: absolute;
+      left: 70%;
+      bottom: 20%;
+    }
+    
+    
+    .ratspopupstatenisland {
+      position: absolute;
+      z-index: 1;
+      background-color:#FBFBFB;
+      width: 959px;
+      height: 397px;
+      bottom: 40%;
+      left: 20%;
+      border-radius: 25px;
+      display: none;
+    }
+    .rattitlestatenisland {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 44px; 
+      bottom: 58%;
+      left: 2%;
+    }
+    
+    .ratwritupstatenisland {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 28px; 
+      bottom: 8%;
+      right: 40%;
+      left: 2%;
+    }
+    .ratviolationstatenisland {
+      position: absolute;
+      left: 70%;
+      bottom: 15%;
+    }
+    
+    .badlightingpopupstatenisland {
+      position: absolute;
+      z-index: 1;
+      background-color:#FBFBFB;
+      width: 959px;
+      height: 397px;
+      bottom: 40%;
+      left: 20%;
+      border-radius: 25px;
+      display: none;
+    }
+    .lightingtitlestatenisland {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 44px; 
+      bottom: 65%;
+      left: 2%;
+    }
+    
+    .lightingwritupstatenisland {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 28px; 
+      bottom: 8%;
+      right: 40%;
+      left: 2%;
+    }
+    .lightingviolationstatenisland {
+      position: absolute;
+      left: 70%;
+      bottom: 15%;
+    }
+    
+    .fliespopupstatenisland {
+      position: absolute;
+      z-index: 1;
+      background-color:#FBFBFB;
+      width: 959px;
+      height: 397px;
+      bottom: 40%;
+      left: 20%;
+      border-radius: 25px;
+      display: none;
+    }
+    .fliestitlestatenisland {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 44px; 
+      bottom: 65%;
+      left: 2%;
+    }
+    
+    .flieswritupstatenisland {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 28px; 
+      bottom: 8%;
+      right: 40%;
+      left: 2%;
+    }
+    .fliesviolationstatenisland {
+      position: absolute;
+      left: 70%;
+      bottom: 15%;
+    }
+    .verminproofpopupstatenisland {
+      position: absolute;
+      z-index: 1;
+      background-color:#FBFBFB;
+      width: 959px;
+      height: 397px;
+      bottom: 40%;
+      left: 20%;
+      border-radius: 25px;
+      display: none;
+    }
+    .verminprooftitlestatenisland {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 44px; 
+      bottom: 66%;
+      left: 2%;
+    }
+    
+    .verminproofwritupstatenisland {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 28px; 
+      bottom: 8%;
+      right: 40%;
+      left: 2%;
+    }
+    .verminproofviolationstatenisland {
+      position: absolute;
+      left: 70%;
+      bottom: 15%;
+    }
+    
+    .contaminationpopupstatenisland {
+      position: absolute;
+      z-index: 1;
+      background-color:#FBFBFB;
+      width: 959px;
+      height: 397px;
+      bottom: 40%;
+      left: 20%;
+      border-radius: 25px;
+      display: none;
+    }
+    .contaminationtitlestatenisland {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 44px; 
+      bottom: 58%;
+      left: 2%;
+    }
+    
+    .contaminationwritupstatenisland {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 28px; 
+      bottom: 3%;
+      right: 40%;
+      left: 2%;
+    }
+    .contaminationviolationstatenisland {
+      position: absolute;
+      left: 70%;
+      bottom: 15%;
+    }
+    
+    .bulbpopupstatenisland {
+      position: absolute;
+      z-index: 1;
+      background-color:#FBFBFB;
+      width: 959px;
+      height: 397px;
+      bottom: 40%;
+      left: 20%;
+      border-radius: 25px;
+      display: none;
+    }
+    .bulbtitlestatenisland {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 44px; 
+      bottom: 58%;
+      left: 2%;
+    }
+    
+    .bulbwritupstatenisland {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 28px; 
+      bottom: 3%;
+      right: 40%;
+      left: 2%;
+    }
+    .bulbviolationstatenisland {
+      position: absolute;
+      left: 70%;
+      bottom: 5%;
+    }
+    
+    .improperpopupstatenisland {
+      position: absolute;
+      z-index: 1;
+      background-color:#FBFBFB;
+      width: 959px;
+      height: 397px;
+      bottom: 40%;
+      left: 20%;
+      border-radius: 25px;
+      display: none;
+    }
+    .impropertitlestatenisland {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 44px; 
+      bottom: 67%;
+      left: 2%;
+    }
+    
+    .improperwritupstatenisland {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 28px; 
+      bottom: 8%;
+      right: 40%;
+      left: 2%;
+    }
+    .improperviolationstatenisland {
+      position: absolute;
+      left: 70%;
+      bottom: 15%;
+    }
+    
+    .plumbingpopupstatenisland {
+      position: absolute;
+      z-index: 1;
+      background-color:#FBFBFB;
+      width: 959px;
+      height: 397px;
+      bottom: 40%;
+      left: 20%;
+      border-radius: 25px;
+      display: none;
+    }
+    .plumbingtitlestatenisland {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 44px; 
+      bottom: 70%;
+      left: 2%;
+    }
+    
+    .plumbingwritupstatenisland {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 28px; 
+      bottom: 6%;
+      right: 40%;
+      left: 2%;
+    }
+    .plumbingviolationstatenisland {
+      position: absolute;
+      left: 68.5%;
+      bottom: 5%;
+    }
+
+
+    .temppopupstatenisland {
+        position: absolute;
+        z-index: 1;
+        background-color:#FBFBFB;
+        width: 959px;
+        height: 397px;
+        bottom: 40%;
+        left: 20%;
+        border-radius: 25px;
+        display: none;
+      }
+      .temptitlestatenisland {
+        position: absolute;
+        font-family: 'Courier Prime', monospace;
+        font-size: 44px; 
+        bottom: 66%;
+        left: 2%;
+      }
+      
+      .tempwritupstatenisland {
+        position: absolute;
+        font-family: 'Courier Prime', monospace;
+        font-size: 29px; 
+        bottom: 12%;
+        right: 40%;
+        left: 2%;
+      }
+      .tempviolationstatenisland {
+        position: absolute;
+        left: 70%;
+        bottom: 5%;
+      }
+    
+    .endpopupstatenisland {
+      position: absolute;
+      z-index: 1;
+      background-color:#FBFBFB;
+      width: 1259px;
+      height: 497px;
+      bottom: 35%;
+      left: 15%;
+      border-radius: 25px;
+      display: none;
+    }
+    
+    .endtitlestatenisland {
+      position: absolute;
+      font-family: "proxima-nova", sans-serif;
+      font-weight: 800;
+      font-style: normal;
+      font-size: 55px; 
+      left: 1%; 
+      top: 3%;
+    }
+    
+    .endwritupstatenisland {
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      font-size: 40px; 
+      bottom: 55%;
+     left: 10%;
+     right: 10%;
+     text-align: center;
+    }
+    
+    .buttonlaststatenisland {
+      background-color: #FBFBFB; 
+      border: 5px solid black;
+      color: black;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      padding: 2%;
+      font-size: 40px;
+      margin: 4px 2px;
+      cursor: pointer;
+      position: absolute;
+      font-family: 'Courier Prime', monospace;
+      left: 35%;
+      bottom: 10%;
+      border-radius: 25px;
+    }

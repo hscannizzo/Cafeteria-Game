@@ -1,6 +1,6 @@
 // These are the levels of our game
 const $kitchenLevel = document.getElementById('kitchen')
-const $cafe1Level = document.getElementById('cafe1')
+const manhattan$cafe1Level = document.getElementById('cafe1')
 const $cafe2Level = document.getElementById('cafe2')
 const $lunchlineLevel = document.getElementById('lunchline')
 
@@ -331,7 +331,7 @@ console.log (mappopup)
 mappopup.style.display = 'block'
    })
 
-   const mappopup = document.getElementById('mappopup')
+   const statenislandmappopup = document.getElementById('mappopup')
    console.log (mappopup)
    mappopup.addEventListener('click', function() {
     mappopup.style.display = 'none'
